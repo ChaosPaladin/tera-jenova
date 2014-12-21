@@ -5,17 +5,17 @@
 <hibernate-configuration>
     <session-factory>
         <!-- MYSQL -->
-        <!--
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.url">jdbc:mysql://localhost/tera</property>
-         -->
+         
 
          <!-- SQLite -->
+         <!--
         <property name="hibernate.dialect">com.applerao.hibernatesqlite.dialect.SQLiteDialect</property>
         <property name="hibernate.connection.driver_class">org.sqlite.JDBC</property>
         <property name="hibernate.connection.url">jdbc:sqlite:../databases/mydb.db</property>
-
+        -->
 
         <property name="hibernate.connection.charSet">UTF-8</property>
         <property name="hibernate.connection.username">root</property>

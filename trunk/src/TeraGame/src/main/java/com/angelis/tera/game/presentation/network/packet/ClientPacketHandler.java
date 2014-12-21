@@ -35,7 +35,7 @@ public class ClientPacketHandler {
         addPacket((short) 0xDA2D, CM_CHARACTER_RESTORE.class); // OK
         
         // ENTER WORLD
-        addPacket((short) 0xE2D7, CM_ENTER_WORLD.class);
+        addPacket((short) 0xA5B7, CM_ENTER_WORLD.class); // OK
         addPacket((short) 0x75B7, CM_UNK_ENTER_WORLD.class);
         addPacket((short) 0x6073, CM_LOAD_TOPO_FIN.class);
         addPacket((short) 0x96A5, CM_UPDATE_CONTENTS_PLAYTIME.class);

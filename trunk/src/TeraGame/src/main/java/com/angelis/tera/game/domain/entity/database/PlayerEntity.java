@@ -19,6 +19,8 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import javolution.util.FastSet;
+
 import com.angelis.tera.common.domain.entity.database.AbstractDatabaseEntity;
 import com.angelis.tera.game.process.model.player.enums.GenderEnum;
 import com.angelis.tera.game.process.model.player.enums.PlayerClassEnum;
@@ -450,6 +452,9 @@ public class PlayerEntity extends AbstractDatabaseEntity {
     }
 
     public Set<ZoneEntity> getVisitedZones() {
+        if (visitedZones == null) {
+            visitedZones = new FastSet<ZoneEntity>();
+        }
         return visitedZones;
     }
 

@@ -24,6 +24,7 @@ import com.angelis.tera.game.presentation.network.packet.TeraServerPacket;
 import com.angelis.tera.game.presentation.network.packet.server.SM_CHARACTER_CREATE;
 import com.angelis.tera.game.presentation.network.packet.server.SM_CHARACTER_CREATE_NAME_USED_CHECK;
 import com.angelis.tera.game.presentation.network.packet.server.SM_CHARACTER_DELETE;
+import com.angelis.tera.game.presentation.network.packet.server.SM_CHARACTER_RESTORE;
 import com.angelis.tera.game.presentation.network.packet.server.SM_FESTIVAL_LIST;
 import com.angelis.tera.game.presentation.network.packet.server.SM_LOAD_TOPO;
 import com.angelis.tera.game.presentation.network.packet.server.SM_PLAYER_BLOCK_ADD_SUCCESS;
@@ -108,6 +109,10 @@ public class PlayerService extends AbstractService {
 
     public final void onPlayerDelete(final Player player) {
         player.getConnection().sendPacket(new SM_CHARACTER_DELETE(true));
+    }
+    
+    public final void onPlayerRestore(final Player player) {
+        player.getConnection().sendPacket(new SM_CHARACTER_RESTORE(true));
     }
 
     public final void onPlayerConnect(final Player player) {
@@ -415,8 +420,7 @@ public class PlayerService extends AbstractService {
         this.onPlayerCreate(player, creationSuccess);
     }
 
-    public void deletePlayer(final int playerId) {
-        final Player player = playerDelegate.findById(playerId);
+    public void deletePlayer(final Player player) {
         if (player == null) {
             return;
         }
@@ -428,14 +432,14 @@ public class PlayerService extends AbstractService {
         this.onPlayerDelete(player);
     }
 
-    public void restorePlayer(final int playerId) {
-        final Player player = playerDelegate.findById(playerId);
+    public void restorePlayer(final Player player) {
         if (player == null) {
             return;
         }
 
         player.setDeletionTime(null);
         ThreadPoolService.getInstance().cancelTask(player, TaskTypeEnum.PLAYER_DELETE);
+        this.onPlayerRestore(player);
     }
 
     public void levelUpPlayer(final Player player, final int level) {

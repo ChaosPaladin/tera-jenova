@@ -91,11 +91,11 @@ public class DialogService extends AbstractService {
                 break;
                 
                 case SPECIALITY_MERCHANT:
-                	dialog.addDialogButton(new DialogButton(dialog, DialogIconEnum.CENTERED_GREEN, DialogStringEnum.SPECIALITY_STORE, new ShowTradelistAction(player, dialog)));
+                    dialog.addDialogButton(new DialogButton(dialog, DialogIconEnum.CENTERED_GREEN, DialogStringEnum.SPECIALITY_STORE, new ShowTradelistAction(player, dialog)));
                 break;
                 
                 case NOCTENIUM_MERCHANT:
-                	dialog.addDialogButton(new DialogButton(dialog, DialogIconEnum.CENTERED_GREEN, DialogStringEnum.TEST, new ShowTradelistAction(player, dialog)));
+                    dialog.addDialogButton(new DialogButton(dialog, DialogIconEnum.CENTERED_GREEN, DialogStringEnum.TEST, new ShowTradelistAction(player, dialog)));
                 break;
             }
         }

@@ -17,9 +17,9 @@ public class ZoneDAO extends AbstractDatabaseDAO<ZoneEntity> {
     public ZoneEntity readByDatas(final byte[] datas) {
         ZoneEntity zone = null;
         
-        final Transaction transaction = session.beginTransaction();
+        final Transaction transaction = this.getTransaction();
         
-        final Query query = session.createQuery("from ZoneEntity where datas = :datas");
+        final Query query = this.createQuery("from ZoneEntity where datas = :datas");
         query.setBinary("datas", datas);
         
         zone = (ZoneEntity) query.uniqueResult();
