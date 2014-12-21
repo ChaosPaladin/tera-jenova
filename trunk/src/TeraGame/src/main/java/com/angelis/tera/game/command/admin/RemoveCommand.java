@@ -1,21 +1,21 @@
 package com.angelis.tera.game.command.admin;
 
 import com.angelis.tera.game.command.AdminErrorMessageEnum;
-import com.angelis.tera.game.controllers.enums.RightEnum;
-import com.angelis.tera.game.network.connection.TeraGameConnection;
-import com.angelis.tera.game.network.packet.server.SM_PLAYER_STATS_UPDATE;
+import com.angelis.tera.game.presentation.network.connection.TeraGameConnection;
+import com.angelis.tera.game.presentation.network.packet.server.SM_PLAYER_STATS_UPDATE;
+import com.angelis.tera.game.process.controllers.enums.RightEnum;
 import com.angelis.tera.game.process.model.account.Account;
 import com.angelis.tera.game.process.model.enums.StorageTypeEnum;
 import com.angelis.tera.game.process.model.player.Player;
 import com.angelis.tera.game.process.model.player.craft.enums.CraftTypeEnum;
 import com.angelis.tera.game.process.model.player.gather.enums.GatherTypeEnum;
 import com.angelis.tera.game.process.model.storage.Storage;
-import com.angelis.tera.game.services.CraftService;
-import com.angelis.tera.game.services.GatherService;
-import com.angelis.tera.game.services.PlayerService;
-import com.angelis.tera.game.services.SkillService;
-import com.angelis.tera.game.services.StorageService;
-import com.angelis.tera.game.services.WorldService;
+import com.angelis.tera.game.process.services.CraftService;
+import com.angelis.tera.game.process.services.GatherService;
+import com.angelis.tera.game.process.services.PlayerService;
+import com.angelis.tera.game.process.services.SkillService;
+import com.angelis.tera.game.process.services.StorageService;
+import com.angelis.tera.game.process.services.WorldService;
 
 public class RemoveCommand extends AbstractAdminCommand {
 

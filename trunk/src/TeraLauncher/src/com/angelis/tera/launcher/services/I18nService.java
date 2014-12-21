@@ -14,7 +14,7 @@ public class I18nService extends BaseI18nService {
     
     @Override
     public String getBundleName() {
-        return "com.angelis.tera.launcher.i18n.messages";
+        return "com.angelis.tera.launcher.presentation.i18n.messages";
     }
     
     /** SINGLETON */

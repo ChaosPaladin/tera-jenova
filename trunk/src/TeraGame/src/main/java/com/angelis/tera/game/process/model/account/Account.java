@@ -5,7 +5,7 @@ import java.util.List;
 import javolution.util.FastList;
 
 import com.angelis.tera.common.process.model.BaseAccountModel;
-import com.angelis.tera.game.network.connection.TeraGameConnection;
+import com.angelis.tera.game.presentation.network.connection.TeraGameConnection;
 import com.angelis.tera.game.process.model.account.enums.AccountTypeEnum;
 import com.angelis.tera.game.process.model.player.Player;
 

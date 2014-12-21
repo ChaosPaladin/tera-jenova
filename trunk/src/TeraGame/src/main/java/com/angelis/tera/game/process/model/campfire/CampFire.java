@@ -4,7 +4,7 @@ import java.util.List;
 
 import javolution.util.FastList;
 
-import com.angelis.tera.game.controllers.CampFireController;
+import com.angelis.tera.game.process.controllers.CampFireController;
 import com.angelis.tera.game.process.model.campfire.enums.CampFireStatusEnum;
 import com.angelis.tera.game.process.model.campfire.enums.CampFireTypeEnum;
 import com.angelis.tera.game.process.model.visible.VisibleTeraObject;

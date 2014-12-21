@@ -2,20 +2,20 @@ package com.angelis.tera.game.process.model.player.request;
 
 import java.util.concurrent.TimeUnit;
 
-import com.angelis.tera.game.network.SystemMessages;
-import com.angelis.tera.game.network.connection.TeraGameConnection;
-import com.angelis.tera.game.network.packet.server.SM_GROUP_UNK;
-import com.angelis.tera.game.network.packet.server.SM_REQUEST_COMPLETE;
-import com.angelis.tera.game.network.packet.server.SM_REQUEST_CONTRACT;
-import com.angelis.tera.game.network.packet.server.SM_REQUEST_CONTRACT_CANCEL;
-import com.angelis.tera.game.network.packet.server.SM_REQUEST_WINDOW_HIDE;
-import com.angelis.tera.game.network.packet.server.SM_REQUEST_WINDOW_SHOW;
+import com.angelis.tera.game.presentation.network.SystemMessages;
+import com.angelis.tera.game.presentation.network.connection.TeraGameConnection;
+import com.angelis.tera.game.presentation.network.packet.server.SM_GROUP_UNK;
+import com.angelis.tera.game.presentation.network.packet.server.SM_REQUEST_COMPLETE;
+import com.angelis.tera.game.presentation.network.packet.server.SM_REQUEST_CONTRACT;
+import com.angelis.tera.game.presentation.network.packet.server.SM_REQUEST_CONTRACT_CANCEL;
+import com.angelis.tera.game.presentation.network.packet.server.SM_REQUEST_WINDOW_HIDE;
+import com.angelis.tera.game.presentation.network.packet.server.SM_REQUEST_WINDOW_SHOW;
 import com.angelis.tera.game.process.model.group.Group;
 import com.angelis.tera.game.process.model.player.Player;
 import com.angelis.tera.game.process.model.player.request.enums.RequestTypeEnum;
-import com.angelis.tera.game.services.GroupService;
-import com.angelis.tera.game.services.ThreadPoolService;
-import com.angelis.tera.game.tasks.request.AutoCancelRequestTask;
+import com.angelis.tera.game.process.services.GroupService;
+import com.angelis.tera.game.process.services.ThreadPoolService;
+import com.angelis.tera.game.process.tasks.request.AutoCancelRequestTask;
 
 public class PartyInviteRequest extends AbstractRequest<Player, Player> {
 

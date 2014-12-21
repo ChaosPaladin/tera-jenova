@@ -1,20 +1,20 @@
 package com.angelis.tera.game.command.admin;
 
 import com.angelis.tera.common.utils.Function;
-import com.angelis.tera.game.network.connection.TeraGameConnection;
-import com.angelis.tera.game.network.packet.ClientPacketHandler;
-import com.angelis.tera.game.network.packet.ServerPacketHandler;
+import com.angelis.tera.game.presentation.network.connection.TeraGameConnection;
+import com.angelis.tera.game.presentation.network.packet.ClientPacketHandler;
+import com.angelis.tera.game.presentation.network.packet.ServerPacketHandler;
 import com.angelis.tera.game.process.model.player.Player;
-import com.angelis.tera.game.services.AdminService;
-import com.angelis.tera.game.services.DropService;
-import com.angelis.tera.game.services.MountService;
-import com.angelis.tera.game.services.PegasusFlyService;
-import com.angelis.tera.game.services.QuestService;
-import com.angelis.tera.game.services.SpawnService;
-import com.angelis.tera.game.services.TradelistService;
-import com.angelis.tera.game.services.UserService;
-import com.angelis.tera.game.services.WorldService;
-import com.angelis.tera.game.services.XMLService;
+import com.angelis.tera.game.process.services.AdminService;
+import com.angelis.tera.game.process.services.DropService;
+import com.angelis.tera.game.process.services.MountService;
+import com.angelis.tera.game.process.services.PegasusFlyService;
+import com.angelis.tera.game.process.services.QuestService;
+import com.angelis.tera.game.process.services.SpawnService;
+import com.angelis.tera.game.process.services.TradelistService;
+import com.angelis.tera.game.process.services.UserService;
+import com.angelis.tera.game.process.services.WorldService;
+import com.angelis.tera.game.process.services.XMLService;
 
 public class ReloadCommand extends AbstractAdminCommand {
 

@@ -6,15 +6,15 @@ import java.util.List;
 import javolution.util.FastList;
 
 import com.angelis.tera.common.domain.mapper.xml.AbstractXMLMapper;
+import com.angelis.tera.game.domain.entity.xml.quests.QuestEntity;
+import com.angelis.tera.game.domain.entity.xml.quests.QuestRequiredEntity;
+import com.angelis.tera.game.domain.entity.xml.quests.QuestRewardEntity;
+import com.angelis.tera.game.domain.entity.xml.quests.QuestStepEntity;
+import com.angelis.tera.game.domain.entity.xml.quests.QuestStepValueEntity;
 import com.angelis.tera.game.process.model.quest.Quest;
 import com.angelis.tera.game.process.model.quest.QuestReward;
 import com.angelis.tera.game.process.model.quest.QuestStep;
 import com.angelis.tera.game.process.model.quest.QuestStepValue;
-import com.angelis.tera.game.xml.entity.quests.QuestEntity;
-import com.angelis.tera.game.xml.entity.quests.QuestRequiredEntity;
-import com.angelis.tera.game.xml.entity.quests.QuestRewardEntity;
-import com.angelis.tera.game.xml.entity.quests.QuestStepEntity;
-import com.angelis.tera.game.xml.entity.quests.QuestStepValueEntity;
 
 public class QuestMapper extends AbstractXMLMapper<QuestEntity, Quest> {
 

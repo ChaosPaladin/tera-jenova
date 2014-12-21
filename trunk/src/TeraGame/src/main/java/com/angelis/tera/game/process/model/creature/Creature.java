@@ -1,6 +1,6 @@
 package com.angelis.tera.game.process.model.creature;
 
-import com.angelis.tera.game.controllers.CreatureController;
+import com.angelis.tera.game.process.controllers.CreatureController;
 import com.angelis.tera.game.process.model.template.CreatureTemplate;
 
 public abstract class Creature extends AbstractCreature {

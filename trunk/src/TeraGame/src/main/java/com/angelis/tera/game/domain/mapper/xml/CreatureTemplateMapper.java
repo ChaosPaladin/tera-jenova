@@ -2,8 +2,8 @@ package com.angelis.tera.game.domain.mapper.xml;
 
 import com.angelis.tera.common.domain.mapper.MapperManager;
 import com.angelis.tera.common.domain.mapper.xml.AbstractXMLMapper;
+import com.angelis.tera.game.domain.entity.xml.creatures.template.CreatureTemplateEntity;
 import com.angelis.tera.game.process.model.template.CreatureTemplate;
-import com.angelis.tera.game.xml.entity.creatures.template.CreatureTemplateEntity;
 
 public class CreatureTemplateMapper extends AbstractXMLMapper<CreatureTemplateEntity, CreatureTemplate> {
 

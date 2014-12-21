@@ -1,7 +1,7 @@
 package com.angelis.tera.game.process.model.visible;
 
 import com.angelis.tera.game.ai.AI;
-import com.angelis.tera.game.controllers.Controller;
+import com.angelis.tera.game.process.controllers.Controller;
 import com.angelis.tera.game.process.model.TeraObject;
 import com.angelis.tera.game.process.model.template.Template;
 

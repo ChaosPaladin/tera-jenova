@@ -2,7 +2,7 @@ package com.angelis.tera.game.command.user;
 
 import java.util.EnumSet;
 
-import com.angelis.tera.game.network.connection.TeraGameConnection;
+import com.angelis.tera.game.presentation.network.connection.TeraGameConnection;
 import com.angelis.tera.game.process.delegate.database.PlayerDelegate;
 import com.angelis.tera.game.process.model.account.enums.AccountTypeEnum;
 

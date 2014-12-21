@@ -1,8 +1,8 @@
 package com.angelis.tera.game.domain.mapper.xml;
 
 import com.angelis.tera.common.domain.mapper.xml.AbstractXMLMapper;
+import com.angelis.tera.game.domain.entity.xml.DropEntity;
 import com.angelis.tera.game.process.model.drop.Drop;
-import com.angelis.tera.game.xml.entity.DropEntity;
 
 public class DropMapper extends AbstractXMLMapper<DropEntity, Drop> {
 

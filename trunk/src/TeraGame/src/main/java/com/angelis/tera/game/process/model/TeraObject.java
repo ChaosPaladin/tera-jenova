@@ -1,6 +1,6 @@
 package com.angelis.tera.game.process.model;
 
-import com.angelis.tera.game.controllers.Controller;
+import com.angelis.tera.game.process.controllers.Controller;
 import com.angelis.tera.game.process.model.visible.VisibleTeraObject;
 
 public abstract class TeraObject extends AbstractUniqueTeraModel {

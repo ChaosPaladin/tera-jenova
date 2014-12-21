@@ -4,7 +4,7 @@ import com.angelis.tera.game.process.model.dialog.AbstractDialogAction;
 import com.angelis.tera.game.process.model.dialog.Dialog;
 import com.angelis.tera.game.process.model.player.Player;
 import com.angelis.tera.game.process.model.quest.Quest;
-import com.angelis.tera.game.services.QuestService;
+import com.angelis.tera.game.process.services.QuestService;
 
 public class QuestCompliteDialogAction extends AbstractDialogAction {
 

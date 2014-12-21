@@ -1,8 +1,8 @@
 package com.angelis.tera.game.command.admin;
 
-import com.angelis.tera.game.network.connection.TeraGameConnection;
+import com.angelis.tera.game.presentation.network.connection.TeraGameConnection;
 import com.angelis.tera.game.process.model.creature.Creature;
-import com.angelis.tera.game.services.SpawnService;
+import com.angelis.tera.game.process.services.SpawnService;
 
 public class DeSpawnCommand extends AbstractAdminCommand {
     @Override

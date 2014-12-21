@@ -4,6 +4,7 @@ import com.angelis.tera.common.utils.Point3D;
 import com.angelis.tera.game.process.model.visible.WorldPosition;
 
 public class Geom {
+
     public static short getHeading(final WorldPosition fromWorldPosition, final WorldPosition toWorldPosition) {
         return (short) (Math.atan2(toWorldPosition.getY() - fromWorldPosition.getY(), toWorldPosition.getX() - fromWorldPosition.getX()) * 32768 / Math.PI);
     }

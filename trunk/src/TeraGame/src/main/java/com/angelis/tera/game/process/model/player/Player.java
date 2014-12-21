@@ -7,8 +7,8 @@ import java.util.Set;
 import javolution.util.FastList;
 
 import com.angelis.tera.game.config.PlayerConfig;
-import com.angelis.tera.game.controllers.PlayerController;
-import com.angelis.tera.game.network.connection.TeraGameConnection;
+import com.angelis.tera.game.presentation.network.connection.TeraGameConnection;
+import com.angelis.tera.game.process.controllers.PlayerController;
 import com.angelis.tera.game.process.model.Zone;
 import com.angelis.tera.game.process.model.account.Account;
 import com.angelis.tera.game.process.model.campfire.CampFire;

@@ -4,7 +4,7 @@ import org.hibernate.Session;
 
 import com.angelis.tera.common.domain.dao.database.AbstractDatabaseDAO;
 import com.angelis.tera.game.domain.entity.database.GuildEntity;
-import com.angelis.tera.game.services.DatabaseService;
+import com.angelis.tera.game.process.services.DatabaseService;
 
 public class GuildDAO extends AbstractDatabaseDAO<GuildEntity> {
 

@@ -2,12 +2,12 @@ package com.angelis.tera.game.process.model.dialog.actions;
 
 import java.util.List;
 
-import com.angelis.tera.game.network.packet.server.SM_PEGASUS_MAP_SHOW;
+import com.angelis.tera.game.presentation.network.packet.server.SM_PEGASUS_MAP_SHOW;
 import com.angelis.tera.game.process.model.dialog.AbstractDialogAction;
 import com.angelis.tera.game.process.model.dialog.Dialog;
 import com.angelis.tera.game.process.model.pegasus.PegasusFly;
 import com.angelis.tera.game.process.model.player.Player;
-import com.angelis.tera.game.services.PegasusFlyService;
+import com.angelis.tera.game.process.services.PegasusFlyService;
 
 public class ShowPegasusFlyMapAction extends AbstractDialogAction {
 

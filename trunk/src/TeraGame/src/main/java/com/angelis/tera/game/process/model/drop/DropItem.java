@@ -1,6 +1,6 @@
 package com.angelis.tera.game.process.model.drop;
 
-import com.angelis.tera.game.controllers.DropItemController;
+import com.angelis.tera.game.process.controllers.DropItemController;
 import com.angelis.tera.game.process.model.creature.AbstractCreature;
 import com.angelis.tera.game.process.model.item.Item;
 import com.angelis.tera.game.process.model.player.Player;

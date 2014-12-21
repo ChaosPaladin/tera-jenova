@@ -1,6 +1,6 @@
 package com.angelis.tera.game.process.model.guild;
 
-import com.angelis.tera.game.controllers.GuildController;
+import com.angelis.tera.game.process.controllers.GuildController;
 import com.angelis.tera.game.process.model.TeraObject;
 
 

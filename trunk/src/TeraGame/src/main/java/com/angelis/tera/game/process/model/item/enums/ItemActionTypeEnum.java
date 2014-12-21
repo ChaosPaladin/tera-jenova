@@ -1,7 +1,7 @@
 package com.angelis.tera.game.process.model.item.enums;
 
-import com.angelis.tera.game.network.SystemMessages;
-import com.angelis.tera.game.network.packet.server.SM_ITEM_START_COOLTIME;
+import com.angelis.tera.game.presentation.network.SystemMessages;
+import com.angelis.tera.game.presentation.network.packet.server.SM_ITEM_START_COOLTIME;
 import com.angelis.tera.game.process.model.abnormality.Abnormality;
 import com.angelis.tera.game.process.model.action.Action;
 import com.angelis.tera.game.process.model.campfire.CampFire;
@@ -11,10 +11,10 @@ import com.angelis.tera.game.process.model.item.Item;
 import com.angelis.tera.game.process.model.item.ItemAction;
 import com.angelis.tera.game.process.model.player.Player;
 import com.angelis.tera.game.process.model.visible.WorldPosition;
-import com.angelis.tera.game.services.ActionService;
-import com.angelis.tera.game.services.ItemService;
-import com.angelis.tera.game.services.SkillService;
-import com.angelis.tera.game.services.SpawnService;
+import com.angelis.tera.game.process.services.ActionService;
+import com.angelis.tera.game.process.services.ItemService;
+import com.angelis.tera.game.process.services.SkillService;
+import com.angelis.tera.game.process.services.SpawnService;
 import com.angelis.tera.game.utils.Geom;
 
 public enum ItemActionTypeEnum {

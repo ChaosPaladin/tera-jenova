@@ -4,7 +4,7 @@ import com.angelis.tera.game.process.model.dialog.AbstractDialogAction;
 import com.angelis.tera.game.process.model.dialog.Dialog;
 import com.angelis.tera.game.process.model.enums.StorageTypeEnum;
 import com.angelis.tera.game.process.model.player.Player;
-import com.angelis.tera.game.services.StorageService;
+import com.angelis.tera.game.process.services.StorageService;
 
 public class ShowBankAction extends AbstractDialogAction {
 

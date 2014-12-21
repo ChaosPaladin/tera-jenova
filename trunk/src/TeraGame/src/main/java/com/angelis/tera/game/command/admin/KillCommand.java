@@ -5,11 +5,11 @@ import java.util.List;
 import javolution.util.FastList;
 
 import com.angelis.tera.game.command.AdminErrorMessageEnum;
-import com.angelis.tera.game.network.connection.TeraGameConnection;
+import com.angelis.tera.game.presentation.network.connection.TeraGameConnection;
 import com.angelis.tera.game.process.model.player.Player;
 import com.angelis.tera.game.process.model.visible.VisibleTeraObject;
 import com.angelis.tera.game.process.model.visible.enums.VisibleTypeEnum;
-import com.angelis.tera.game.services.WorldService;
+import com.angelis.tera.game.process.services.WorldService;
 
 public class KillCommand extends AbstractAdminCommand {
     

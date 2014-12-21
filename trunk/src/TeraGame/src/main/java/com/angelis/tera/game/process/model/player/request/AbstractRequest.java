@@ -1,14 +1,14 @@
 package com.angelis.tera.game.process.model.player.request;
 
-import com.angelis.tera.game.network.packet.server.SM_REQUEST_CONTRACT;
-import com.angelis.tera.game.network.packet.server.SM_REQUEST_CONTRACT_CANCEL;
-import com.angelis.tera.game.network.packet.server.SM_REQUEST_CONTRACT_REPLY;
+import com.angelis.tera.game.presentation.network.packet.server.SM_REQUEST_CONTRACT;
+import com.angelis.tera.game.presentation.network.packet.server.SM_REQUEST_CONTRACT_CANCEL;
+import com.angelis.tera.game.presentation.network.packet.server.SM_REQUEST_CONTRACT_REPLY;
 import com.angelis.tera.game.process.model.AbstractUniqueTeraModel;
 import com.angelis.tera.game.process.model.creature.AbstractCreature;
 import com.angelis.tera.game.process.model.player.Player;
 import com.angelis.tera.game.process.model.player.request.enums.RequestTypeEnum;
-import com.angelis.tera.game.services.ThreadPoolService;
-import com.angelis.tera.game.tasks.TaskTypeEnum;
+import com.angelis.tera.game.process.services.ThreadPoolService;
+import com.angelis.tera.game.process.tasks.TaskTypeEnum;
 
 public abstract class AbstractRequest<I extends AbstractCreature, T extends AbstractCreature> extends AbstractUniqueTeraModel {
     

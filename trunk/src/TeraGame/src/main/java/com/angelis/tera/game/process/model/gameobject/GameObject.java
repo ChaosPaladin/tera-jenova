@@ -1,6 +1,6 @@
 package com.angelis.tera.game.process.model.gameobject;
 
-import com.angelis.tera.game.controllers.GameObjectController;
+import com.angelis.tera.game.process.controllers.GameObjectController;
 import com.angelis.tera.game.process.model.player.Player;
 import com.angelis.tera.game.process.model.visible.VisibleTeraObject;
 import com.angelis.tera.game.process.model.visible.WorldPosition;

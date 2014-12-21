@@ -1,15 +1,15 @@
 package com.angelis.tera.game.process.model.chainedaction;
 
 import com.angelis.tera.common.utils.Rnd;
-import com.angelis.tera.game.network.packet.server.SM_GATHERCRAFT_POINT;
-import com.angelis.tera.game.network.packet.server.SM_GATHER_PROGRESS;
-import com.angelis.tera.game.network.packet.server.SM_GATHER_START;
+import com.angelis.tera.game.presentation.network.packet.server.SM_GATHERCRAFT_POINT;
+import com.angelis.tera.game.presentation.network.packet.server.SM_GATHER_PROGRESS;
+import com.angelis.tera.game.presentation.network.packet.server.SM_GATHER_START;
 import com.angelis.tera.game.process.model.gather.Gather;
 import com.angelis.tera.game.process.model.gather.enums.GatherResultEnum;
 import com.angelis.tera.game.process.model.player.Player;
 import com.angelis.tera.game.process.model.player.gather.enums.GatherTypeEnum;
-import com.angelis.tera.game.services.GatherService;
-import com.angelis.tera.game.services.VisibleService;
+import com.angelis.tera.game.process.services.GatherService;
+import com.angelis.tera.game.process.services.VisibleService;
 
 public class GatherChainedAction extends AbstractChainedAction {
 

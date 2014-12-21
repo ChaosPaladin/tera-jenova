@@ -9,30 +9,26 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
-import org.apache.commons.lang3.LocaleUtils;
-import org.apache.commons.lang3.StringUtils;
-
 import com.angelis.tera.common.network.AbstractHttpServer;
 import com.angelis.tera.common.network.config.ServerConfig;
+import com.angelis.tera.common.process.exceptions.AccountNotFoundException;
+import com.angelis.tera.common.process.exceptions.AccountWithIncorrectPasswordException;
 import com.angelis.tera.login.config.AccountConfig;
 import com.angelis.tera.login.domain.entity.xml.ServerListEntity;
-import com.angelis.tera.login.process.delegate.database.AccountDelegate;
-import com.angelis.tera.login.process.delegate.database.ServerDelegate;
 import com.angelis.tera.login.process.dto.Server;
+import com.angelis.tera.login.process.exceptions.MissingRequiredFieldException;
 import com.angelis.tera.login.process.model.Account;
 import com.angelis.tera.login.process.model.http.HttpRequest;
 import com.angelis.tera.login.process.model.http.HttpResponse;
 import com.angelis.tera.login.process.model.http.enums.HttpStatusEnum;
 import com.angelis.tera.login.process.model.session.Session;
+import com.angelis.tera.login.process.services.AccountService;
+import com.angelis.tera.login.process.services.ServerService;
 import com.angelis.tera.login.utils.xml.XMLUtils;
 import com.angelis.tera.login.utils.xml.XmlCharacterHandler;
 
 public class TeraLoginServer extends AbstractHttpServer {
 
-    /** DELEGATES */
-    private final AccountDelegate accountDelegate = new AccountDelegate();
-    private final ServerDelegate serverDelegate = new ServerDelegate();
-    
     public TeraLoginServer(final ServerConfig serverConfig) throws IOException {
         super(serverConfig);
     }
@@ -100,17 +96,15 @@ public class TeraLoginServer extends AbstractHttpServer {
                 final String name = httpRequest.getParameter("name");
                 final String port = httpRequest.getParameter("port");
                 final String ip = httpRequest.getParameter("ip");
-                if (StringUtils.isEmpty(name) || StringUtils.isEmpty(port) || StringUtils.isEmpty(ip)) {
+
+                try {
+                    ServerService.getInstance().createServer(name, port, ip);
+                }
+                catch (final MissingRequiredFieldException e) {
                     doRestricted(httpRequest, httpResponse);
                     return;
                 }
-
-                final Server server = new Server();
-                server.setServerName(name);
-                server.setPort(Integer.parseInt(port));
-                server.setIp(ip);
-
-                serverDelegate.create(server);
+                
                 httpResponse.appendContent("Server created with success");
             break;
         }
@@ -120,7 +114,7 @@ public class TeraLoginServer extends AbstractHttpServer {
         /*final String uri = httpRequest.getUri();
         final String lang = uri.substring(uri.length()-2);*/
 
-        final List<Server> servers = serverDelegate.findAll();
+        final List<Server> servers = ServerService.getInstance().getAll();
         if (servers == null || servers.isEmpty()) {
             return;
         }
@@ -148,16 +142,19 @@ public class TeraLoginServer extends AbstractHttpServer {
 
     private void doLogin(final HttpRequest httpRequest, final HttpResponse httpResponse) {
         httpResponse.setMimeType("application/json");
-        
+
         final String login = httpRequest.getParameter("login");
         final String password = httpRequest.getParameter("password");
-        if (StringUtils.isEmpty(login) || StringUtils.isEmpty(password)) {
+
+        Account account = null;
+        try {
+            account = AccountService.getInstance().getAccountByLoginAndPassword(login, password);
+        }
+        catch (final MissingRequiredFieldException e) {
             httpResponse.appendContent("{result: \"error\", message: \"need login and password param\"}");
             return;
         }
-        
-        final Account account = accountDelegate.findByLogin(login);
-        if (account == null) {
+        catch (final AccountNotFoundException e) {
             if (AccountConfig.ACCOUNT_CREATE_IF_LOGIN_NOT_FOUND) {
                 doRegister(httpRequest, httpResponse);
             } else {
@@ -165,14 +162,13 @@ public class TeraLoginServer extends AbstractHttpServer {
             }
             return;
         }
-
-        if (!account.getPassword().equals(password)) {
+        catch (final AccountWithIncorrectPasswordException e) {
             httpResponse.appendContent("{result: \"error\", message: \"wrong password\"}");
             return;
         }
-        
+
         account.setAuthenticated(true);
-        accountDelegate.update(account);
+        AccountService.getInstance().updateAccount(account);
         
         httpRequest.getSession().setAccount(account);
         httpResponse.appendContent("{result: \"success\"}");
@@ -184,18 +180,15 @@ public class TeraLoginServer extends AbstractHttpServer {
         final String login = httpRequest.getParameter("login");
         final String password = httpRequest.getParameter("password");
         final String locale = httpRequest.getParameter("locale");
-        if (StringUtils.isEmpty(login) || StringUtils.isEmpty(password)) {
-            httpResponse.appendContent("{result: error, message: need login and password param}");
+
+        try {
+            AccountService.getInstance().createAccount(login, password, locale);
+        }
+        catch (final MissingRequiredFieldException e) {
+            httpResponse.appendContent("{result: error, message: need login, password and locale param}");
             return;
         }
-        
-        final Account account = new Account();
-        account.setLogin(login);
-        account.setPassword(password);
-        account.setBanned(false);
-        account.setLocale(LocaleUtils.toLocale(locale));
-        accountDelegate.create(account);
-        
+
         httpResponse.appendContent("{result: success}");
     }
 

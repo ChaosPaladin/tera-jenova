@@ -2,9 +2,9 @@ package com.angelis.tera.game.utils;
 
 import java.util.List;
 
-import com.angelis.tera.game.network.packet.TeraServerPacket;
-import com.angelis.tera.game.network.packet.server.SM_QUEST_VILLAGER_INFO;
-import com.angelis.tera.game.network.packet.server.SM_QUEST_WORLD_VILLAGER_INFO_CLEAR;
+import com.angelis.tera.game.presentation.network.packet.TeraServerPacket;
+import com.angelis.tera.game.presentation.network.packet.server.SM_QUEST_VILLAGER_INFO;
+import com.angelis.tera.game.presentation.network.packet.server.SM_QUEST_WORLD_VILLAGER_INFO_CLEAR;
 import com.angelis.tera.game.process.model.creature.Creature;
 import com.angelis.tera.game.process.model.creature.Npc;
 import com.angelis.tera.game.process.model.dialog.enums.DialogIconEnum;
@@ -19,7 +19,7 @@ import com.angelis.tera.game.process.model.quest.enums.QuestStepTypeEnum;
 import com.angelis.tera.game.process.model.storage.Storage;
 import com.angelis.tera.game.process.model.visible.VisibleTeraObject;
 import com.angelis.tera.game.process.model.visible.enums.VisibleTypeEnum;
-import com.angelis.tera.game.services.QuestService;
+import com.angelis.tera.game.process.services.QuestService;
 
 public class QuestUtils {
 
