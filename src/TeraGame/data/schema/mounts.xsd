@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://angelis.com/mounts" xmlns:xsd="http://angelis.com/mounts" xmlns:base="http://angelis.com/base" elementFormDefault="qualified">
+    <!-- IMPORTS -->
+    <import schemaLocation="base.xsd" namespace="http://angelis.com/base" />
+    
+    <!-- TYPES -->
+    <complexType name="MountType">
+        <attribute name="id" type="integer" />
+        <attribute name="skill_id" type="integer" />
+        <attribute name="speed" type="integer" />
+    </complexType>
+    <complexType name="MountsType">
+        <sequence>
+            <element name="mount" type="xsd:MountType" maxOccurs="unbounded" />
+        </sequence>
+    </complexType>
+    <!-- CONTENT -->
+    <element name="mounts" type="xsd:MountsType" />
+</schema>

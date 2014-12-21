@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<player_experiences xmlns="http://angelis.com/player_experiences" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://angelis.com/player_experiences ../schema/player_experiences.xsd "
+>
+    <player_experience level="1" experience="840" />
+    <player_experience level="2" experience="1846" />
+    <player_experience level="3" experience="3048" />
+    <player_experience level="4" experience="4470" />
+    <player_experience level="5" experience="6145" />
+    <player_experience level="6" experience="8113" />
+    <player_experience level="7" experience="10410" />
+    <player_experience level="8" experience="13088" />
+    <player_experience level="9" experience="16197" />
+    <player_experience level="10" experience="19795" />
+    <player_experience level="11" experience="23952" />
+    <player_experience level="12" experience="29940" />
+    <player_experience level="13" experience="35820" />
+    <player_experience level="14" experience="43748" />
+    <player_experience level="15" experience="52633" />
+    <player_experience level="16" experience="62859" />
+    <player_experience level="17" experience="78574" />
+    <player_experience level="18" experience="98077" />
+    <player_experience level="19" experience="114490" />
+    <player_experience level="20" experience="143113" />
+    <player_experience level="21" experience="178891" />
+    <player_experience level="22" experience="223614" />
+    <player_experience level="23" experience="275045" />
+    <player_experience level="24" experience="335555" />
+    <player_experience level="25" experience="419444" />
+    <player_experience level="26" experience="514305" />
+    <player_experience level="27" experience="684342" />
+    <player_experience level="28" experience="747584" />
+    <player_experience level="29" experience="839475" />
+    <player_experience level="30" experience="954831" />
+    <player_experience level="31" experience="1122643" />
+    <player_experience level="32" experience="1254159" />
+    <player_experience level="33" experience="1454823" />
+    <player_experience level="34" experience="1719869" />
+    <player_experience level="35" experience="2094194" />
+    <player_experience level="36" experience="2592956" />
+    <player_experience level="37" experience="3029644" />
+    <player_experience level="38" experience="3423497" />
+    <player_experience level="39" experience="3868552" />
+    <player_experience level="40" experience="4448835" />
+    <player_experience level="41" experience="5427578" />
+    <player_experience level="42" experience="7452245" />
+    <player_experience level="43" experience="9542027" />
+    <player_experience level="44" experience="10942319" />
+    <player_experience level="45" experience="12815896" />
+    <player_experience level="46" experience="14351495" />
+    <player_experience level="47" experience="17700998" />
+    <player_experience level="48" experience="20002128" />
+    <player_experience level="49" experience="22002128" />
+    <player_experience level="50" experience="24950654" />
+    <player_experience level="51" experience="27707107" />
+    <player_experience level="52" experience="30765345" />
+    <player_experience level="53" experience="34158159" />
+    <player_experience level="54" experience="37921882" />
+    <player_experience level="55" experience="42096768" />
+    <player_experience level="56" experience="46727412" />
+    <player_experience level="57" experience="51863218" />
+    <player_experience level="58" experience="95333740" />
+    <player_experience level="59" experience="95333740" />
+    <player_experience level="60" experience="151558828" />
+</player_experiences>

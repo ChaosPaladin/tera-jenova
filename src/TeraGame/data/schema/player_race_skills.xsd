@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://angelis.com/player_race_skills"
+    xmlns:xsd="http://angelis.com/player_race_skills" xmlns:base="http://angelis.com/base" elementFormDefault="qualified"
+>
+    <!-- IMPORTS -->
+    <import schemaLocation="base.xsd" namespace="http://angelis.com/base" />
+    
+    <!-- TYPES -->
+    <complexType name="PlayerRaceSkillType">
+        <sequence>
+            <element name="skill" type="base:SkillType" maxOccurs="unbounded"/>
+        </sequence>
+        <attribute name="targetRace" type="base:RaceType"/>
+    </complexType>
+    <complexType name="PlayerRaceSkillsType">
+        <sequence>
+            <element name="player_race_skill" type="xsd:PlayerRaceSkillType" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+    </complexType>
+    
+    <!-- CONTENT -->
+    <element name="player_race_skills" type="xsd:PlayerRaceSkillsType" />
+</schema>

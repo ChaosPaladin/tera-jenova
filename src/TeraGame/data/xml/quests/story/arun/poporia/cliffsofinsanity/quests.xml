@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<quests xmlns="http://angelis.com/quests" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/quests ../../../../schema/quests.xsd ">
+    <!-- jenova-project-tera QuestCreator, Created By TheNak -->
+    <quest quest_id="1501" quest_type="STORY" start_npc_full_id="0" required_level="23" experience_reward="73000" money_reward="250" reward_type="SELECTABLE">
+        <step type="TALK">
+            <step_value object_id="6301137"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="6701007"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="21501019"/>
+        </step>
+        <step type="KILL">
+            <step_value object_id="1506"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="21501019"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="21501010"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="21501027"/>
+        </step>
+        <step type="READ">
+            <step_value object_id="43901001"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="6301137"/>
+        </step>
+        <step type="KILL">
+            <step_value object_id="15014"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="21501027"/>
+        </step>
+        <reward item_id="15767" amount="1"/>
+        <reward item_id="15770" amount="1"/>
+        <reward item_id="15773" amount="1"/>
+    </quest>
+    <quest quest_id="1502" quest_type="STORY" start_npc_full_id="21501027" required_level="23" experience_reward="85000" money_reward="250" reward_type="SELECTABLE">
+        <step type="TALK">
+            <step_value object_id="21501020"/>
+        </step>
+        <step type="KILL">
+            <step_value object_id="15021"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="21501020"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="21501027"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="6701007"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="21501012"/>
+        </step>
+        <reward item_id="10681" amount="1"/>
+        <reward item_id="10682" amount="1"/>
+        <reward item_id="10683" amount="1"/>
+        <reward item_id="10684" amount="1"/>
+        <reward item_id="10685" amount="1"/>
+        <reward item_id="10686" amount="1"/>
+        <reward item_id="10687" amount="1"/>
+        <reward item_id="10688" amount="1"/>
+    </quest>
+    <quest quest_id="1503" quest_type="STORY" start_npc_full_id="21501012" required_level="24" experience_reward="109000" money_reward="250" reward_type="SELECTABLE">
+        <step type="TALK">
+            <step_value object_id="6701007"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="21601026"/>
+        </step>
+        <step type="KILL">
+            <step_value object_id="1602406"/>
+        </step>
+        <step type="KILL">
+            <step_value object_id="1601003"/>
+        </step>
+        <step type="KILL">
+            <step_value object_id="1601002"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="21601028"/>
+        </step>
+        <reward item_id="13198" amount="1"/>
+        <reward item_id="13199" amount="1"/>
+        <reward item_id="13200" amount="1"/>
+        <reward item_id="13201" amount="1"/>
+        <reward item_id="13202" amount="1"/>
+        <reward item_id="13203" amount="1"/>
+        <reward item_id="13204" amount="1"/>
+        <reward item_id="13205" amount="1"/>
+        <reward item_id="15766" amount="1"/>
+        <reward item_id="15769" amount="1"/>
+        <reward item_id="15772" amount="1"/>
+    </quest>
+    <quest quest_id="1504" quest_type="STORY" start_npc_full_id="21601028" required_level="26" experience_reward="121000" money_reward="450" reward_type="SELECTABLE">
+        <step type="TALK">
+            <step_value object_id="48801001"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="48801001"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="48801001"/>
+        </step>
+        <step type="KILL">
+            <step_value object_id="488010"/>
+        </step>
+        <step type="READ">
+            <step_value object_id="488022"/>
+        </step>
+        <step type="KILL">
+            <step_value object_id="488021"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="21601028"/>
+        </step>
+        <reward item_id="10633" amount="1"/>
+        <reward item_id="10634" amount="1"/>
+        <reward item_id="10635" amount="1"/>
+        <reward item_id="10636" amount="1"/>
+        <reward item_id="10638" amount="1"/>
+        <reward item_id="10639" amount="1"/>
+        <reward item_id="10640" amount="1"/>
+    </quest>
+    <quest quest_id="1505" quest_type="STORY" start_npc_full_id="0" required_level="26" experience_reward="85000" money_reward="150" reward_type="SELECTABLE">
+        <step type="TALK">
+            <step_value object_id="21601028"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="21501012"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="21501012"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="6301137"/>
+        </step>
+        <reward item_id="15768" amount="1"/>
+        <reward item_id="15771" amount="1"/>
+        <reward item_id="15774" amount="1"/>
+    </quest>
+</quests>

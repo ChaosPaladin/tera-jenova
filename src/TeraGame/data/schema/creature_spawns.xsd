@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://angelis.com/creature_spawns"
+    xmlns:xsd="http://angelis.com/creature_spawns" xmlns:base="http://angelis.com/base"
+    elementFormDefault="qualified"
+>
+    <!-- IMPORTS -->
+    <import schemaLocation="base.xsd" namespace="http://angelis.com/base" />
+
+    <!-- TYPES -->
+    <simpleType name="CreatureTitleType">
+        <restriction base="string">
+            <enumeration value="FLIGHT_MASTER" />
+            <enumeration value="BANK" />
+        </restriction>
+    </simpleType>
+    <complexType name="TeraCreatureSpawnType">
+        <complexContent>
+            <extension base="base:BaseSpawnType">
+                <attribute name="heading" type="integer" />
+            </extension>
+        </complexContent>
+    </complexType>
+    <complexType name="CreatureSpawnType">
+        <sequence>
+            <element name="spawn" type="xsd:TeraCreatureSpawnType" maxOccurs="unbounded" />
+        </sequence>
+        <attribute name="id" type="integer" />
+        <attribute name="full_id" type="integer" />
+        <attribute name="creature_type" type="integer" />
+        <attribute name="model_id" type="integer" />
+    </complexType>
+    <complexType name="CreatureSpawnsType">
+        <sequence>
+            <element name="import" type="base:ImportType" minOccurs="0" maxOccurs="unbounded" />
+            <element name="creature_spawn" type="xsd:CreatureSpawnType" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+    </complexType>
+
+    <!-- CONTENT -->
+    <element name="creature_spawns" type="xsd:CreatureSpawnsType" />
+</schema>

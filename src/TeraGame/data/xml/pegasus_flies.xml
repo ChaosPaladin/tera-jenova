@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pegasus_flies xmlns="http://angelis.com/pegasus_flies" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/pegasus_flies ../schema/pegasus_flies.xsd ">
+    <pegasus_fly full_id="21301016" from_name_id="13001">
+        <fly id="8" cost="1070" level="10" to_name_id="63001"/>
+    </pegasus_fly>
+    <pegasus_fly full_id="6301009" from_name_id="63001">
+        <fly id="1" cost="1070" level="10" to_name_id="13001"/><!--Island Of Dawn-->
+        <fly id="2" cost="1070" level="10" to_name_id="60001"/><!--Lumbertown-->
+        <fly id="3" cost="1070" level="10" to_name_id="59001"/><!--Crescentia-->
+        <fly id="4" cost="1070" level="10" to_name_id="67001"/><!--Popolion-->
+        <fly id="5" cost="1070" level="10" to_name_id="68001"/><!--Pora Elinu-->
+        <fly id="15" cost="1070" level="10" to_name_id="65001"/><!--Chebika-->
+        <fly id="17" cost="1070" level="10" to_name_id="66001"/><!--Tulufan-->
+        <fly id="21" cost="1070" level="10" to_name_id="61001"/><!--Castanica-->
+        <fly id="19" cost="1070" level="10" to_name_id="62001"/><!--Cutthroat Harbor-->
+        <fly id="29" cost="1070" level="10" to_name_id="72001"/><!--Allemtheia-->
+        <fly id="30" cost="1070" level="10" to_name_id="84001"/><!--Kaiator-->
+    </pegasus_fly>
+    <pegasus_fly full_id="6801006" from_name_id="68001">
+        <fly id="13" cost="1070" level="10" to_name_id="67001"/><!--Popolion-->
+    </pegasus_fly>
+</pegasus_flies>

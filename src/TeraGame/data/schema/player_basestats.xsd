@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://angelis.com/player_basestats"
+    xmlns:xsd="http://angelis.com/player_basestats" xmlns:base="http://angelis.com/base" elementFormDefault="qualified">
+    
+    <!-- IMPORT -->
+    <import schemaLocation="base.xsd" namespace="http://angelis.com/base"/>
+    
+    <complexType name="PlayerBaseStatType">
+        <sequence>
+            <element name="basestats" type="base:BaseStatsType" maxOccurs="unbounded"/>
+        </sequence>
+        <attribute name="targetClass" type="base:ClassType"/>
+    </complexType>
+    <complexType name="PlayerBaseStatsType">
+        <sequence>
+            <element name="import" type="base:ImportType" minOccurs="0" maxOccurs="unbounded" />
+            <element name="player_basestat" type="xsd:PlayerBaseStatType" minOccurs="0" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+    
+    <!-- CONTENT -->
+    <element name="player_basestats" type="xsd:PlayerBaseStatsType"/>
+</schema>

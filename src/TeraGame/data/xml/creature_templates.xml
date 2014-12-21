@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<creature_templates xmlns="http://angelis.com/creature_templates" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/creature_templates ../schema/creature_templates.xsd ">
+    <import file="creatures/templates" skipRoot="true" />
+</creature_templates>

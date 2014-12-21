@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://angelis.com/creature_drops" xmlns:xsd="http://angelis.com/creature_drops" xmlns:base="http://angelis.com/base" elementFormDefault="qualified">
+    <!-- IMPORTS -->
+    <import schemaLocation="base.xsd" namespace="http://angelis.com/base" />
+    <!-- TYPES -->
+    <complexType name="CreatureDropType">
+        <sequence>
+            <element name="drop" type="base:DropType" maxOccurs="unbounded" />
+        </sequence>
+        <attribute name="full_id" type="integer" />
+        <attribute name="name" type="string" />
+    </complexType>
+    <complexType name="CreatureDropsType">
+        <sequence>
+            <element name="import" type="base:ImportType" minOccurs="0" maxOccurs="unbounded" />
+            <element name="creature_drop" type="xsd:CreatureDropType" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+    </complexType>
+    <!-- CONTENT -->
+    <element name="creature_drops" type="xsd:CreatureDropsType" />
+</schema>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quests xmlns="http://angelis.com/quests" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/quests ../../../../schema/quests.xsd ">
+    <quest quest_id="202" quest_type="STORY" start_npc_full_id="20201004" required_level="11" experience_reward="6000" money_reward="80">
+        <step type="TALK">
+            <step_value object_id="20201020"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="20201002"/>
+        </step>
+        <step type="KILL">
+            <step_value object_id="20206"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="20201037"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="20201012"/>
+        </step>
+        <reward item_id="10545" amount="1"/>
+        <reward item_id="10546" amount="1"/>
+        <reward item_id="10547" amount="1"/>
+        <reward item_id="10548" amount="1"/>
+        <reward item_id="10549" amount="1"/>
+        <reward item_id="10550" amount="1"/>
+        <reward item_id="10551" amount="1"/>
+        <reward item_id="10552" amount="1"/>
+    </quest>
+    <quest quest_id="203" quest_type="STORY" start_npc_full_id="20201011" required_level="11" experience_reward="15000" money_reward="80">
+        <required_quest quest_id="202"/>
+        <step type="TALK">
+            <step_value object_id="20201024"/>
+        </step>
+        <step type="KILL">
+            <step_value object_id="20259"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="20201024"/>
+        </step>
+    </quest>            
+</quests>

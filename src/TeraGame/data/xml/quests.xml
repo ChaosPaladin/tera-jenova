@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quests xmlns="http://angelis.com/quests" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/quests ../schema/quests.xsd ">
+    <import file="quests" skipRoot="true" />
+</quests>

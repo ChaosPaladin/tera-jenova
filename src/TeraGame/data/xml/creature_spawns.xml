@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<creature_spawns xmlns="http://angelis.com/creature_spawns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/creature_spawns ../schema/creature_spawns.xsd ">
+    <import file="creatures/spawns" skipRoot="true" />
+</creature_spawns>

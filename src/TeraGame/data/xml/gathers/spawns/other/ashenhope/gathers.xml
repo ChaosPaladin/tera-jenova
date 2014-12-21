@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gather_spawns xmlns="http://angelis.com/gather_spawns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://angelis.com/gather_spawns ../../../../schema/gather_spawns.xsd "
+>
+    <gather_spawn id="592">
+        <spawn mapId="7087" x="-56590.508" y="-57458.29" z="1297.5441"/>
+        <spawn mapId="7087" x="-56133.547" y="-57737.7" z="1287.5105"/>
+        <spawn mapId="7087" x="-55675.96" y="-57543.49" z="1243.8893"/>
+        <spawn mapId="7087" x="-55084.1" y="-57253.21" z="1306.4656"/>
+        <spawn mapId="7087" x="-55852.164" y="-58093.766" z="1270.5159"/>
+        <spawn mapId="7087" x="-55341.2" y="-57973.066" z="1235.6401"/>
+        <spawn mapId="7087" x="-54632.938" y="-58290.47" z="1209.2588"/>
+        <spawn mapId="7087" x="-55097.91" y="-59094.406" z="1186.2991"/>
+        <spawn mapId="7087" x="-55683.133" y="-58582.887" z="1242.6539"/>
+        <spawn mapId="7087" x="-56209.48" y="-58439.78" z="1277.4269"/>
+    </gather_spawn>
+</gather_spawns>

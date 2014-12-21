@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<player_basestats xmlns="http://angelis.com/player_basestats" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/player_basestats ../schema/player_basestats.xsd ">
+    <import file="stats" skipRoot="true" />
+</player_basestats>

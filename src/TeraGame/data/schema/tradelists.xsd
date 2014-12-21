@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://angelis.com/tradelists" xmlns:xsd="http://angelis.com/tradelists" xmlns:base="http://angelis.com/base" elementFormDefault="qualified">
+    <!-- IMPORTS -->
+    <import schemaLocation="base.xsd" namespace="http://angelis.com/base" />
+    <!-- TYPES -->
+    <complexType name="TradelistTabItemType">
+        <attribute name="id" type="integer" />
+    </complexType>
+    <complexType name="TradelistTabType">
+        <sequence>
+            <element name="item" type="xsd:TradelistTabItemType" maxOccurs="unbounded" />
+        </sequence>
+        <attribute name="tradelist_tab_name" type="base:TradelistTabNameType" />
+    </complexType>
+    <complexType name="TradelistType">
+        <sequence>
+            <element name="tab" type="xsd:TradelistTabType" maxOccurs="unbounded" />
+        </sequence>
+        <attribute name="full_id" type="integer" />
+    </complexType>
+    <complexType name="TradelistsType">
+        <sequence>
+            <element name="import" type="base:ImportType" minOccurs="0" maxOccurs="unbounded" />
+            <element name="tradelist" type="xsd:TradelistType" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+    </complexType>
+    <!-- CONTENT -->
+    <element name="tradelists" type="xsd:TradelistsType" />
+</schema>

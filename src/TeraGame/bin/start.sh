@@ -1,0 +1,1 @@
+java -cp ./lib/*:TeraGame.jar com.angelis.tera.game.MainGame > logs/console.log 2>&1

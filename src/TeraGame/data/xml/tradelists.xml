@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tradelists xmlns="http://angelis.com/tradelists" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/tradelists ../schema/tradelists.xsd ">
+	<import file="tradelists" skipRoot="true" />
+</tradelists>

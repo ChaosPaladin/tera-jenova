@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mounts xmlns="http://angelis.com/mounts" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/mounts ../schema/mounts.xsd ">
+    <mount id="1" skill_id="111111" speed="240"/>
+    <mount id="1" skill_id="111124" speed="240"/>
+    <mount id="1" skill_id="1" speed="270"/>
+    <mount id="1" skill_id="111194" speed="280"/>
+    <mount id="3" skill_id="111114" speed="270"/>
+    <mount id="3" skill_id="111126" speed="255"/>
+    <mount id="5" skill_id="111115" speed="240"/>
+    <mount id="5" skill_id="111121" speed="280"/>
+    <mount id="5" skill_id="111127" speed="255"/>
+    <mount id="6" skill_id="111116" speed="240"/>
+    <mount id="6" skill_id="111131" speed="255"/>
+    <mount id="7" skill_id="111117" speed="240" />
+    <mount id="10" skill_id="111120" speed="290"/>
+    <mount id="11" skill_id="111113" speed="290"/>
+    <mount id="12" skill_id="111123" speed="280"/>
+    <mount id="14" skill_id="111191" speed="280"/>
+    <mount id="15" skill_id="111192" speed="280"/>
+    <mount id="16" skill_id="111193" speed="280"/>
+    <mount id="18" skill_id="111195" speed="280"/>
+    <mount id="19" skill_id="111196" speed="280"/>
+    <mount id="20" skill_id="111197" speed="280"/>
+    <mount id="21" skill_id="111198" speed="280"/>
+    <mount id="22" skill_id="111199" speed="280"/>
+    <mount id="25" skill_id="111119" speed="240"/>
+    <mount id="25" skill_id="111128" speed="255"/>
+    <mount id="26" skill_id="111129" speed="0"/>
+    <mount id="26" skill_id="111117" speed="240"/>
+    <mount id="26" skill_id="111190" speed="270"/>
+    <mount id="27" skill_id="111118" speed="240"/>
+    <mount id="27" skill_id="111122" speed="270"/>
+    <mount id="27" skill_id="111130" speed="255"/>
+    <mount id="29" skill_id="111132" speed="280"/>
+    <mount id="46" skill_id="111171" speed="280"/>
+    <mount id="50" skill_id="1111515" speed="280"/>
+    <mount id="66" skill_id="1111537" speed="280"/>
+    <mount id="67" skill_id="1111538" speed="280"/>
+</mounts>

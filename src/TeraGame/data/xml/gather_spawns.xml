@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gather_spawns xmlns="http://angelis.com/gather_spawns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/gather_spawns ../schema/gather_spawns.xsd ">
+    <import file="gathers/spawns" skipRoot="true" />
+</gather_spawns>

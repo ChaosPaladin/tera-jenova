@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://angelis.com/gather_templates"
+    xmlns:xsd="http://angelis.com/gather_templates" xmlns:base="http://angelis.com/base" elementFormDefault="qualified"
+>
+    <!-- IMPORTS -->
+    <import schemaLocation="base.xsd" namespace="http://angelis.com/base" />
+    
+    <!-- TYPES -->
+    <complexType name="GatherTemplateType">
+        <attribute name="id" type="integer" />
+        <attribute name="gather_type" type="base:GatherType" />
+        <attribute name="min_level" type="integer" />
+        <attribute name="max_level" type="integer" />
+        <attribute name="gather_cost_point" type="int" />
+    </complexType>
+    <complexType name="GatherTemplatesType">
+        <sequence>
+            <element name="import" type="base:ImportType" minOccurs="0" maxOccurs="unbounded" />
+            <element name="gather_template" type="xsd:GatherTemplateType" minOccurs="0" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+    
+    <!-- CONTENT -->
+    <element name="gather_templates" type="xsd:GatherTemplatesType" />
+</schema>

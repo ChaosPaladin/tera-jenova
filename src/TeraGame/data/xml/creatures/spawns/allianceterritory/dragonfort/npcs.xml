@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<creature_spawns xmlns="http://angelis.com/creature_spawns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/creature_spawns ../../../../schema/creature_spawns.xsd ">
+	<creature_spawn creature_type="123" full_id="12307005" id="7005" model_id="10485860">
+        <spawn heading="-16384" mapId="9123" x="-102487.336" y="-83831.67" z="4546.0"/>
+        <spawn heading="0" mapId="9123" x="-102104.016" y="-84328.47" z="4541.0"/>
+        <spawn heading="0" mapId="9123" x="-101946.71" y="-83694.445" z="4543.0"/>
+        <spawn heading="0" mapId="9123" x="-101940.73" y="-83659.49" z="4547.0"/>
+        <spawn heading="29855" mapId="9123" x="-100561.88" y="-84385.914" z="4676.0"/>
+        <spawn heading="28580" mapId="9123" x="-100548.19" y="-84228.01" z="4676.0"/>
+        <spawn heading="15837" mapId="9123" x="-100385.32" y="-84126.15" z="4659.0"/>
+        <spawn heading="17840" mapId="9123" x="-100235.96" y="-84240.555" z="4647.0"/>
+        <spawn heading="2184" mapId="9123" x="-100183.1" y="-84409.41" z="4666.0"/>
+        <spawn heading="-364" mapId="9123" x="-100277.14" y="-84534.945" z="4676.0"/>
+    </creature_spawn>
+    <creature_spawn creature_type="123" full_id="123030000" id="30000" model_id="7209020">
+        <spawn heading="0" mapId="9123" x="-102279.86" y="-82968.44" z="4607.0"/>
+    </creature_spawn>
+    <creature_spawn creature_type="123" full_id="12302012" id="2012" model_id="7209020">
+        <spawn heading="-364" mapId="9123" x="-102229.77" y="-83146.29" z="4607.0"/>
+    </creature_spawn>
+    <creature_spawn creature_type="123" full_id="12308100" id="8100" model_id="7209020">
+        <spawn heading="3427" mapId="9123" x="-102168.93" y="-83662.24" z="4551.0"/>
+    </creature_spawn>
+    <creature_spawn creature_type="123" full_id="12307001" id="7001" model_id="10485860">
+        <spawn heading="-17477" mapId="9123" x="-102331.984" y="-83097.59" z="4607.0"/>
+        <spawn heading="-18387" mapId="9123" x="-102393.69" y="-83104.87" z="4607.0"/>
+        <spawn heading="-16201" mapId="9123" x="-100142.21" y="-83046.984" z="4711.0"/>
+        <spawn heading="-17112" mapId="9123" x="-99819.38" y="-83031.83" z="4708.0"/>
+        <spawn heading="-16201" mapId="9123" x="-99727.195" y="-83011.586" z="4716.0"/>
+        <spawn heading="-15656" mapId="9123" x="-98625.13" y="-84732.28" z="4520.0"/>
+        <spawn heading="-16567" mapId="9123" x="-98465.2" y="-84745.28" z="4497.0"/>
+        <spawn heading="-15656" mapId="9123" x="-98377.75" y="-84729.22" z="4496.0"/>
+        <spawn heading="-16567" mapId="9123" x="-98707.49" y="-84784.74" z="4526.0"/>
+        <spawn heading="-17112" mapId="9123" x="-100188.33" y="-83034.44" z="4715.0"/>
+    </creature_spawn>
+    <creature_spawn creature_type="123" full_id="1230501" id="501" model_id="7209020">
+        <spawn heading="-397" mapId="9123" x="-98738.28" y="-86390.53" z="4102.0"/>
+    </creature_spawn>
+    <creature_spawn creature_type="123" full_id="1230220022" id="220022" model_id="7209020">
+        <spawn heading="-14564" mapId="9123" x="-101663.7" y="-82208.16" z="4620.0"/>
+    </creature_spawn>
+    <creature_spawn creature_type="123" full_id="1230220043" id="220043" model_id="7209020">
+        <spawn heading="26396" mapId="9123" x="-100343.484" y="-84371.62" z="4673.0"/>
+    </creature_spawn>
+    <creature_spawn creature_type="123" full_id="1230220021" id="220021" model_id="7209020">
+        <spawn heading="-16384" mapId="9123" x="-100068.68" y="-82063.95" z="4883.0"/>
+    </creature_spawn>
+    <creature_spawn creature_type="123" full_id="1230220023" id="220023" model_id="7209020">
+        <spawn heading="-20571" mapId="9123" x="-101509.84" y="-82148.984" z="4620.0"/>
+    </creature_spawn>
+    <creature_spawn creature_type="123" full_id="123030003" id="30003" model_id="7209020">
+        <spawn heading="-19478" mapId="9123" x="-101594.61" y="-82196.9" z="4620.0"/>
+    </creature_spawn>
+    <creature_spawn creature_type="123" full_id="1230220020" id="220020" model_id="7209020">
+        <spawn heading="-16384" mapId="9123" x="-99759.22" y="-82061.77" z="4883.0"/>
+    </creature_spawn>
+    <creature_spawn creature_type="123" full_id="12309001" id="9001" model_id="7209020">
+        <spawn heading="-15568" mapId="9123" x="-99917.92" y="-81915.54" z="4883.763"/>
+    </creature_spawn>
+    <creature_spawn creature_type="123" full_id="12307500" id="7500" model_id="7209020">
+        <spawn heading="29941" mapId="9123" x="-99339.836" y="-83295.48" z="4656.0"/>
+        <spawn heading="1691" mapId="9123" x="-99803.01" y="-83688.19" z="4664.0"/>
+    </creature_spawn>
+    <creature_spawn creature_type="123" full_id="1230220027" id="220027" model_id="7209020">
+        <spawn heading="24940" mapId="9123" x="-100806.3" y="-83739.94" z="4676.0"/>
+        <spawn heading="15291" mapId="9123" x="-100714.734" y="-83003.32" z="4673.0"/>
+        <spawn heading="-16567" mapId="9123" x="-100721.6" y="-82746.92" z="4697.0"/>
+        <spawn heading="-25305" mapId="9123" x="-100583.375" y="-82782.28" z="4703.0"/>
+    </creature_spawn>
+    <creature_spawn creature_type="123" full_id="1230220032" id="220032" model_id="7209020">
+        <spawn heading="12196" mapId="9123" x="-100700.336" y="-82868.25" z="4685.0"/>
+        <spawn heading="17112" mapId="9123" x="-101569.95" y="-82231.78" z="4620.0"/>
+    </creature_spawn>
+    <creature_spawn creature_type="123" full_id="1230220036" id="220036" model_id="7209020">
+        <spawn heading="6917" mapId="9123" x="-100740.445" y="-82856.95" z="4687.0"/>
+        <spawn heading="31857" mapId="9123" x="-99916.34" y="-83934.375" z="4638.0"/>
+    </creature_spawn>
+    <creature_spawn creature_type="123" full_id="1230220029" id="220029" model_id="7209020">
+        <spawn heading="-30766" mapId="9123" x="-100661.62" y="-82804.34" z="4696.0"/>
+    </creature_spawn>    
+    <creature_spawn creature_type="123" full_id="1230220033" id="220033" model_id="7209020">
+        <spawn heading="-11833" mapId="9123" x="-101633.15" y="-82108.266" z="4620.0"/>
+    </creature_spawn> 
+    <creature_spawn creature_type="123" full_id="1230220026" id="220026" model_id="7209020">
+        <spawn heading="-16202" mapId="9123" x="-99955.37" y="-83846.81" z="4640.0"/>
+    </creature_spawn>
+</creature_spawns>

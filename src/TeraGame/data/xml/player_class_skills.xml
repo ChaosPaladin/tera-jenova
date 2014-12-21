@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<player_class_skills xmlns="http://angelis.com/player_class_skills" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://angelis.com/player_class_skills ../schema/player_class_skills.xsd "
+>
+    <player_class_skill targetClass="WARRIOR">
+        <!-- TODO -->
+        <skill id="10200" require_level="1" />
+    </player_class_skill>
+    
+    <player_class_skill targetClass="LANCER">
+        <!-- TODO -->
+        <skill id="10200" require_level="1" />
+    </player_class_skill>
+    
+    <player_class_skill targetClass="SLAYER">
+        <!-- TODO -->
+        <skill id="10200" require_level="1" />
+    </player_class_skill>
+    
+    <player_class_skill targetClass="BERSERKER">
+        <!-- TODO -->
+        <skill id="10200" require_level="1" />
+    </player_class_skill>
+    
+    <player_class_skill targetClass="SORCERER">
+        <!-- TODO -->
+        <skill id="10200" require_level="1" />
+    </player_class_skill>
+    
+    <player_class_skill targetClass="ARCHER">
+        <!-- TODO -->
+        <skill id="10200" require_level="1" />
+    </player_class_skill>
+    
+    <player_class_skill targetClass="PRIEST">
+        <!-- TODO -->
+        <skill id="10200" require_level="1" />
+    </player_class_skill>
+    
+    <player_class_skill targetClass="MYSTIC">
+        <!-- TODO -->
+        <skill id="10200" require_level="1" />
+    </player_class_skill>
+    
+    <player_class_skill targetClass="REAPER">
+        <!-- TODO -->
+        <skill id="10200" require_level="1" />
+    </player_class_skill>
+</player_class_skills>

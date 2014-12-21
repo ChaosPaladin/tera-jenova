@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gather_drops xmlns="http://angelis.com/gather_drops" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/gather_drops ../../../../schema/gather_drops.xsd">
+    <gather_drop gather_id="301" name="Sun Essence">
+        <drop chance="HIGH" max_amount="4" min_amount="2" item_id="1003"/>
+        <drop chance="VERY_LOW" max_amount="3" min_amount="1" item_id="8007"/>
+        <drop chance="VERY_LOW" max_amount="3" min_amount="1" item_id="1072"/>
+        <drop chance="LOW" max_amount="3" min_amount="1" item_id="1053"/>
+    </gather_drop>
+</gather_drops>
