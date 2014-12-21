@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="142.0" prefWidth="467.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="promptLabel" layoutX="14.0" layoutY="14.0" text="Label" />
+      <TextField layoutX="14.0" layoutY="43.0" prefHeight="25.0" prefWidth="444.0" />
+      <Button layoutX="12.0" layoutY="104.0" mnemonicParsing="false" onAction="#onConfirm" text="Ok" />
+      <Button layoutX="50.0" layoutY="104.0" mnemonicParsing="false" onAction="#onCancel" text="Cancel" />
+   </children>
+</Pane>
