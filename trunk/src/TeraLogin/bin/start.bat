@@ -1,0 +1,1 @@
+java -cp ./lib/*;TeraLogin.jar com.angelis.tera.game.MainLogin
