@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://angelis.com/quests" xmlns:xsd="http://angelis.com/quests" xmlns:base="http://angelis.com/base" elementFormDefault="qualified">
+    <!-- IMPORTS -->
+    <import schemaLocation="base.xsd" namespace="http://angelis.com/base" />
+    
+    <!-- TYPES -->
+    <simpleType name="QuestIconType">
+        <restriction base="string">
+            <enumeration value="NORMAL"/>
+            <enumeration value="STORY"/>
+            <enumeration value="REPEATABLE"/>
+        </restriction>
+    </simpleType>
+    
+    <simpleType name="QuestStepType">
+        <restriction base="string">
+            <enumeration value="TALK"/>
+            <enumeration value="READ"/>
+            <enumeration value="LEARN"/>
+            <enumeration value="KILL"/>
+            <enumeration value="COLLECT"/>
+            <enumeration value="WATCH_MOVIE"/>
+        </restriction>
+    </simpleType>
+
+    <complexType name="QuestStepValueType">
+        <attribute name="object_id" type="integer" />
+        <attribute name="amount" use="optional" default="1"/>
+    </complexType>
+
+    <complexType name="QuestStepsType">
+        <sequence>
+            <element name="step_value" type="xsd:QuestStepValueType" maxOccurs="unbounded" />
+        </sequence>
+        <attribute name="type" type="xsd:QuestStepType" />
+    </complexType>
+    
+    <complexType name="QuestRequired">
+        <attribute name="quest_id" type="integer" />
+    </complexType>
+    
+    <complexType name="QuestRewardType">
+        <attribute name="item_id" type="integer" />
+        <attribute name="amount" type="integer" />
+    </complexType>
+    
+    <simpleType name="QuestRewardChoiceType">
+        <restriction base="string">
+            <enumeration value="SELECTABLE"/>
+            <enumeration value="UNSPECIFIED"/>
+            <enumeration value="ALL"/>
+        </restriction>
+    </simpleType>
+
+    <complexType name="QuestType">
+        <sequence>
+            <element name="required_quest" type="xsd:QuestRequired" minOccurs="0" maxOccurs="unbounded" />
+            <element name="step" type="xsd:QuestStepsType" minOccurs="0" maxOccurs="unbounded" />
+            <element name="reward" type="xsd:QuestRewardType" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+        <attribute name="quest_id" type="integer" />
+        <attribute name="quest_type" type="xsd:QuestIconType" />
+        <attribute name="start_npc_full_id" type="integer" />
+        <attribute name="required_level" type="integer" />
+        <attribute name="experience_reward" type="integer" />
+        <attribute name="money_reward" type="integer" />
+        <attribute name="policy_points_reward" type="integer" use="optional" />
+        <attribute name="alliance_contribution_points_reward" type="integer" use="optional" />
+        <attribute name="reputation_points_reward" type="integer" use="optional" />
+        <attribute name="credit_points_reward" type="integer" use="optional" />
+        <attribute name="reward_type" type="xsd:QuestRewardChoiceType" use="optional" />
+    </complexType>
+
+    <complexType name="QuestsType">
+        <sequence>
+            <element name="import" type="base:ImportType" minOccurs="0" maxOccurs="unbounded" />
+            <element name="quest" type="xsd:QuestType" minOccurs="0" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+
+    <!-- CONTENT -->
+    <element name="quests" type="xsd:QuestsType" />
+</schema>

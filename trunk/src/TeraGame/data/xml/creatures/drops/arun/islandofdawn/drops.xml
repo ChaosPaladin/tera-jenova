@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<creature_drops xmlns="http://angelis.com/creature_drops" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://angelis.com/creature_drops ../../../../schema/creature_drops.xsd "
+>
+    <creature_drop full_id="130300931" name="Ghilliedhu">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+    </creature_drop>
+    <creature_drop full_id="130300932" name="Horned Ghilliedhu">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+    </creature_drop>
+    <creature_drop full_id="130300921" name="Noruk">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1004" />
+    </creature_drop>
+    <creature_drop full_id="130111" name="Gentle Pigling">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+    </creature_drop>
+    <creature_drop full_id="130301193" name="Stonebeak Brigand">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+    </creature_drop>
+    <creature_drop full_id="1301" name="Pigling">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1004" />
+    </creature_drop>
+    <creature_drop full_id="1301001" name="Vekas">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="22004" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="22005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="22001" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="22002" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1003" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1001" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1002" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="501" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="511" />
+        <drop chance="MEDIUM" max_amount="1" min_amount="1" item_id="17409" />
+        <drop chance="MEDIUM" max_amount="1" min_amount="1" item_id="17412" />
+        <drop chance="MEDIUM" max_amount="1" min_amount="1" item_id="17404" />
+        <drop chance="MEDIUM" max_amount="1" min_amount="1" item_id="17407" />
+        <drop chance="MEDIUM" max_amount="1" min_amount="1" item_id="17410" />
+        <drop chance="MEDIUM" max_amount="1" min_amount="1" item_id="17405" />
+        <drop chance="MEDIUM" max_amount="1" min_amount="1" item_id="17408" />
+        <drop chance="MEDIUM" max_amount="1" min_amount="1" item_id="17411" />
+        <drop chance="MEDIUM" max_amount="1" min_amount="1" item_id="17406" />
+    </creature_drop>
+    <creature_drop full_id="130301191" name="Stonebeak Raider">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+    </creature_drop>
+    <creature_drop full_id="1301" name="Pigling">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1004" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1003" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1001" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1002" />
+    </creature_drop>
+    <creature_drop full_id="1302" name="Sporewalker">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1003" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1001" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1002" />
+    </creature_drop>
+    <creature_drop full_id="130901" name="Orcan Guardian">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1003" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1001" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1002" />
+    </creature_drop>
+    <creature_drop full_id="130951" name="Dark Raider">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1003" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1001" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1002" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="501" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="511" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="20301" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="20601" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="20001" />
+    </creature_drop>
+    <creature_drop full_id="1307" name="Disc Reaper">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+    </creature_drop>
+    <creature_drop full_id="130300942" name="Terron Thrall">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+    </creature_drop>
+    <creature_drop full_id="1301003" name="Acharak's Soldier">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+    </creature_drop>
+    <creature_drop full_id="1306" name="Kariagon">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1003" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1001" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1002" />
+    </creature_drop>
+    <creature_drop full_id="130300910" name="Prowling Cromos">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1004" />
+    </creature_drop>
+    <creature_drop full_id="130300960" name="Devoted Ebon Imp">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1004" />
+    </creature_drop>
+    <creature_drop full_id="130901" name="Orcan Guardian">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1003" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1001" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1002" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="20001" />
+    </creature_drop>
+    <creature_drop full_id="1308" name="Runekeeper">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1003" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1001" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1002" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12128" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12127" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12123" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12124" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12126" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12125" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17396" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17402" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17400" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17397" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17403" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17398" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17395" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17401" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17121" />
+    </creature_drop>
+    <creature_drop full_id="1309" name="Destroyer">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1003" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1001" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1002" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12128" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12127" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12123" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12124" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12126" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12125" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17396" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17402" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17400" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17397" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17403" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17398" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17395" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17401" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17121" />
+    </creature_drop>
+    <creature_drop full_id="130557" name="Scion Scout">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1003" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1001" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1002" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12128" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12127" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12123" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12124" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12126" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12125" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17396" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17402" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17400" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17397" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17403" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17398" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17395" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17401" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17121" />
+    </creature_drop>
+    <creature_drop full_id="1301004" name="Kugai">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1003" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1001" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1002" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12128" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12127" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12123" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12124" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12126" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12125" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17396" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17402" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17400" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17397" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17403" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17398" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17395" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17401" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17121" />
+    </creature_drop>
+    <creature_drop full_id="130556" name="Scion Scout">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1003" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1001" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1002" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12128" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12127" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12123" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12124" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12126" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12125" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17396" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17402" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17400" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17397" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17403" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17398" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17395" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17401" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17121" />
+    </creature_drop>
+    <creature_drop full_id="130555" name="Scion Scout">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1003" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1001" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1002" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12128" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12127" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12123" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12124" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12126" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12125" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17396" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17402" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17400" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17397" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17403" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17398" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17395" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17401" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17121" />
+    </creature_drop>
+    <creature_drop full_id="130558" name="Scion Scout">
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8000" />
+        <drop chance="LOW" max_amount="1" min_amount="1" item_id="8005" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="8007" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="7214" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6064" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="6066" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7104" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7108" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7201" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="98" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="7100" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1003" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1001" />
+        <drop chance="VERY_LOW" max_amount="1" min_amount="1" item_id="1002" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12128" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12127" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12123" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12124" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12126" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="12125" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17396" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17402" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17400" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17397" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17403" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17398" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17395" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17401" />
+        <drop chance="RARE" max_amount="1" min_amount="1" item_id="17121" />
+    </creature_drop>
+</creature_drops>

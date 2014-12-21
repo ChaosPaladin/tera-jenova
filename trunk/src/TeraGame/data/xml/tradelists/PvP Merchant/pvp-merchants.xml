@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tradelists xmlns="http://angelis.com/tradelists" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/tradelists ../schema/tradelists.xsd ">
+    <!-- Velika -->
+    <tradelist full_id="6301256">
+        <tab tradelist_tab_name="EQUIPEMENT">
+            <item id="21394"/>
+            <item id="21349"/>
+            <item id="21334"/>
+            <item id="21289"/>
+            <item id="21319"/>
+            <item id="21304"/>
+            <item id="21379"/>
+            <item id="21364"/>
+            <item id="21409"/>
+            <item id="21426"/>
+            <item id="21441"/>
+            <item id="21456"/>
+            <item id="21475"/>
+            <item id="21490"/>
+            <item id="21505"/>
+            <item id="21524"/>
+            <item id="21539"/>
+            <item id="21558"/>
+            <item id="21550"/>
+            <item id="21564"/>
+            <item id="21565"/>
+            <item id="21566"/>           
+        </tab>
+        <tab tradelist_tab_name="PROVISIONING">
+            <item id="304"/>
+            <item id="1134"/>
+            <item id="1133"/>
+            <item id="5165"/>
+            <item id="5165"/>
+            <item id="5167"/>
+            <item id="5168"/>
+            <item id="5169"/>
+            <item id="5170"/>
+            <item id="5171"/>
+            <item id="5172"/>
+        </tab>
+        <tab tradelist_tab_name="PLANS">
+            <item id="27050"/>
+            <item id="27051"/>
+            <item id="27052"/>
+            <item id="27053"/>
+            <item id="27054"/>
+            <item id="27055"/>
+            <item id="27056"/>
+            <item id="27057"/>
+            <item id="27058"/>
+            <item id="27059"/>
+            <item id="27060"/>
+            <item id="27061"/>
+            <item id="27062"/>
+            <item id="27063"/>
+            <item id="27064"/>
+            <item id="27065"/>
+            <item id="27066"/>
+        </tab>
+        <tab tradelist_tab_name="SACRIFICIELEQUIPEMENT">
+            <item id="21391"/>
+            <item id="21346"/>
+            <item id="21331"/>
+            <item id="21286"/>
+            <item id="21316"/>
+            <item id="21301"/>
+            <item id="21376"/>
+            <item id="21361"/>
+            <item id="21406"/>
+            <item id="21423"/>
+            <item id="21438"/>
+            <item id="21453"/>
+            <item id="21472"/>
+            <item id="21487"/>
+            <item id="21502"/>
+            <item id="21521"/>
+            <item id="21536"/>          
+        </tab>
+    </tradelist>
+</tradelists>

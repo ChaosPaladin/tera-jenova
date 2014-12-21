@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<player_itemsets xmlns="http://angelis.com/player_itemsets" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/player_itemsets ../schema/player_itemsets.xsd ">
+    <player_itemset targetClass="WARRIOR">
+        <player_item itemId="10001" slot="WEAPON" />
+        <player_item itemId="15004" slot="ARMOR" />
+        <player_item itemId="15005" slot="GLOVES" />
+        <player_item itemId="15006" slot="FOOT" />
+    </player_itemset>
+    <player_itemset targetClass="LANCER">
+        <player_item itemId="10002" slot="WEAPON" />
+        <player_item itemId="15004" slot="ARMOR" />
+        <player_item itemId="15005" slot="GLOVES" />
+        <player_item itemId="15006" slot="FOOT" />
+    </player_itemset>
+    <player_itemset targetClass="SLAYER">
+        <player_item itemId="10003" slot="WEAPON" />
+        <player_item itemId="15001" slot="ARMOR" />
+        <player_item itemId="15002" slot="GLOVES" />
+        <player_item itemId="15003" slot="FOOT" />
+    </player_itemset>
+    <player_itemset targetClass="BERSERKER">
+        <player_item itemId="10004" slot="WEAPON" />
+        <player_item itemId="15001" slot="ARMOR" />
+        <player_item itemId="15002" slot="GLOVES" />
+        <player_item itemId="15003" slot="FOOT" />
+    </player_itemset>
+    <player_itemset targetClass="SORCERER">
+        <player_item itemId="10005" slot="WEAPON" />
+        <player_item itemId="15007" slot="ARMOR" />
+        <player_item itemId="15008" slot="GLOVES" />
+        <player_item itemId="15009" slot="FOOT" />
+    </player_itemset>
+    <player_itemset targetClass="ARCHER">
+        <player_item itemId="10006" slot="WEAPON" />
+        <player_item itemId="15004" slot="ARMOR" />
+        <player_item itemId="15005" slot="GLOVES" />
+        <player_item itemId="15006" slot="FOOT" />
+    </player_itemset>
+    <player_itemset targetClass="PRIEST">
+        <player_item itemId="10007" slot="WEAPON" />
+        <player_item itemId="15007" slot="ARMOR" />
+        <player_item itemId="15008" slot="GLOVES" />
+        <player_item itemId="15009" slot="FOOT" />
+    </player_itemset>
+    <player_itemset targetClass="MYSTIC">
+        <player_item itemId="10008" slot="WEAPON" />
+        <player_item itemId="15007" slot="ARMOR" />
+        <player_item itemId="15008" slot="GLOVES" />
+        <player_item itemId="15009" slot="FOOT" />
+    </player_itemset>
+    <player_itemset targetClass="REAPER">
+        <player_item itemId="80396" slot="WEAPON" />
+        <player_item itemId="80397" slot="ARMOR" />
+        <player_item itemId="80398" slot="GLOVES" />
+        <player_item itemId="80399" slot="FOOT" />
+    </player_itemset>
+</player_itemsets>

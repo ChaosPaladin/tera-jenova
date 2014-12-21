@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<quests xmlns="http://angelis.com/quests" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/quests ../../../../schema/quests.xsd ">
+    <!-- jenova-project-tera QuestCreator, Created By TheNak -->
+    <quest quest_id="301" quest_type="STORY" start_npc_full_id="0" required_level="13" experience_reward="8500" money_reward="80" reward_type="SELECTABLE">
+        <step type="TALK">
+            <step_value object_id="6001014"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="6001007"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="20301004"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="20301013"/>
+        </step>
+        <step type="KILL">
+            <step_value object_id="3012"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="20301004"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="5901009"/>
+        </step>
+        <reward item_id="10601" amount="1"/>
+        <reward item_id="10602" amount="1"/>
+        <reward item_id="10603" amount="1"/>
+        <reward item_id="10604" amount="1"/>
+        <reward item_id="10605" amount="1"/>
+        <reward item_id="10606" amount="1"/>
+        <reward item_id="10607" amount="1"/>
+        <reward item_id="10608" amount="1"/>
+    </quest>
+    <quest quest_id="302" quest_type="STORY" start_npc_full_id="5901009" required_level="13" experience_reward="12000" money_reward="80" reward_type="SELECTABLE">
+        <step type="TALK">
+            <step_value object_id="5901001"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="5901009"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="20301007"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="20301030"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="20301030"/>
+        </step>
+        <step type="KILL">
+            <step_value object_id="307"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="20301007"/>
+        </step>
+        <reward item_id="15676" amount="1"/>
+        <reward item_id="15679" amount="1"/>
+        <reward item_id="15682" amount="1"/>
+    </quest>
+</quests>

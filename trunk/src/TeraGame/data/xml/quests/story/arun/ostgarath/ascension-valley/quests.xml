@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<quests xmlns="http://angelis.com/quests" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/quests ../../../../schema/quests.xsd ">
+	<!-- jenova-project-tera QuestCreator, Created By TheNak -->
+	<quest quest_id="901" quest_type="STORY" start_npc_full_id="0" required_level="30" experience_reward="240000" money_reward="100" reward_type="SELECTABLE">
+		<step type="TALK">
+			<step_value object_id="6301166"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="6301167"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="6301137"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="6301166"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="6201001"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="6201018"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="6201035"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="6201038"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="12024"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="6301166"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="21201033"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="21201035"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="21201030"/>
+		</step>
+		<step type="KILL">
+			<step_value object_id="43801"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="21201035"/>
+		</step>
+		<reward item_id="15721" amount="1"/>
+		<reward item_id="15724" amount="1"/>
+		<reward item_id="15727" amount="1"/>
+	</quest>
+	<quest quest_id="902" quest_type="STORY" start_npc_full_id="21201035" required_level="30" experience_reward="144000" money_reward="100" reward_type="SELECTABLE">
+		<step type="TALK">
+			<step_value object_id="6201010"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="6201020"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="6201021"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="6201035"/>
+		</step>
+		<step type="KILL">
+			<step_value object_id="12025"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="6201035"/>
+		</step>
+		<reward item_id="15722" amount="1"/>
+		<reward item_id="15725" amount="1"/>
+		<reward item_id="15728" amount="1"/>
+	</quest>
+	<quest quest_id="903" quest_type="STORY" start_npc_full_id="0" required_level="30" experience_reward="240000" money_reward="108" reward_type="SELECTABLE">
+		<step type="TALK">
+			<step_value object_id="6201036"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="21201035"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="21201035"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="21201035"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="6201036"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="6201036"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="20901030"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="6201036"/>
+		</step>
+		<reward item_id="15784" amount="1"/>
+		<reward item_id="15787" amount="1"/>
+		<reward item_id="15790" amount="1"/>
+	</quest>
+	<quest quest_id="904" quest_type="STORY" start_npc_full_id="20901031" required_level="30" experience_reward="300000" money_reward="108" reward_type="SELECTABLE">
+		<step type="TALK">
+			<step_value object_id="20901032"/>
+		</step>
+		<step type="KILL">
+			<step_value object_id="902100"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="20901029"/>
+		</step>
+		<step type="KILL">
+			<step_value object_id="40105001"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="40101010"/>
+		</step>
+		<step type="TALK">
+			<step_value object_id="40101008"/>
+		</step>
+		<reward item_id="10697" amount="1"/>
+		<reward item_id="10698" amount="1"/>
+		<reward item_id="10699" amount="1"/>
+		<reward item_id="10700" amount="1"/>
+		<reward item_id="10701" amount="1"/>
+		<reward item_id="10702" amount="1"/>
+		<reward item_id="10703" amount="1"/>
+		<reward item_id="10704" amount="1"/>
+	</quest>
+</quests>

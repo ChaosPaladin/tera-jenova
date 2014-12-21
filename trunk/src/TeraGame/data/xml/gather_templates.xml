@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gather_templates xmlns="http://angelis.com/gather_templates" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/gather_spawns ../schema/gather_templates.xsd ">
+    <import file="gathers/templates" skipRoot="true" />
+</gather_templates>

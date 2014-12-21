@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<player_race_skills xmlns="http://angelis.com/player_race_skills" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://angelis.com/player_race_skills ../schema/player_race_skills.xsd "
+>
+    <player_race_skill targetRace="HUMAN">
+        <!-- TODO -->
+        <skill id="10200" require_level="1" />
+    </player_race_skill>
+    
+    <player_race_skill targetRace="HIGH_ELF">
+        <!-- TODO -->
+        <skill id="10200" require_level="1" />
+    </player_race_skill>
+    
+    <player_race_skill targetRace="AMAN">
+        <!-- TODO -->
+        <skill id="10200" require_level="1" />
+    </player_race_skill>
+    
+    <player_race_skill targetRace="CASTANIC">
+        <!-- TODO -->
+        <skill id="10200" require_level="1" />
+    </player_race_skill>
+    
+    <player_race_skill targetRace="POPORI">
+        <!-- TODO -->
+        <skill id="10200" require_level="1" />
+    </player_race_skill>
+    
+    <player_race_skill targetRace="ELIN">
+        <!-- TODO -->
+        <skill id="10200" require_level="1" />
+    </player_race_skill>
+    
+    <player_race_skill targetRace="BARAKA">
+        <!-- TODO -->
+        <skill id="10200" require_level="1" />
+    </player_race_skill>
+</player_race_skills>

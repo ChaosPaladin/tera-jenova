@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://angelis.com/pegasus_flies" xmlns:xsd="http://angelis.com/pegasus_flies" xmlns:base="http://angelis.com/base" elementFormDefault="qualified">
+    <!-- IMPORTS -->
+    <import schemaLocation="base.xsd" namespace="http://angelis.com/base" />
+    <!-- TYPES -->
+    <complexType name="FlyStepType">
+        <attribute name="map_id" type="integer" />
+        <attribute name="x" type="integer" />
+        <attribute name="y" type="integer" />
+        <attribute name="z" type="integer" />
+    </complexType>
+    <complexType name="FlyType">
+        <sequence>
+            <element name="step" type="xsd:FlyStepType" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+        <attribute name="id" type="integer" />
+        <attribute name="cost" type="integer" />
+        <attribute name="level" type="integer" />
+        <attribute name="to_name_id" type="integer" />
+    </complexType>
+    
+    <complexType name="PegasusFlyType">
+        <sequence>
+            <element name="fly" type="xsd:FlyType" maxOccurs="unbounded" />
+        </sequence>
+        <attribute name="full_id" type="integer" />
+        <attribute name="from_name_id" type="integer" />
+    </complexType>
+    
+    <complexType name="PegasusFliesType">
+        <sequence>
+            <element name="pegasus_fly" type="xsd:PegasusFlyType" maxOccurs="unbounded" />
+        </sequence>
+    </complexType>
+    
+    <!-- CONTENT -->
+    <element name="pegasus_flies" type="xsd:PegasusFliesType" />
+</schema>

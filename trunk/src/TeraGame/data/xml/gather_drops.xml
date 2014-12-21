@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gather_drops xmlns="http://angelis.com/gather_drops" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/gather_drops ../schema/gather_drops.xsd">
+    <import file="gathers/drops" skipRoot="true" />
+</gather_drops>

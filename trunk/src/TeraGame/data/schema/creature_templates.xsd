@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://angelis.com/creature_templates"
+    xmlns:xsd="http://angelis.com/creature_templates" xmlns:base="http://angelis.com/base" elementFormDefault="qualified"
+>
+    <!-- IMPORTS -->
+    <import schemaLocation="base.xsd" namespace="http://angelis.com/base" />
+    
+    <!-- TYPES -->
+    <complexType name="CreatureTemplateType">
+        <sequence>
+            <element name="basestats" type="base:BaseStatsType" minOccurs="0" />
+        </sequence>
+        <attribute name="full_id" type="integer" />
+        <attribute name="rank" type="base:CreatureTemplateRankType" />
+        <attribute name="exp" type="integer" />
+        <attribute name="hunting_zone_id" type="integer" />
+        <attribute name="model_id" type="integer" />
+        <attribute name="offensive" type="integer" />
+        <attribute name="title" type="base:CreatureTitleType" use="optional" />
+    </complexType>
+    <complexType name="CreatureTemplatesType">
+        <sequence>
+            <element name="import" type="base:ImportType" minOccurs="0" maxOccurs="unbounded" />
+            <element name="creature_template" type="xsd:CreatureTemplateType" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+    </complexType>
+    
+    <!-- CONTENT -->
+    <element name="creature_templates" type="xsd:CreatureTemplatesType" />
+</schema>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<creature_templates xmlns="http://angelis.com/creature_templates" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/creature_templates ../../../schema/creature_templates.xsd ">
+	<creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301004" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="28" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301120" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="28" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301121" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="28" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301119" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="28" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301123" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="33" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301122" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="47" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301124" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="18" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301117" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="28" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301118" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="28" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="64" model_id="7209020" full_id="6401026" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="47" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301115" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="28" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301017" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="43" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301114" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="28" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301111" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="28" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301112" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="28" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301003" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="47" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301024" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="33" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301023" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="43" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301107" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="28" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301106" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="28" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301108" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="55" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301014" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="28" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301104" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="0" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301101" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="18" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301103" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="21" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301105" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="47" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301102" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="18" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301007" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="47" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301134" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="28" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301139" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="28" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301142" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="47" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301028" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="28" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301025" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="47" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301026" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="28" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301143" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="33" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301141" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="28" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+        <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301015" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="0" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301008" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="33" stun_resistance="49" weakening_resistance="49" />
+    </creature_template> 
+    <creature_template exp="0" hunting_zone_id="123" model_id="7209020" full_id="21301001" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="0" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301147" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="47" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301145" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="28" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301146" offensive="0" rank="NPC">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="28" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+    <creature_template exp="0" hunting_zone_id="213" model_id="7209020" full_id="21301016" offensive="0" rank="NPC" title="FLIGHT_MASTER">
+        <basestats attack="1" attack_speed="100" balance="1414" balance_factor="40" base_hp="710000" base_mp="0" combat_hp_regen="0" combat_mp_regen="0" crit_power="2" crit_rate="41" crit_resistance="60" defense="681" endurance="63" impact="2838" impact_factor="56" level="40" natural_mp_degen="0" natural_mp_regen="0" power="56" speed="47" stun_resistance="49" weakening_resistance="49" />
+    </creature_template>
+</creature_templates>    

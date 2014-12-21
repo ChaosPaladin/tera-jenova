@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tradelists xmlns="http://angelis.com/tradelists" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/tradelists ../schema/tradelists.xsd ">
+    <tradelist full_id="6301176">
+        <tab tradelist_tab_name="WEAPON_CRYSTAL">
+            <!-- Hexage -->
+            <item id="8202"/>
+            <item id="8214"/>
+            <item id="8244"/>
+            <item id="8256"/>
+            <item id="8268"/>
+            <item id="8280"/>
+            <item id="8292"/>
+            <item id="8316"/>
+            <item id="8334"/>
+            <item id="8346"/>
+            <item id="8358"/>
+            <item id="8370"/>
+            <item id="8382"/>
+            <item id="8544"/>
+            <item id="8568"/>
+            <!--Pentant-->
+            <item id="8203"/>
+            <item id="8215"/>
+            <item id="8245"/>
+            <item id="8257"/>
+            <item id="8269"/>
+            <item id="8281"/>
+            <item id="8293"/>
+            <item id="8317"/>
+            <item id="8335"/>
+            <item id="8347"/>
+            <item id="8359"/>
+            <item id="8371"/>
+            <item id="8383"/>
+            <item id="8545"/>
+            <item id="8569"/>
+            <!--Concach-->
+            <item id="8204"/>
+            <item id="8216"/>
+            <item id="8246"/>
+            <item id="8258"/>
+            <item id="8270"/>
+            <item id="8282"/>
+            <item id="8294"/>
+            <item id="8336"/>
+            <item id="8348"/>
+            <item id="8360"/>
+            <item id="8372"/>
+            <item id="8384"/>
+            <item id="8546"/>
+            <item id="8570"/>
+            <item id="8546"/>
+            <!--Crux-->
+            <item id="8205"/>
+            <item id="8217"/>
+            <item id="8247"/>
+            <item id="8259"/>
+            <item id="8271"/>
+            <item id="8283"/>
+            <item id="8295"/>
+            <item id="8337"/>
+            <item id="8349"/>
+            <item id="8361"/>
+            <item id="8373"/>
+            <item id="8385"/>
+            <item id="8547"/>
+            <item id="8571"/>
+            <item id="8547"/>
+        </tab>
+        <tab tradelist_tab_name="ARMOR_CRYSTAL">
+            <!--Hexage-->
+            <item id="8394"/>
+            <item id="8406"/>
+            <item id="8436"/>
+            <item id="8448"/>
+            <item id="8460"/>
+            <item id="8472"/>
+            <item id="8496"/>
+            <item id="8508"/>
+            <item id="8520"/>
+            <item id="8556"/>
+            <!--Pentant-->
+            <item id="8395"/>
+            <item id="8407"/>
+            <item id="8437"/>
+            <item id="8449"/>
+            <item id="8461"/>
+            <item id="8473"/>
+            <item id="8497"/>
+            <item id="8509"/>
+            <item id="8521"/>
+            <item id="8557"/>
+            <!--Concach-->
+            <item id="8396"/>
+            <item id="8408"/>
+            <item id="8438"/>
+            <item id="8447"/>
+            <item id="8462"/>
+            <item id="8474"/>
+            <item id="8498"/>
+            <item id="8510"/>
+            <item id="8522"/>
+            <item id="8558"/>
+            <!--Crux-->
+            <item id="8397"/>
+            <item id="8409"/>
+            <item id="8439"/>
+            <item id="8448"/>
+            <item id="8463"/>
+            <item id="8475"/>
+            <item id="8499"/>
+            <item id="8511"/>
+            <item id="8523"/>
+            <item id="8559"/>
+        </tab>
+    </tradelist>
+    <tradelist full_id="6301253">
+        <tab tradelist_tab_name="WEAPON_CRYSTAL">
+            <!-- Hexage -->
+            <item id="8202"/>
+            <item id="8214"/>
+            <item id="8244"/>
+            <item id="8256"/>
+            <item id="8268"/>
+            <item id="8280"/>
+            <item id="8292"/>
+            <item id="8316"/>
+            <item id="8334"/>
+            <item id="8346"/>
+            <item id="8358"/>
+            <item id="8370"/>
+            <item id="8382"/>
+            <item id="8544"/>
+            <item id="8568"/>
+            <!--Pentant-->
+            <item id="8203"/>
+            <item id="8215"/>
+            <item id="8245"/>
+            <item id="8257"/>
+            <item id="8269"/>
+            <item id="8281"/>
+            <item id="8293"/>
+            <item id="8317"/>
+            <item id="8335"/>
+            <item id="8347"/>
+            <item id="8359"/>
+            <item id="8371"/>
+            <item id="8383"/>
+            <item id="8545"/>
+            <item id="8569"/>
+            <!--Concach-->
+            <item id="8204"/>
+            <item id="8216"/>
+            <item id="8246"/>
+            <item id="8258"/>
+            <item id="8270"/>
+            <item id="8282"/>
+            <item id="8294"/>
+            <item id="8336"/>
+            <item id="8348"/>
+            <item id="8360"/>
+            <item id="8372"/>
+            <item id="8384"/>
+            <item id="8546"/>
+            <item id="8570"/>
+            <item id="8546"/>
+            <!--Crux-->
+            <item id="8205"/>
+            <item id="8217"/>
+            <item id="8247"/>
+            <item id="8259"/>
+            <item id="8271"/>
+            <item id="8283"/>
+            <item id="8295"/>
+            <item id="8337"/>
+            <item id="8349"/>
+            <item id="8361"/>
+            <item id="8373"/>
+            <item id="8385"/>
+            <item id="8547"/>
+            <item id="8571"/>
+            <item id="8547"/>
+        </tab>
+        <tab tradelist_tab_name="ARMOR_CRYSTAL">
+            <!--Hexage-->
+            <item id="8394"/>
+            <item id="8406"/>
+            <item id="8436"/>
+            <item id="8448"/>
+            <item id="8460"/>
+            <item id="8472"/>
+            <item id="8496"/>
+            <item id="8508"/>
+            <item id="8520"/>
+            <item id="8556"/>
+            <!--Pentant-->
+            <item id="8395"/>
+            <item id="8407"/>
+            <item id="8437"/>
+            <item id="8449"/>
+            <item id="8461"/>
+            <item id="8473"/>
+            <item id="8497"/>
+            <item id="8509"/>
+            <item id="8521"/>
+            <item id="8557"/>
+            <!--Concach-->
+            <item id="8396"/>
+            <item id="8408"/>
+            <item id="8438"/>
+            <item id="8447"/>
+            <item id="8462"/>
+            <item id="8474"/>
+            <item id="8498"/>
+            <item id="8510"/>
+            <item id="8522"/>
+            <item id="8558"/>
+            <!--Crux-->
+            <item id="8397"/>
+            <item id="8409"/>
+            <item id="8439"/>
+            <item id="8448"/>
+            <item id="8463"/>
+            <item id="8475"/>
+            <item id="8499"/>
+            <item id="8511"/>
+            <item id="8523"/>
+            <item id="8559"/>
+        </tab>
+    </tradelist>
+    <tradelist full_id="6301104">
+        <tab tradelist_tab_name="WEAPON_CRYSTAL">
+            <!-- Hexage -->
+            <item id="8202"/>
+            <item id="8214"/>
+            <item id="8244"/>
+            <item id="8256"/>
+            <item id="8268"/>
+            <item id="8280"/>
+            <item id="8292"/>
+            <item id="8316"/>
+            <item id="8334"/>
+            <item id="8346"/>
+            <item id="8358"/>
+            <item id="8370"/>
+            <item id="8382"/>
+            <item id="8544"/>
+            <item id="8568"/>
+            <!--Pentant-->
+            <item id="8203"/>
+            <item id="8215"/>
+            <item id="8245"/>
+            <item id="8257"/>
+            <item id="8269"/>
+            <item id="8281"/>
+            <item id="8293"/>
+            <item id="8317"/>
+            <item id="8335"/>
+            <item id="8347"/>
+            <item id="8359"/>
+            <item id="8371"/>
+            <item id="8383"/>
+            <item id="8545"/>
+            <item id="8569"/>
+            <!--Concach-->
+            <item id="8204"/>
+            <item id="8216"/>
+            <item id="8246"/>
+            <item id="8258"/>
+            <item id="8270"/>
+            <item id="8282"/>
+            <item id="8294"/>
+            <item id="8336"/>
+            <item id="8348"/>
+            <item id="8360"/>
+            <item id="8372"/>
+            <item id="8384"/>
+            <item id="8546"/>
+            <item id="8570"/>
+            <item id="8546"/>
+            <!--Crux-->
+            <item id="8205"/>
+            <item id="8217"/>
+            <item id="8247"/>
+            <item id="8259"/>
+            <item id="8271"/>
+            <item id="8283"/>
+            <item id="8295"/>
+            <item id="8337"/>
+            <item id="8349"/>
+            <item id="8361"/>
+            <item id="8373"/>
+            <item id="8385"/>
+            <item id="8547"/>
+            <item id="8571"/>
+            <item id="8547"/>
+        </tab>
+        <tab tradelist_tab_name="ARMOR_CRYSTAL">
+            <!--Hexage-->
+            <item id="8394"/>
+            <item id="8406"/>
+            <item id="8436"/>
+            <item id="8448"/>
+            <item id="8460"/>
+            <item id="8472"/>
+            <item id="8496"/>
+            <item id="8508"/>
+            <item id="8520"/>
+            <item id="8556"/>
+            <!--Pentant-->
+            <item id="8395"/>
+            <item id="8407"/>
+            <item id="8437"/>
+            <item id="8449"/>
+            <item id="8461"/>
+            <item id="8473"/>
+            <item id="8497"/>
+            <item id="8509"/>
+            <item id="8521"/>
+            <item id="8557"/>
+            <!--Concach-->
+            <item id="8396"/>
+            <item id="8408"/>
+            <item id="8438"/>
+            <item id="8447"/>
+            <item id="8462"/>
+            <item id="8474"/>
+            <item id="8498"/>
+            <item id="8510"/>
+            <item id="8522"/>
+            <item id="8558"/>
+            <!--Crux-->
+            <item id="8397"/>
+            <item id="8409"/>
+            <item id="8439"/>
+            <item id="8448"/>
+            <item id="8463"/>
+            <item id="8475"/>
+            <item id="8499"/>
+            <item id="8511"/>
+            <item id="8523"/>
+            <item id="8559"/>
+        </tab>
+    </tradelist>
+    <tradelist full_id="6301002">
+        <tab tradelist_tab_name="WEAPON_CRYSTAL">
+            <!-- Hexage -->
+            <item id="8202"/>
+            <item id="8214"/>
+            <item id="8244"/>
+            <item id="8256"/>
+            <item id="8268"/>
+            <item id="8280"/>
+            <item id="8292"/>
+            <item id="8316"/>
+            <item id="8334"/>
+            <item id="8346"/>
+            <item id="8358"/>
+            <item id="8370"/>
+            <item id="8382"/>
+            <item id="8544"/>
+            <item id="8568"/>
+            <!--Pentant-->
+            <item id="8203"/>
+            <item id="8215"/>
+            <item id="8245"/>
+            <item id="8257"/>
+            <item id="8269"/>
+            <item id="8281"/>
+            <item id="8293"/>
+            <item id="8317"/>
+            <item id="8335"/>
+            <item id="8347"/>
+            <item id="8359"/>
+            <item id="8371"/>
+            <item id="8383"/>
+            <item id="8545"/>
+            <item id="8569"/>
+            <!--Concach-->
+            <item id="8204"/>
+            <item id="8216"/>
+            <item id="8246"/>
+            <item id="8258"/>
+            <item id="8270"/>
+            <item id="8282"/>
+            <item id="8294"/>
+            <item id="8336"/>
+            <item id="8348"/>
+            <item id="8360"/>
+            <item id="8372"/>
+            <item id="8384"/>
+            <item id="8546"/>
+            <item id="8570"/>
+            <item id="8546"/>
+            <!--Crux-->
+            <item id="8205"/>
+            <item id="8217"/>
+            <item id="8247"/>
+            <item id="8259"/>
+            <item id="8271"/>
+            <item id="8283"/>
+            <item id="8295"/>
+            <item id="8337"/>
+            <item id="8349"/>
+            <item id="8361"/>
+            <item id="8373"/>
+            <item id="8385"/>
+            <item id="8547"/>
+            <item id="8571"/>
+            <item id="8547"/>
+        </tab>
+        <tab tradelist_tab_name="ARMOR_CRYSTAL">
+            <!--Hexage-->
+            <item id="8394"/>
+            <item id="8406"/>
+            <item id="8436"/>
+            <item id="8448"/>
+            <item id="8460"/>
+            <item id="8472"/>
+            <item id="8496"/>
+            <item id="8508"/>
+            <item id="8520"/>
+            <item id="8556"/>
+            <!--Pentant-->
+            <item id="8395"/>
+            <item id="8407"/>
+            <item id="8437"/>
+            <item id="8449"/>
+            <item id="8461"/>
+            <item id="8473"/>
+            <item id="8497"/>
+            <item id="8509"/>
+            <item id="8521"/>
+            <item id="8557"/>
+            <!--Concach-->
+            <item id="8396"/>
+            <item id="8408"/>
+            <item id="8438"/>
+            <item id="8447"/>
+            <item id="8462"/>
+            <item id="8474"/>
+            <item id="8498"/>
+            <item id="8510"/>
+            <item id="8522"/>
+            <item id="8558"/>
+            <!--Crux-->
+            <item id="8397"/>
+            <item id="8409"/>
+            <item id="8439"/>
+            <item id="8448"/>
+            <item id="8463"/>
+            <item id="8475"/>
+            <item id="8499"/>
+            <item id="8511"/>
+            <item id="8523"/>
+            <item id="8559"/>
+        </tab>
+    </tradelist>
+    <tradelist full_id="6301173">
+        <tab tradelist_tab_name="WEAPON_CRYSTAL">
+            <!-- Hexage -->
+            <item id="8202"/>
+            <item id="8214"/>
+            <item id="8244"/>
+            <item id="8256"/>
+            <item id="8268"/>
+            <item id="8280"/>
+            <item id="8292"/>
+            <item id="8316"/>
+            <item id="8334"/>
+            <item id="8346"/>
+            <item id="8358"/>
+            <item id="8370"/>
+            <item id="8382"/>
+            <item id="8544"/>
+            <item id="8568"/>
+            <!--Pentant-->
+            <item id="8203"/>
+            <item id="8215"/>
+            <item id="8245"/>
+            <item id="8257"/>
+            <item id="8269"/>
+            <item id="8281"/>
+            <item id="8293"/>
+            <item id="8317"/>
+            <item id="8335"/>
+            <item id="8347"/>
+            <item id="8359"/>
+            <item id="8371"/>
+            <item id="8383"/>
+            <item id="8545"/>
+            <item id="8569"/>
+            <!--Concach-->
+            <item id="8204"/>
+            <item id="8216"/>
+            <item id="8246"/>
+            <item id="8258"/>
+            <item id="8270"/>
+            <item id="8282"/>
+            <item id="8294"/>
+            <item id="8336"/>
+            <item id="8348"/>
+            <item id="8360"/>
+            <item id="8372"/>
+            <item id="8384"/>
+            <item id="8546"/>
+            <item id="8570"/>
+            <item id="8546"/>
+            <!--Crux-->
+            <item id="8205"/>
+            <item id="8217"/>
+            <item id="8247"/>
+            <item id="8259"/>
+            <item id="8271"/>
+            <item id="8283"/>
+            <item id="8295"/>
+            <item id="8337"/>
+            <item id="8349"/>
+            <item id="8361"/>
+            <item id="8373"/>
+            <item id="8385"/>
+            <item id="8547"/>
+            <item id="8571"/>
+            <item id="8547"/>
+        </tab>
+        <tab tradelist_tab_name="ARMOR_CRYSTAL">
+            <!--Hexage-->
+            <item id="8394"/>
+            <item id="8406"/>
+            <item id="8436"/>
+            <item id="8448"/>
+            <item id="8460"/>
+            <item id="8472"/>
+            <item id="8496"/>
+            <item id="8508"/>
+            <item id="8520"/>
+            <item id="8556"/>
+            <!--Pentant-->
+            <item id="8395"/>
+            <item id="8407"/>
+            <item id="8437"/>
+            <item id="8449"/>
+            <item id="8461"/>
+            <item id="8473"/>
+            <item id="8497"/>
+            <item id="8509"/>
+            <item id="8521"/>
+            <item id="8557"/>
+            <!--Concach-->
+            <item id="8396"/>
+            <item id="8408"/>
+            <item id="8438"/>
+            <item id="8447"/>
+            <item id="8462"/>
+            <item id="8474"/>
+            <item id="8498"/>
+            <item id="8510"/>
+            <item id="8522"/>
+            <item id="8558"/>
+            <!--Crux-->
+            <item id="8397"/>
+            <item id="8409"/>
+            <item id="8439"/>
+            <item id="8448"/>
+            <item id="8463"/>
+            <item id="8475"/>
+            <item id="8499"/>
+            <item id="8511"/>
+            <item id="8523"/>
+            <item id="8559"/>
+        </tab>
+    </tradelist>
+</tradelists>

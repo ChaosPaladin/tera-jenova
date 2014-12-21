@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tradelists xmlns="http://angelis.com/tradelists" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/tradelists ../schema/tradelists.xsd ">
+    <tradelist full_id="123030003">
+        <tab tradelist_tab_name="TEST">
+            <item id="139093"/>
+            <item id="91120"/>
+            <item id="91121"/>
+            <item id="15"/>
+            <item id="98"/>
+            <item id="99"/>
+            <item id="91"/>
+            <item id="92"/>
+            <item id="93"/>
+        </tab>
+        <tab tradelist_tab_name="TEST2">
+            <item id="125"/>
+            <item id="126"/>
+            <item id="128"/>
+            <item id="7154"/>
+            <item id="7155"/>
+            <item id="6283"/>
+            <item id="6284"/>
+            <item id="6285"/>
+            <item id="6286"/>
+            <item id="6287"/>
+            <item id="6288"/>
+            <item id="6289"/>
+            <item id="6290"/>
+            <item id="6291"/>
+            <item id="6292"/>
+        </tab>
+    </tradelist>
+</tradelists>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<creature_drops xmlns="http://angelis.com/creature_drops" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/creature_drops ../schema/creature_drops.xsd ">
+    <import file="creatures/drops" skipRoot="true" />
+</creature_drops>

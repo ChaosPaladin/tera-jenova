@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gather_templates xmlns="http://angelis.com/gather_templates" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/gather_templates ../../../schema/gather_templates.xsd">
+    <!-- jenova-project-tera GatherTempCreator, Created By TheNak -->
+    <!-- Quest -->
+    <gather_template id="492" gather_type="QUEST" min_level="1" max_level="110" gather_cost_point="0" />
+    <!-- ESSENCE -->
+    <gather_template id="301" gather_type="ESSENCE" min_level="1" max_level="110" gather_cost_point="1" />
+    <!--Plant -->
+    <gather_template id="1" gather_type="PLANT" min_level="1" max_level="110" gather_cost_point="1" />
+    <!-- MINE -->
+    <gather_template id="101" gather_type="MINE" min_level="1" max_level="110" gather_cost_point="1" />
+</gather_templates>

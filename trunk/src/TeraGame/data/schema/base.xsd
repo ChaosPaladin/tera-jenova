@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://angelis.com/base"
+    xmlns:base="http://angelis.com/base" elementFormDefault="qualified"
+>
+    <simpleType name="ClassType">
+        <restriction base="string">
+            <enumeration value="WARRIOR" />
+            <enumeration value="LANCER" />
+            <enumeration value="SLAYER" />
+            <enumeration value="BERSERKER" />
+            <enumeration value="SORCERER" />
+            <enumeration value="ARCHER" />
+            <enumeration value="PRIEST" />
+            <enumeration value="MYSTIC" />
+            <enumeration value="REAPER" />
+        </restriction>
+    </simpleType>
+    <simpleType name="RaceType">
+        <restriction base="string">
+            <enumeration value="HUMAN" />
+            <enumeration value="HIGH_ELF" />
+            <enumeration value="AMAN" />
+            <enumeration value="CASTANIC" />
+            <enumeration value="POPORI" />
+            <enumeration value="ELIN" />
+            <enumeration value="BARAKA" />
+        </restriction>
+    </simpleType>
+    <simpleType name="InventorySlotType">
+        <restriction base="string">
+            <enumeration value="WEAPON" />
+            <enumeration value="ARMOR" />
+            <enumeration value="GLOVES" />
+            <enumeration value="FOOT" />
+            <enumeration value="EARING_LEFT" />
+            <enumeration value="EARING_RIGHT" />
+            <enumeration value="RING_LEFT" />
+            <enumeration value="RING_RIGHT" />
+            <enumeration value="NECK" />
+            <enumeration value="UNDERWEAR" />
+            <enumeration value="HAIR" />
+            <enumeration value="FACE" />
+            <enumeration value="HAIR_DECORATION" />
+            <enumeration value="MASK" />
+            <enumeration value="WEAPON_APPREANCE" />
+            <enumeration value="ARMOR_APPREANCE" />
+            <enumeration value="BACK" />
+        </restriction>
+    </simpleType>
+    <simpleType name="ArmorMatterType">
+        <restriction base="string">
+            <enumeration value="MAIL" />
+            <enumeration value="LEATHER" />
+            <enumeration value="CLOTH" />
+        </restriction>
+    </simpleType>
+    <simpleType name="WeaponType">
+        <restriction base="string">
+            <enumeration value="BOW" />
+            <enumeration value="LANCER" />
+            <enumeration value="TWIN_SWORD" />
+            <enumeration value="GREATSWORD" />
+            <enumeration value="DISC" />
+            <enumeration value="AXE" />
+            <enumeration value="SCEPTER" />
+            <enumeration value="STAFF" />
+            <enumeration value="WHIP" />
+        </restriction>
+    </simpleType>
+    <simpleType name="GatherType">
+        <restriction base="string">
+            <enumeration value="MINE"/>
+            <enumeration value="PLANT"/>
+            <enumeration value="ESSENCE"/>
+            <enumeration value="BUG"/>
+            <enumeration value="QUEST"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="DropChanceType">
+        <restriction base="string">
+            <enumeration value="HIGH"/>
+            <enumeration value="MEDIUM"/>
+            <enumeration value="LOW"/>
+            <enumeration value="VERY_LOW"/>
+            <enumeration value="RARE"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="CreatureTemplateRankType">
+        <restriction base="string">
+            <enumeration value="NPC"/>
+            <enumeration value="MONSTER"/>
+            <enumeration value="OBJECT"/>
+            <enumeration value="BAM"/>
+            <enumeration value="BOSS"/>
+            <enumeration value="NAMED"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="CreatureTitleType">
+        <restriction base="string">
+            <enumeration value="FLIGHT_MASTER" />
+            <enumeration value="BANK" />
+            <enumeration value="MERCHANT" />
+            <enumeration value="SKILL_MERCHANT" />
+            <enumeration value="SPECIALITY_MERCHANT" />
+            <enumeration value="CRYSTAL_MERCHANT" />
+            <enumeration value="PAINT_MERCHANT" />
+            <enumeration value="BROKER" />
+            <enumeration value="CITY_TELEPORTER" />
+            <enumeration value="GUILD_MANAGER" />
+            <enumeration value="GUILD_EMBLEM" />
+            <enumeration value="MISSION_BOARD" />
+            <enumeration value="INVENTORY_MANAGER" />
+            <enumeration value="PVP_MERCHANT" />
+            <enumeration value="FORGE" />
+            <enumeration value="SEWING_TABLE" />
+            <enumeration value="ALEMBIC" />
+            <enumeration value="SHADOW_MERCHANT" />
+            <enumeration value="NOCTENIUM_MERCHANT" />
+        </restriction>
+    </simpleType>
+    <simpleType name="TradelistTabNameType">
+        <restriction base="string">
+            <enumeration value="TEST" />
+            <enumeration value="TEST2" />
+            <enumeration value="GLYPHE" />
+            <enumeration value="MELEE_WEAPON" />
+            <enumeration value="DISTANT_WEAPON" />
+            <enumeration value="PAINT_BOTTLE" />
+            <enumeration value="PAINT_NECESSITY" />
+            <enumeration value="BATTLE_FURNITURE" />
+            <enumeration value="ARCANIC_FURNITURE" />
+            <enumeration value="WEAPON_CRYSTAL" />
+            <enumeration value="ARMOR_CRYSTAL" />
+            <enumeration value="WEAPON" />
+            <enumeration value="METAL_ARMOR" />
+            <enumeration value="LEATHER_ARMOR" />
+            <enumeration value="CLOTH_ARMOR" />
+            <enumeration value="COSTUME" />
+            <enumeration value="EQUIPEMENT" />
+            <enumeration value="GENERAL_GOODS" />
+            <enumeration value="BATTLE" />
+            <enumeration value="EXTRACTION_LESSON" />
+            <enumeration value="SCROLL" />
+            <enumeration value="BLOODRAVESET" />
+            <enumeration value="STRIKEFORCEPLANS" />
+            <enumeration value="NIGHTFORGEDESIGN" />
+            <enumeration value="PROVISIONING" />
+            <enumeration value="EQUIPEMENT" />
+            <enumeration value="PLANS" />
+            <enumeration value="SACRIFICIELEQUIPEMENT" />
+        </restriction>
+    </simpleType>
+    
+    <complexType name="BaseStatsType">
+        <attribute name="level" type="integer"/>
+        <attribute name="base_hp" type="integer"/>
+        <attribute name="base_mp" type="integer"/>
+        <attribute name="stamina_hp" type="integer"/>
+        <attribute name="stamina_mp" type="integer"/>
+        <attribute name="attack" type="integer"/>
+        <attribute name="defense" type="integer"/>
+        <attribute name="impact" type="integer"/>
+        <attribute name="balance" type="integer"/>
+        <attribute name="crit_rate" type="integer"/>
+        <attribute name="crit_resistance" type="integer"/>
+        <attribute name="crit_power" type="integer"/>
+        <attribute name="power" type="integer"/>
+        <attribute name="endurance" type="integer"/>
+        <attribute name="impact_factor" type="integer"/>
+        <attribute name="balance_factor" type="integer"/>
+        <attribute name="attack_speed" type="integer"/>
+        <attribute name="speed" type="integer"/>
+        <attribute name="weakening_resistance" type="integer"/>
+        <attribute name="periodic_resistance" type="integer"/>
+        <attribute name="stun_resistance" type="integer"/>
+        <attribute name="natural_mp_regen" type="integer"/>
+        <attribute name="natural_hp_regen" type="integer"/>
+        <attribute name="natural_mp_degen" type="integer"/>
+        <attribute name="combat_hp_regen" type="integer"/>
+        <attribute name="combat_mp_regen" type="integer"/>
+        <attribute name="determination" type="integer"/>
+        <attribute name="natural_determination_regen" type="integer"/>
+        <attribute name="combat_determination_regen" type="integer"/>
+    </complexType>
+    <complexType name="BaseSpawnType">
+        <attribute name="mapId" type="integer" />
+        <attribute name="x" type="float" />
+        <attribute name="y" type="float" />
+        <attribute name="z" type="float" />
+    </complexType>
+    <complexType name="DropType">
+        <attribute name="chance" type="base:DropChanceType" />
+        <attribute name="max_amount" type="integer" />
+        <attribute name="min_amount" type="integer" />
+        <attribute name="item_id" type="integer" />
+    </complexType>
+    <complexType name="SkillType">
+        <attribute name="id" type="integer" />
+        <attribute name="require_level" type="integer" />
+    </complexType>
+    <complexType name="ImportType">
+        <attribute name="file" type="string" use="required" />
+        <attribute name="skipRoot" type="boolean" use="optional" default="false" />
+        <attribute name="recursiveImport" type="boolean" use="optional" default="true" />
+    </complexType>
+</schema>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quests xmlns="http://angelis.com/quests" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/quests ../../../../schema/quests.xsd ">
+    <quest quest_id="6305" quest_type="STORY" start_npc_full_id="6301107" required_level="10" experience_reward="16500" money_reward="50">
+        <step type="TALK">
+            <step_value object_id="6301101"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="6301102"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="6301102"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="6301137"/>
+        </step>
+    </quest>
+    <quest quest_id="201" quest_type="STORY" required_level="11" experience_reward="7000" money_reward="70">
+        <required_quest quest_id="6305"/>
+        <step type="TALK">
+            <step_value object_id="6301137"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="6301107"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="6301009"/>
+        </step>
+        <step type="TALK">
+            <step_value object_id="6001014"/>
+        </step>
+    </quest>            
+</quests>

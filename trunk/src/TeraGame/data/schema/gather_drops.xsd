@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://angelis.com/gather_drops" xmlns:xsd="http://angelis.com/gather_drops" xmlns:base="http://angelis.com/base" elementFormDefault="qualified">
+    <!-- IMPORTS -->
+    <import schemaLocation="base.xsd" namespace="http://angelis.com/base" />
+    <!-- TYPES -->
+    <complexType name="GatherDropType">
+        <sequence>
+            <element name="drop" type="base:DropType" maxOccurs="unbounded" />
+        </sequence>
+        <attribute name="gather_id" type="integer" />
+        <attribute name="name" type="string" />
+    </complexType>
+    <complexType name="GatherDropsType">
+        <sequence>
+            <element name="import" type="base:ImportType" minOccurs="0" maxOccurs="unbounded" />
+            <element name="gather_drop" type="xsd:GatherDropType" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+    </complexType>
+    <!-- CONTENT -->
+    <element name="gather_drops" type="xsd:GatherDropsType" />
+</schema>
