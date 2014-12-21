@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creature_spawns xmlns="http://angelis.com/creature_spawns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/creature_spawns ../../../../schema/creature_spawns.xsd ">
-	<creature_spawn creature_type="123" full_id="12307005" id="7005" model_id="10485860">
+    <creature_spawn creature_type="123" full_id="12307005" id="7005" model_id="10485860">
         <spawn heading="-16384" mapId="9123" x="-102487.336" y="-83831.67" z="4546.0"/>
         <spawn heading="0" mapId="9123" x="-102104.016" y="-84328.47" z="4541.0"/>
         <spawn heading="0" mapId="9123" x="-101946.71" y="-83694.445" z="4543.0"/>

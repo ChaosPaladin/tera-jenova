@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<creature_spawns xmlns="http://angelis.com/creature_spawns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/creature_spawns ../schema/creature_spawns.xsd ">	
-	<creature_spawn creature_type="87" full_id="8701000" id="1000" model_id="7077935">
+<creature_spawns xmlns="http://angelis.com/creature_spawns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/creature_spawns ../schema/creature_spawns.xsd ">    
+    <creature_spawn creature_type="87" full_id="8701000" id="1000" model_id="7077935">
         <spawn heading="-4188" mapId="7087" x="-48663.15" y="-51170.383" z="635.0"/>
     </creature_spawn>
-	<creature_spawn creature_type="87" full_id="8701001" id="1001" model_id="851981">
+    <creature_spawn creature_type="87" full_id="8701001" id="1001" model_id="851981">
         <spawn heading="-20389" mapId="7087" x="-48339.95" y="-49866.848" z="864.0"/>
     </creature_spawn>
-	<creature_spawn creature_type="87" full_id="8703000" id="3000" model_id="7077935">
+    <creature_spawn creature_type="87" full_id="8703000" id="3000" model_id="7077935">
         <spawn heading="4740" mapId="7087" x="-49319.543" y="-50497.74" z="834.0"/>
         <spawn heading="-7308" mapId="7087" x="-48342.26" y="-50573.176" z="802.0"/>
         <spawn heading="-15212" mapId="7087" x="-48168.656" y="-50838.957" z="729.0"/>

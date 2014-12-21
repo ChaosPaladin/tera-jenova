@@ -21,7 +21,6 @@ public class CM_CHARACTER_DELETE extends TeraClientPacket {
 
     @Override
     protected void runImpl() {
-        PlayerService.getInstance().deletePlayer(playerId);
+        PlayerService.getInstance().deletePlayer(this.getConnection().getAccount().getPlayerById(this.playerId));
     }
-
 }

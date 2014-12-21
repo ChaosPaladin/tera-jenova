@@ -49,4 +49,8 @@ public abstract class DateUtils {
     public static final int getSecondsBetweenDates(final Date startDate, final Date endDate) {
         return (int) Math.abs((startDate.getTime() - endDate.getTime())/1000);
     }
+    
+    public static int getCurrentTimestamp() {
+        return (int) (new Date().getTime()/1000);
+    }
 }

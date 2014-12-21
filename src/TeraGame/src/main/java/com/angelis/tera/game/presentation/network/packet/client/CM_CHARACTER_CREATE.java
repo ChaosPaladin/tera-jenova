@@ -14,7 +14,7 @@ import com.angelis.tera.game.process.services.PlayerService;
 public class CM_CHARACTER_CREATE extends TeraClientPacket {
 
     private final Player player = new Player();
-    
+
     public CM_CHARACTER_CREATE(final ByteBuffer byteBuffer, final TeraGameConnection connection) {
         super(byteBuffer, connection);
     }
@@ -22,21 +22,22 @@ public class CM_CHARACTER_CREATE extends TeraClientPacket {
     @Override
     protected void readImpl() {
         final PlayerAppearance playerAppearance = new PlayerAppearance();
-        
+
         readH(); // nameShift
-        
+
         readH(); // detailsShift1
         final short detailsLength1 = readH();
-        
+
         readH(); // detailsShift2
         final short detailsLength2 = readH();
 
         player.setGender(GenderEnum.fromValue(readD()));
         player.setRace(RaceEnum.fromValue(readD()));
         player.setPlayerClass(PlayerClassEnum.fromValue(readD()));
-        
+
         playerAppearance.setData(readB(8));
 
+        readC();
         readD();
         readC();
 
@@ -44,7 +45,7 @@ public class CM_CHARACTER_CREATE extends TeraClientPacket {
 
         playerAppearance.setDetails1(readB(detailsLength1));
         playerAppearance.setDetails2(readB(detailsLength2));
-        
+
         player.setPlayerAppearance(playerAppearance);
     }
 

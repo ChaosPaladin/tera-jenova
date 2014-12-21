@@ -31,6 +31,7 @@ public class SM_CHARACTER_LIST extends TeraServerPacket {
         
         for (int i = 0 ; i < this.account.getPlayers().size() ; i++) {
             final Player player = this.account.getPlayers().get(i);
+            final boolean isScheduleDelete = player.getDeletionTime() != null;
             
             final short shift = (short) byteBuffer.position();
             writeH(byteBuffer, shift);
@@ -55,16 +56,14 @@ public class SM_CHARACTER_LIST extends TeraServerPacket {
             writeB(byteBuffer, player.getCurrentZoneData()); // player zone data
             writeD(byteBuffer, player.getLastOnlineTime() != null ? (int) (player.getLastOnlineTime().getTime()/1000) : 0);
             writeD(byteBuffer, 0);
-            writeB(byteBuffer, "008F5F01000000000018D7D4AC");
-            final boolean isScheduleDelete = player.getDeletionTime() != null;
             writeC(byteBuffer, isScheduleDelete);
-            writeB(byteBuffer, "BBC6965400000000");
+            writeQ(byteBuffer, DateUtils.getCurrentTimestamp());
             if (isScheduleDelete) {
                 writeD(byteBuffer, DateUtils.getSecondsFromNow(player.getDeletionTime()));
             } else {
                 writeB(byteBuffer, "EEFFFFFF");
             }
-            
+
             final Storage storage = player.getStorage(StorageTypeEnum.INVENTORY);
             writeD(byteBuffer, storage.getStorageItemByInventorySlot(InventorySlotEnum.WEAPON) != null ? storage.getStorageItemByInventorySlot(InventorySlotEnum.WEAPON).getItem().getId() : 0);
             writeD(byteBuffer, storage.getStorageItemByInventorySlot(InventorySlotEnum.EARING_LEFT) != null ? storage.getStorageItemByInventorySlot(InventorySlotEnum.EARING_LEFT).getItem().getId() : 0);
@@ -81,9 +80,9 @@ public class SM_CHARACTER_LIST extends TeraServerPacket {
             
             writeB(byteBuffer, player.getPlayerAppearance().getData());
             writeC(byteBuffer, 0); //Offline?
-            writeB(byteBuffer, "00000000000000000000000000D8CDD8AC"); // unk
+            writeB(byteBuffer, "00000000000000000000000000793969AB"); // unk
             
-            writeB(byteBuffer, new byte[48]); // unk
+            writeB(byteBuffer, new byte[60]); // unk
             
             //Item Color?
             /*WriteD(writer, player.Inventory.GetItem(1) != null ? player.Inventory.GetItem(1).Color : 0);
@@ -117,9 +116,11 @@ public class SM_CHARACTER_LIST extends TeraServerPacket {
             writeD(byteBuffer, 0); // unk new
             
             writeD(byteBuffer, 0); //Rested (current)
-            writeD(byteBuffer, 0); //Rested (max)
+            writeD(byteBuffer, 1); //Rested (max)
             
-            writeB(byteBuffer, "0100000000000100000000");
+            writeB(byteBuffer, "01010000000001");
+            writeB(byteBuffer, "6400"); // maybe size
+            writeB(byteBuffer, "0000");
 
             this.writeBufferPosition(byteBuffer, shift+8);
             writeS(byteBuffer, player.getName());

@@ -81,7 +81,9 @@ public class AccountMapper extends BaseAccountMapper<AccountEntity, Account> {
             final PlayerMapper playerMapper = MapperManager.getDatabaseMapper(PlayerMapper.class);
             final List<Player> players = new FastList<>();
             for (final PlayerEntity playerEntity : entity.getPlayers()) {
-                players.add(playerMapper.map(playerEntity, dependenciesToExclude));
+                final Player player = playerMapper.map(playerEntity, dependenciesToExclude);
+                player.setAccount(model);
+                players.add(player);
             }
             model.setPlayers(players);
         }

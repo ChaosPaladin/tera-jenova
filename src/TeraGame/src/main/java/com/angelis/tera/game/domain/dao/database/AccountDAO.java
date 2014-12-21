@@ -17,9 +17,9 @@ public class AccountDAO extends AbstractDatabaseDAO<AccountEntity> {
     public AccountEntity findByLogin(final String login) {
         AccountEntity account = null;
         
-        final Transaction transaction = session.beginTransaction();
+        final Transaction transaction = this.getTransaction();
         
-        final Query query = session.createQuery("from AccountEntity where login = :login");
+        final Query query = this.createQuery("from AccountEntity where login = :login");
         query.setString("login", login);
         
         account = (AccountEntity) query.uniqueResult();
