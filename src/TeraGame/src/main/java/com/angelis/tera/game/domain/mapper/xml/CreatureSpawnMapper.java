@@ -1,8 +1,8 @@
 package com.angelis.tera.game.domain.mapper.xml;
 
 import com.angelis.tera.common.domain.mapper.xml.AbstractXMLMapper;
+import com.angelis.tera.game.domain.entity.xml.creatures.spawn.CreatureSpawnsEntity;
 import com.angelis.tera.game.process.model.creature.Creature;
-import com.angelis.tera.game.xml.entity.creatures.spawn.CreatureSpawnsEntity;
 
 public class CreatureSpawnMapper extends AbstractXMLMapper<CreatureSpawnsEntity, Creature> {
 

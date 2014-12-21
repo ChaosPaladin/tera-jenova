@@ -6,7 +6,7 @@ import org.hibernate.Transaction;
 
 import com.angelis.tera.common.domain.dao.database.AbstractDatabaseDAO;
 import com.angelis.tera.game.domain.entity.database.ZoneEntity;
-import com.angelis.tera.game.services.DatabaseService;
+import com.angelis.tera.game.process.services.DatabaseService;
 
 public class ZoneDAO extends AbstractDatabaseDAO<ZoneEntity> {
 

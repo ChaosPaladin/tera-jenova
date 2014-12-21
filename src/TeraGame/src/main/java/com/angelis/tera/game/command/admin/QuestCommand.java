@@ -1,14 +1,14 @@
 package com.angelis.tera.game.command.admin;
 
 import com.angelis.tera.game.command.AdminErrorMessageEnum;
-import com.angelis.tera.game.network.connection.TeraGameConnection;
+import com.angelis.tera.game.presentation.network.connection.TeraGameConnection;
 import com.angelis.tera.game.process.model.account.Account;
 import com.angelis.tera.game.process.model.creature.Npc;
 import com.angelis.tera.game.process.model.player.Player;
 import com.angelis.tera.game.process.model.quest.Quest;
-import com.angelis.tera.game.services.QuestService;
-import com.angelis.tera.game.services.SpawnService;
-import com.angelis.tera.game.services.WorldService;
+import com.angelis.tera.game.process.services.QuestService;
+import com.angelis.tera.game.process.services.SpawnService;
+import com.angelis.tera.game.process.services.WorldService;
 
 
 public class QuestCommand extends AbstractAdminCommand {

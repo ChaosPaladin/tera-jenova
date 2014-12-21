@@ -1,11 +1,11 @@
 package com.angelis.tera.game.command.admin;
 
 import com.angelis.tera.game.command.AdminErrorMessageEnum;
-import com.angelis.tera.game.network.connection.TeraGameConnection;
-import com.angelis.tera.game.network.packet.server.SM_QUIT_TO_CHARACTER_LIST;
+import com.angelis.tera.game.presentation.network.connection.TeraGameConnection;
+import com.angelis.tera.game.presentation.network.packet.server.SM_QUIT_TO_CHARACTER_LIST;
 import com.angelis.tera.game.process.model.account.Account;
 import com.angelis.tera.game.process.model.player.Player;
-import com.angelis.tera.game.services.WorldService;
+import com.angelis.tera.game.process.services.WorldService;
 
 public class KickCommand extends AbstractAdminCommand {
 

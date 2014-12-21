@@ -4,7 +4,7 @@ import org.hibernate.Session;
 
 import com.angelis.tera.common.domain.dao.database.AbstractDatabaseDAO;
 import com.angelis.tera.login.domain.entity.database.ServerEntity;
-import com.angelis.tera.login.services.DatabaseService;
+import com.angelis.tera.login.process.services.DatabaseService;
 
 public class ServerDAO extends AbstractDatabaseDAO<ServerEntity> {
 

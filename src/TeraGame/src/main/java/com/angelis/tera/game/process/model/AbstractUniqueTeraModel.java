@@ -1,7 +1,7 @@
 package com.angelis.tera.game.process.model;
 
 import com.angelis.tera.common.process.model.HasUid;
-import com.angelis.tera.game.services.ObjectIDService;
+import com.angelis.tera.game.process.services.ObjectIDService;
 
 public class AbstractUniqueTeraModel extends AbstractTeraModel implements HasUid {
 

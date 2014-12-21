@@ -1,8 +1,8 @@
 package com.angelis.tera.game.domain.mapper.xml;
 
 import com.angelis.tera.common.domain.mapper.xml.AbstractXMLMapper;
+import com.angelis.tera.game.domain.entity.xml.BaseStatsEntity;
 import com.angelis.tera.game.process.model.creature.BaseStats;
-import com.angelis.tera.game.xml.entity.BaseStatsEntity;
 
 public class BaseStatsMapper extends AbstractXMLMapper<BaseStatsEntity, BaseStats> {
 

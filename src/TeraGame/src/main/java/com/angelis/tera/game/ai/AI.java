@@ -15,7 +15,7 @@ import com.angelis.tera.game.ai.events.IEventHandler;
 import com.angelis.tera.game.ai.state.IStateHandler;
 import com.angelis.tera.game.ai.state.enums.AIStateEnum;
 import com.angelis.tera.game.process.model.visible.VisibleTeraObject;
-import com.angelis.tera.game.services.ThreadPoolService;
+import com.angelis.tera.game.process.services.ThreadPoolService;
 
 public abstract class AI<O extends VisibleTeraObject> implements Runnable {
 

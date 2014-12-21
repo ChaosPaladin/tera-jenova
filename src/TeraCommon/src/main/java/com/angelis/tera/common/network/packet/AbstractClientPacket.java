@@ -10,7 +10,7 @@ import com.angelis.tera.common.utils.PrintUtils;
 public abstract class AbstractClientPacket<C extends AbstractTeraConnection> extends AbstractPacket implements Runnable {
 
     /** LOGGER */
-    private static Logger log = Logger.getLogger(AbstractClientPacket.class.getName());
+    protected static Logger log = Logger.getLogger(AbstractClientPacket.class.getName());
 
     private final ByteBuffer byteBuffer;
     private final C connection;

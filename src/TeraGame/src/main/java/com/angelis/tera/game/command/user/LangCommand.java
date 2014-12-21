@@ -4,7 +4,7 @@ import java.util.EnumSet;
 
 import org.apache.commons.lang3.LocaleUtils;
 
-import com.angelis.tera.game.network.connection.TeraGameConnection;
+import com.angelis.tera.game.presentation.network.connection.TeraGameConnection;
 import com.angelis.tera.game.process.model.account.enums.AccountTypeEnum;
 
 public class LangCommand extends AbstractUserCommand {

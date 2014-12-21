@@ -1,9 +1,9 @@
 package com.angelis.tera.game.command;
 
-import com.angelis.tera.game.network.connection.TeraGameConnection;
-import com.angelis.tera.game.network.packet.server.SM_CHAT;
+import com.angelis.tera.game.presentation.network.connection.TeraGameConnection;
+import com.angelis.tera.game.presentation.network.packet.server.SM_CHAT;
 import com.angelis.tera.game.process.model.channel.enums.ChatTypeEnum;
-import com.angelis.tera.game.services.I18nService;
+import com.angelis.tera.game.process.services.I18nService;
 
 public abstract class AbstractCommand {
     

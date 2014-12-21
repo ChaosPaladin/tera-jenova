@@ -18,8 +18,8 @@ import com.angelis.tera.game.process.model.gameobject.GameObject;
 import com.angelis.tera.game.process.model.gather.Gather;
 import com.angelis.tera.game.process.model.player.Player;
 import com.angelis.tera.game.process.model.visible.enums.VisibleTypeEnum;
-import com.angelis.tera.game.services.SpawnService;
-import com.angelis.tera.game.services.WorldService;
+import com.angelis.tera.game.process.services.SpawnService;
+import com.angelis.tera.game.process.services.WorldService;
 
 public final class KnownList {
 

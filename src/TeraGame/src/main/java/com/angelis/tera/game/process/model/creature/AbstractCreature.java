@@ -4,11 +4,11 @@ import java.util.Set;
 
 import javolution.util.FastSet;
 
-import com.angelis.tera.game.controllers.Controller;
+import com.angelis.tera.game.process.controllers.Controller;
 import com.angelis.tera.game.process.model.abnormality.Abnormality;
 import com.angelis.tera.game.process.model.template.Template;
 import com.angelis.tera.game.process.model.visible.VisibleTeraObject;
-import com.angelis.tera.game.services.BaseStatService;
+import com.angelis.tera.game.process.services.BaseStatService;
 
 
 public abstract class AbstractCreature extends VisibleTeraObject {

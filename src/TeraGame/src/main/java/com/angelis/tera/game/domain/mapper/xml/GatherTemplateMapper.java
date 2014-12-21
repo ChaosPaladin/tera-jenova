@@ -1,8 +1,8 @@
 package com.angelis.tera.game.domain.mapper.xml;
 
 import com.angelis.tera.common.domain.mapper.xml.AbstractXMLMapper;
+import com.angelis.tera.game.domain.entity.xml.gathers.GatherTemplateEntity;
 import com.angelis.tera.game.process.model.template.GatherTemplate;
-import com.angelis.tera.game.xml.entity.gathers.GatherTemplateEntity;
 
 public class GatherTemplateMapper extends AbstractXMLMapper<GatherTemplateEntity, GatherTemplate> {
 

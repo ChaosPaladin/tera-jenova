@@ -1,7 +1,7 @@
 package com.angelis.tera.game.process.model.gather;
 
 import com.angelis.tera.common.utils.Rnd;
-import com.angelis.tera.game.controllers.GatherController;
+import com.angelis.tera.game.process.controllers.GatherController;
 import com.angelis.tera.game.process.model.player.Player;
 import com.angelis.tera.game.process.model.template.GatherTemplate;
 import com.angelis.tera.game.process.model.visible.VisibleTeraObject;
