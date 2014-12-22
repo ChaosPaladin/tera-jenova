@@ -35,7 +35,7 @@ import com.angelis.tera.game.domain.entity.xml.creatures.template.CreatureTempla
 import com.angelis.tera.game.domain.entity.xml.gathers.GatherDropEntityHolder;
 import com.angelis.tera.game.domain.entity.xml.gathers.GatherSpawnEntityHolder;
 import com.angelis.tera.game.domain.entity.xml.gathers.GatherTemplateEntityHolder;
-import com.angelis.tera.game.domain.entity.xml.items.ItemTemplateEntityHolder;
+import com.angelis.tera.game.domain.entity.xml.items.ItemEntityHolder;
 import com.angelis.tera.game.domain.entity.xml.mounts.MountEntityHolder;
 import com.angelis.tera.game.domain.entity.xml.pegasus.PegasusFliesEntityHolder;
 import com.angelis.tera.game.domain.entity.xml.players.PlayerBaseStatsEntityHolder;
@@ -103,8 +103,7 @@ public class XMLService extends AbstractService {
         this.checkBinFile(GatherTemplateEntityHolder.class, "gather_templates");
         this.checkBinFile(GatherDropEntityHolder.class, "gather_drops");
         
-        this.checkBinFile(ItemTemplateEntityHolder.class, "item_templates");
-        
+        this.checkBinFile(ItemEntityHolder.class, "items");
         this.checkBinFile(ZoneEntityHolder.class, "zones");
 
         log.info("XMLService started");

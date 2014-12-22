@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://angelis.com/item_templates" xmlns:xsd="http://angelis.com/item_templates" xmlns:base="http://angelis.com/base" elementFormDefault="qualified">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://angelis.com/items" xmlns:xsd="http://angelis.com/items" xmlns:base="http://angelis.com/base" elementFormDefault="qualified">
     <!-- IMPORTS -->
     <import schemaLocation="base.xsd" namespace="http://angelis.com/base" />
     <!-- TYPES -->
@@ -28,7 +28,7 @@
         <attribute name="duration" type="integer" use="optional" />
         <attribute name="amount" type="integer" use="optional" />
     </complexType>
-    <complexType name="ItemTemplateType">
+    <complexType name="ItemType">
         <sequence>
             <element name="item_action" type="xsd:ItemActionType" />
         </sequence>
@@ -37,11 +37,11 @@
         <attribute name="armor_matter_type" type="base:ArmorMatterType" />
         <attribute name="weapon_type" type="base:WeaponType" />
     </complexType>
-    <complexType name="ItemTemplatesType">
+    <complexType name="ItemsType">
         <sequence>
-            <element name="item_template" type="xsd:ItemTemplateType" minOccurs="0" maxOccurs="unbounded" />
+            <element name="item" type="xsd:ItemType" minOccurs="0" maxOccurs="unbounded" />
         </sequence>
     </complexType>
     <!-- CONTENT -->
-    <element name="item_templates" type="xsd:ItemTemplatesType" />
+    <element name="items" type="xsd:ItemsType" />
 </schema>

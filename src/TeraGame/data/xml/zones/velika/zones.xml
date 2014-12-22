@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zones xmlns="http://angelis.com/zones" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/zones ../../../schema/zones.xsd ">
-    <zone datas="010000000200000007000000"/>
-    <zone datas="010000000200000006000000"/>
+    <zone datas="010000000100000001000000"/>
 </zones>

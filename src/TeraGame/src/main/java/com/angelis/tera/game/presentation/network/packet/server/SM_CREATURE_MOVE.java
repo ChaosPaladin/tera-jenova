@@ -5,6 +5,7 @@ import java.nio.ByteBuffer;
 import com.angelis.tera.game.presentation.network.connection.TeraGameConnection;
 import com.angelis.tera.game.presentation.network.packet.TeraServerPacket;
 import com.angelis.tera.game.process.model.creature.Creature;
+import com.angelis.tera.game.process.model.creature.CurrentStats;
 import com.angelis.tera.game.process.model.visible.WorldPosition;
 
 
@@ -24,6 +25,7 @@ public class SM_CREATURE_MOVE extends TeraServerPacket {
     @Override
     protected void writeImpl(final TeraGameConnection connection, final ByteBuffer byteBuffer) {
         final WorldPosition worldPosition = this.teraCreature.getWorldPosition();
+        final CurrentStats currentStats = this.teraCreature.getCurrentStats();
         
         writeUid(byteBuffer, this.teraCreature);
         writeF(byteBuffer, worldPosition.getX());
@@ -31,7 +33,7 @@ public class SM_CREATURE_MOVE extends TeraServerPacket {
         writeF(byteBuffer, worldPosition.getZ());
         
         writeH(byteBuffer, worldPosition.getHeading());
-        writeH(byteBuffer, this.teraCreature.getCurrentStats().getSpeed());
+        writeH(byteBuffer, currentStats.getSpeed());
         
         writeF(byteBuffer, x);
         writeF(byteBuffer, y);

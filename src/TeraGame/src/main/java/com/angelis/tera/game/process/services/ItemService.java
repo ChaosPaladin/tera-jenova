@@ -8,10 +8,9 @@ import org.apache.log4j.Logger;
 
 import com.angelis.tera.common.domain.mapper.MapperManager;
 import com.angelis.tera.common.services.AbstractService;
-import com.angelis.tera.game.domain.entity.xml.items.ItemActionEntity;
-import com.angelis.tera.game.domain.entity.xml.items.ItemTemplateEntity;
-import com.angelis.tera.game.domain.entity.xml.items.ItemTemplateEntityHolder;
-import com.angelis.tera.game.domain.mapper.xml.ItemActionMapper;
+import com.angelis.tera.game.domain.entity.xml.items.ItemEntity;
+import com.angelis.tera.game.domain.entity.xml.items.ItemEntityHolder;
+import com.angelis.tera.game.domain.mapper.xml.ItemMapper;
 import com.angelis.tera.game.presentation.network.packet.server.SM_ITEM_INFO;
 import com.angelis.tera.game.process.model.campfire.CampFire;
 import com.angelis.tera.game.process.model.enums.StorageTypeEnum;
@@ -32,22 +31,19 @@ public class ItemService extends AbstractService {
 
     @Override
     public void onInit() {
-        final ItemActionMapper itemActionMapper = MapperManager.getXMLMapper(ItemActionMapper.class);
-        for (final ItemTemplateEntity itemTemplateEntity : XMLService.getInstance().getEntity(ItemTemplateEntityHolder.class).getItemTemplates()) {
-            final Item item = new Item(itemTemplateEntity.getItemId());
-            for (final ItemActionEntity itemActionEntity : itemTemplateEntity.getItemActions()) {
-                item.getItemActions().add(itemActionMapper.map(itemActionEntity));
-            }
-            this.items.put(itemTemplateEntity.getItemId(), item);
+        final ItemMapper itemMapper = MapperManager.getXMLMapper(ItemMapper.class);
+        for (final ItemEntity itemEntity : XMLService.getInstance().getEntity(ItemEntityHolder.class).getItems()) {
+            this.items.put(itemEntity.getItemId(), itemMapper.map(itemEntity));
         }
-        XMLService.getInstance().clearEntity(ItemTemplateEntityHolder.class);
+        XMLService.getInstance().clearEntity(ItemEntityHolder.class);
 
         log.info("ItemService started");
     }
 
     @Override
     public void onDestroy() {
-        log.info("ItemService started");
+        this.items.clear();
+        log.info("ItemService stopped");
     }
 
     public void showItemInfo(final Player player, final ViewModeEnum viewMode, final Item item, final String playerName) {
@@ -73,7 +69,7 @@ public class ItemService extends AbstractService {
 
         final Item item = this.items.get(itemId);
         if (item == null) {
-            log.error("No item_template for item_id "+itemId);
+            log.error("No item template found for item_id "+itemId);
             return;
         }
         

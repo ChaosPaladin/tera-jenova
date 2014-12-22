@@ -81,12 +81,12 @@ public class ClientPacketHandler {
         // PLAYER
         addPacket((short) 0x4E90, CM_PLAYER_MOVE.class); // OK
         addPacket((short) 0x6797, CM_PLAYER_ZONE_CHANGE.class); // OK
-        addPacket((short) 0xAF8D, CM_LOOKING_FOR_BATTLEGROUND_WINDOW_OPEN.class); // TODO
-        addPacket((short) 0x927E, CM_LOOKING_FOR_INSTANCE_WINDOW_OPEN.class); // TODO
+        addPacket((short) 0xC6D1, CM_LOOKING_FOR_BATTLEGROUND_WINDOW_OPEN.class); // OK
+        addPacket((short) 0xC590, CM_LOOKING_FOR_INSTANCE_WINDOW_OPEN.class); // OK
         addPacket((short) 0xE8A2, CM_PLAYER_REPORT.class); // TODO
         addPacket((short) 0x8DA7, CM_PLAYER_COMPARE_ACHIEVEMENTS.class);
         addPacket((short) 0xB532, CM_PLAYER_INSPECT.class); // TODO
-        addPacket((short) 0xA5E7, CM_PLAYER_SELECT_CREATURE.class);
+        addPacket((short) 0x9520, CM_PLAYER_SELECT_CREATURE.class); // OK
         addPacket((short) 0xE195, CM_PLAYER_DONJON_CLEAR_COUNT_LIST.class);
 
         // GATHER
@@ -104,8 +104,8 @@ public class ClientPacketHandler {
         addPacket((short) 0xB139, CM_ITEM_USE.class); // OK
         addPacket((short) 0xD1F6, CM_ITEM_SIMPLE_INFO.class);
         addPacket((short) 0x83A1, CM_INVENTORY_ORDER.class); // OK
-        addPacket((short) 0xB0FA, CM_PLAYER_UNEQUIP.class);
-        addPacket((short) 0xF8D3, CM_PLAYER_EQUIP.class);
+        addPacket((short) 0xBE5B, CM_ITEM_UNEQUIP.class); // OK
+        addPacket((short) 0xF8D3, CM_ITEM_EQUIP.class);
         addPacket((short) 0xF772, CM_PLAYER_EQUIPEMENT_ITEM_INFO.class); // OK
         addPacket((short) 0xACA1, CM_PLAYER_DUNGEON_COOLTIME_LIST.class);
         addPacket((short) 0xB106, CM_PLAYER_ITEM_TRASH.class);

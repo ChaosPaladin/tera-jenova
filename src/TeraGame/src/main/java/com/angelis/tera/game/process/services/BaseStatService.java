@@ -149,7 +149,7 @@ public class BaseStatService extends AbstractService {
         currentStats.setMp(creatureBaseStats.getBaseMp());
         currentStats.setSpeed(creatureBaseStats.getSpeed());
     }
-    
+
     /** SINGLETON */
     public static BaseStatService getInstance() {
         return SingletonHolder.instance;
