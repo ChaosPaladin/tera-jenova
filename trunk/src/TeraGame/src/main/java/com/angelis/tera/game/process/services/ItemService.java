@@ -6,10 +6,12 @@ import javolution.util.FastMap;
 
 import org.apache.log4j.Logger;
 
+import com.angelis.tera.common.domain.mapper.MapperManager;
 import com.angelis.tera.common.services.AbstractService;
 import com.angelis.tera.game.domain.entity.xml.items.ItemActionEntity;
 import com.angelis.tera.game.domain.entity.xml.items.ItemTemplateEntity;
 import com.angelis.tera.game.domain.entity.xml.items.ItemTemplateEntityHolder;
+import com.angelis.tera.game.domain.mapper.xml.ItemActionMapper;
 import com.angelis.tera.game.presentation.network.packet.server.SM_ITEM_INFO;
 import com.angelis.tera.game.process.model.campfire.CampFire;
 import com.angelis.tera.game.process.model.enums.StorageTypeEnum;
@@ -30,21 +32,11 @@ public class ItemService extends AbstractService {
 
     @Override
     public void onInit() {
+        final ItemActionMapper itemActionMapper = MapperManager.getXMLMapper(ItemActionMapper.class);
         for (final ItemTemplateEntity itemTemplateEntity : XMLService.getInstance().getEntity(ItemTemplateEntityHolder.class).getItemTemplates()) {
             final Item item = new Item(itemTemplateEntity.getItemId());
             for (final ItemActionEntity itemActionEntity : itemTemplateEntity.getItemActions()) {
-                final ItemAction itemAction = new ItemAction();
-                itemAction.setItemActionType(itemActionEntity.getItemActionType());
-                itemAction.setHpGain(itemActionEntity.getHpGain());
-                itemAction.setMpGain(itemActionEntity.getMpGain());
-                itemAction.setStaminaGain(itemActionEntity.getStaminaGain());
-                itemAction.setSpeedGain(itemActionEntity.getSpeedGain());
-                itemAction.setSkillId(itemActionEntity.getSkillId());
-                itemAction.setSkillLevel(itemActionEntity.getSkillLevel());
-                itemAction.setEffectId(itemActionEntity.getEffectId());
-                itemAction.setRate(itemActionEntity.getRate());
-                itemAction.setDuration(itemActionEntity.getDuration());
-                item.getItemActions().add(itemAction);
+                item.getItemActions().add(itemActionMapper.map(itemActionEntity));
             }
             this.items.put(itemTemplateEntity.getItemId(), item);
         }

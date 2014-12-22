@@ -15,6 +15,7 @@ public class Account extends BaseAccountModel {
     private TeraGameConnection connection;
     private List<Player> players;
     private Options options;
+    private int extraCharacterSlotCount;
 
     public Account(final Integer id) {
         super(id);
@@ -73,6 +74,18 @@ public class Account extends BaseAccountModel {
         this.options = option;
     }
     
+    public int getExtraCharacterSlotCount() {
+        return extraCharacterSlotCount;
+    }
+
+    public void setExtraCharacterSlotCount(final int extraCharacterSlotCount) {
+        this.extraCharacterSlotCount = extraCharacterSlotCount;
+    }
+    
+    public void addExtractCharacterSlot(final int amount) {
+        this.extraCharacterSlotCount += amount;
+    }
+
     public final boolean haveCharacterWithLevel(final int level) {
         for (final Player player : this.getPlayers()) {
             if (player.getLevel() >= level) {

@@ -1,0 +1,1 @@
+java -cp ./lib/*;TeraLauncher.jar com.angelis.tera.launcher.MainLauncher

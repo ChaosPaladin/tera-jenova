@@ -5,11 +5,12 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import com.angelis.tera.common.domain.entity.xml.AbstractXMLEntity;
 import com.angelis.tera.game.process.model.item.enums.ItemActionTypeEnum;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement(name = "item_action", namespace = "http://angelis.com/item_templates")
-public class ItemActionEntity {
+public class ItemActionEntity extends AbstractXMLEntity {
 
     @XmlAttribute(name = "action_type")
     private ItemActionTypeEnum itemActionType;
@@ -28,7 +29,7 @@ public class ItemActionEntity {
 
     @XmlAttribute(name = "skill_id")
     private int skillId;
-    
+
     @XmlAttribute(name = "skill_level")
     private int skillLevel;
 
@@ -40,6 +41,9 @@ public class ItemActionEntity {
 
     @XmlAttribute(name = "duration")
     private int duration;
+
+    @XmlAttribute(name = "amount")
+    private int amount;
 
     public ItemActionTypeEnum getItemActionType() {
         return itemActionType;
@@ -79,5 +83,9 @@ public class ItemActionEntity {
 
     public int getDuration() {
         return duration;
+    }
+
+    public int getAmount() {
+        return amount;
     }
 }

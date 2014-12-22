@@ -30,6 +30,7 @@ public class AccountMapper extends BaseAccountMapper<AccountEntity, Account> {
     public void map(final Account model, final AccountEntity entity) {
         // DIRECT
         super.map(model, entity);
+        entity.setExtraCharacterSlotCount(model.getExtraCharacterSlotCount());
         entity.setAccountType(model.getAccountType());
         
         // OPTION
@@ -64,6 +65,7 @@ public class AccountMapper extends BaseAccountMapper<AccountEntity, Account> {
     public void map(final AccountEntity entity, final Account model) {
         // DIRECT
         super.map(entity, model);
+        model.setExtraCharacterSlotCount(entity.getExtraCharacterSlotCount());
         model.setAccountType(entity.getAccountType());
         
         // OPTION
