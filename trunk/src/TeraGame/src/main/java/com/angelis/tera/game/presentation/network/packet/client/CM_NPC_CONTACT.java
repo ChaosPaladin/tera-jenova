@@ -9,6 +9,7 @@ import com.angelis.tera.game.process.services.DialogService;
 public class CM_NPC_CONTACT extends TeraClientPacket {
 
     private int npcId;
+
     public CM_NPC_CONTACT(final ByteBuffer byteBuffer, final TeraGameConnection connection) {
         super(byteBuffer, connection);
     }
