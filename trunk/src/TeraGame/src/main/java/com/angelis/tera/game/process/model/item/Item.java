@@ -16,6 +16,10 @@ public class Item extends AbstractUniqueTeraModel {
         super(id);
     }
 
+    public Item() {
+        super(null);
+    }
+
     public Set<ItemAction> getItemActions() {
         if (itemActions == null) {
             itemActions = new FastSet<>(0);
@@ -23,7 +27,7 @@ public class Item extends AbstractUniqueTeraModel {
         return itemActions;
     }
 
-    public void setActions(final Set<ItemAction> actions) {
-        this.itemActions = actions;
+    public void setItemActions(final Set<ItemAction> itemActions) {
+        this.itemActions = itemActions;
     }
 }

@@ -143,7 +143,7 @@ public class SkillService extends AbstractService {
 
     public void applyAbnormality(final AbstractCreature creature, final Abnormality abnormality) {
         VisibleService.getInstance().sendPacketForVisible(creature, new SM_ABNORMALITY_BEGIN(abnormality), false);
-        ThreadPoolService.getInstance().scheduleTask(new CreatureEndAbnormality(new Pair<AbstractCreature, Abnormality>(creature, abnormality)), 10, TimeUnit.SECONDS);
+        ThreadPoolService.getInstance().scheduleTask(new CreatureEndAbnormality(new Pair<AbstractCreature, Abnormality>(creature, abnormality)), 0, TimeUnit.SECONDS);
     }
 
     private void sendSkillCoolTime(final Player player, final int skillId, final int cooltime) {

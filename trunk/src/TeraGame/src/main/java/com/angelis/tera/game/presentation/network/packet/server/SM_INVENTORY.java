@@ -72,7 +72,6 @@ public class SM_INVENTORY extends TeraServerPacket {
             
             writeD(byteBuffer, 0); // enchantment bonus
             writeD(byteBuffer, 0);
-            
             writeD(byteBuffer, 0); // Binded?
             writeD(byteBuffer, 0);
             writeD(byteBuffer, 0);
@@ -90,7 +89,11 @@ public class SM_INVENTORY extends TeraServerPacket {
             writeD(byteBuffer, 0); // can be 0xFFFFFFFF
             writeD(byteBuffer, 0); // can be 0xFFFFFFFF
             
-            writeB(byteBuffer, new byte[39]); //unk
+            writeB(byteBuffer, new byte[44]); //unk
+            
+            writeD(byteBuffer, 0xFFFFFFFF);
+            writeD(byteBuffer, 0);
+            writeH(byteBuffer, 0);
             
             final int position = byteBuffer.position();
             if (++index < storageItems.size()) {

@@ -13,13 +13,12 @@ public class CM_LOOKING_FOR_BATTLEGROUND_WINDOW_OPEN extends TeraClientPacket {
 
     @Override
     protected void readImpl() {
-        // empty
+        // Empty packet
     }
 
     @Override
     protected void runImpl() {
         // TODO Auto-generated method stub
-        
     }
 
 }

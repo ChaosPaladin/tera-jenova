@@ -9,13 +9,13 @@ import com.angelis.tera.game.process.model.player.Player;
 import com.angelis.tera.game.process.model.storage.Storage;
 import com.angelis.tera.game.process.services.StorageService;
 
-public class CM_PLAYER_UNEQUIP extends TeraClientPacket {
+public class CM_ITEM_UNEQUIP extends TeraClientPacket {
 
     private int fromSlot;
     private int toSlot;
     private int itemId;
     
-    public CM_PLAYER_UNEQUIP(final ByteBuffer byteBuffer, final TeraGameConnection connection) {
+    public CM_ITEM_UNEQUIP(final ByteBuffer byteBuffer, final TeraGameConnection connection) {
         super(byteBuffer, connection);
     }
 

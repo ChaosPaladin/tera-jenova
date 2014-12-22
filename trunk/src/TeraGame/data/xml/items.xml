@@ -1,468 +1,471 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<item_templates xmlns="http://angelis.com/item_templates" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/item_templates ../schema/item_templates.xsd ">
-    <item_template item_id="98">
+<items xmlns="http://angelis.com/items" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/items ../schema/items.xsd ">
+    <item item_id="98">
         <item_action action_type="SPAWN_CAMPFIRE" stamina_gain="1" rate="2" />
-    </item_template>
-    <item_template item_id="70116">
+    </item>
+    <item item_id="70116">
         <item_action action_type="SPAWN_CAMPFIRE" stamina_gain="1" rate="5" />
-    </item_template>
-    <item_template item_id="70117">
+    </item>
+    <item item_id="70117">
         <item_action action_type="SPAWN_CAMPFIRE" stamina_gain="1" rate="5" />
-    </item_template>
-    <item_template item_id="117">
+    </item>
+    <item item_id="117">
         <item_action action_type="DRINK_POTION" stamina_gain="100" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="129">
+    </item>
+    <item item_id="125">
+        <item_action action_type="DRINK_POTION" hp_gain="43" rate="1" duration="10" />
+    </item>
+    <item item_id="129">
         <item_action action_type="DRINK_POTION" stamina_gain="100" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="8007">
+    </item>
+    <item item_id="8007">
         <item_action action_type="DRINK_POTION" speed_gain="15" rate="1" duration="180" />
-    </item_template>
-    <item_template item_id="6000">
+    </item>
+    <item item_id="6000">
         <item_action action_type="DRINK_POTION" hp_gain="600" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6002">
+    </item>
+    <item item_id="6002">
         <item_action action_type="DRINK_POTION" hp_gain="930" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6004">
+    </item>
+    <item item_id="6004">
         <item_action action_type="DRINK_POTION" hp_gain="1436" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6006">
+    </item>
+    <item item_id="6006">
         <item_action action_type="DRINK_POTION" hp_gain="2211" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6008">
+    </item>
+    <item item_id="6008">
         <item_action action_type="DRINK_POTION" hp_gain="3402" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6010">
+    </item>
+    <item item_id="6010">
         <item_action action_type="DRINK_POTION" hp_gain="5231" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6012">
+    </item>
+    <item item_id="6012">
         <item_action action_type="DRINK_POTION" hp_gain="9022" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6014">
+    </item>
+    <item item_id="6014">
         <item_action action_type="DRINK_POTION" hp_gain="12651" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6016">
+    </item>
+    <item item_id="6016">
         <item_action action_type="DRINK_POTION" mp_gain="478" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6018">
+    </item>
+    <item item_id="6018">
         <item_action action_type="DRINK_POTION" mp_gain="534" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6020">
+    </item>
+    <item item_id="6020">
         <item_action action_type="DRINK_POTION" mp_gain="591" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6022">
+    </item>
+    <item item_id="6022">
         <item_action action_type="DRINK_POTION" mp_gain="647" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6024">
+    </item>
+    <item item_id="6024">
         <item_action action_type="DRINK_POTION" mp_gain="703" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6026">
+    </item>
+    <item item_id="6026">
         <item_action action_type="DRINK_POTION" mp_gain="759" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6028">
+    </item>
+    <item item_id="6028">
         <item_action action_type="DRINK_POTION" mp_gain="816" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6030">
+    </item>
+    <item item_id="6030">
         <item_action action_type="DRINK_POTION" mp_gain="872" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6032">
+    </item>
+    <item item_id="6032">
         <item_action action_type="DRINK_POTION" hp_gain="500" mp_gain="359" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6034">
+    </item>
+    <item item_id="6034">
         <item_action action_type="DRINK_POTION" hp_gain="775" mp_gain="401" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6036">
+    </item>
+    <item item_id="6036">
         <item_action action_type="DRINK_POTION" hp_gain="1197" mp_gain="443" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6038">
+    </item>
+    <item item_id="6038">
         <item_action action_type="DRINK_POTION" hp_gain="1843" mp_gain="485" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6040">
+    </item>
+    <item item_id="6040">
         <item_action action_type="DRINK_POTION" hp_gain="2835" mp_gain="527" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6042">
+    </item>
+    <item item_id="6042">
         <item_action action_type="DRINK_POTION" hp_gain="4359" mp_gain="570" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6044">
+    </item>
+    <item item_id="6044">
         <item_action action_type="DRINK_POTION" hp_gain="7518" mp_gain="612" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6046">
+    </item>
+    <item item_id="6046">
         <item_action action_type="DRINK_POTION" hp_gain="10543" mp_gain="654" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6048">
+    </item>
+    <item item_id="6048">
         <item_action action_type="DRINK_POTION" hp_gain="58" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6050">
+    </item>
+    <item item_id="6050">
         <item_action action_type="DRINK_POTION" hp_gain="90" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6052">
+    </item>
+    <item item_id="6052">
         <item_action action_type="DRINK_POTION" hp_gain="140" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6054">
+    </item>
+    <item item_id="6054">
         <item_action action_type="DRINK_POTION" hp_gain="215" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6056">
+    </item>
+    <item item_id="6056">
         <item_action action_type="DRINK_POTION" hp_gain="331" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6058">
+    </item>
+    <item item_id="6058">
         <item_action action_type="DRINK_POTION" hp_gain="509" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6060">
+    </item>
+    <item item_id="6060">
         <item_action action_type="DRINK_POTION" hp_gain="877" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6062">
+    </item>
+    <item item_id="6062">
         <item_action action_type="DRINK_POTION" hp_gain="1230" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6064">
+    </item>
+    <item item_id="6064">
         <item_action action_type="DRINK_POTION" mp_gain="50" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6066">
+    </item>
+    <item item_id="6066">
         <item_action action_type="DRINK_POTION" mp_gain="56" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6068">
+    </item>
+    <item item_id="6068">
         <item_action action_type="DRINK_POTION" mp_gain="62" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6070">
+    </item>
+    <item item_id="6070">
         <item_action action_type="DRINK_POTION" mp_gain="67" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6072">
+    </item>
+    <item item_id="6072">
         <item_action action_type="DRINK_POTION" mp_gain="73" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6074">
+    </item>
+    <item item_id="6074">
         <item_action action_type="DRINK_POTION" mp_gain="79" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6076">
+    </item>
+    <item item_id="6076">
         <item_action action_type="DRINK_POTION" mp_gain="85" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6078">
+    </item>
+    <item item_id="6078">
         <item_action action_type="DRINK_POTION" mp_gain="91" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6080">
+    </item>
+    <item item_id="6080">
         <item_action action_type="DRINK_POTION" hp_gain="53" mp_gain="37" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6082">
+    </item>
+    <item item_id="6082">
         <item_action action_type="DRINK_POTION" hp_gain="83" mp_gain="42" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6084">
+    </item>
+    <item item_id="6084">
         <item_action action_type="DRINK_POTION" hp_gain="128" mp_gain="46" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6086">
+    </item>
+    <item item_id="6086">
         <item_action action_type="DRINK_POTION" hp_gain="197" mp_gain="51" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6088">
+    </item>
+    <item item_id="6088">
         <item_action action_type="DRINK_POTION" hp_gain="302" mp_gain="55" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6090">
+    </item>
+    <item item_id="6090">
         <item_action action_type="DRINK_POTION" hp_gain="465" mp_gain="59" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6092">
+    </item>
+    <item item_id="6092">
         <item_action action_type="DRINK_POTION" hp_gain="802" mp_gain="64" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6094">
+    </item>
+    <item item_id="6094">
         <item_action action_type="DRINK_POTION" hp_gain="1125" mp_gain="68" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6096">
+    </item>
+    <item item_id="6096">
         <item_action action_type="DRINK_POTION" hp_gain="1201" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6098">
+    </item>
+    <item item_id="6098">
         <item_action action_type="DRINK_POTION" hp_gain="1860" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6100">
+    </item>
+    <item item_id="6100">
         <item_action action_type="DRINK_POTION" hp_gain="2872" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6102">
+    </item>
+    <item item_id="6102">
         <item_action action_type="DRINK_POTION" hp_gain="4423" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6104">
+    </item>
+    <item item_id="6104">
         <item_action action_type="DRINK_POTION" hp_gain="6804" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6106">
+    </item>
+    <item item_id="6106">
         <item_action action_type="DRINK_POTION" hp_gain="10461" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6108">
+    </item>
+    <item item_id="6108">
         <item_action action_type="DRINK_POTION" hp_gain="18044" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6110">
+    </item>
+    <item item_id="6110">
         <item_action action_type="DRINK_POTION" hp_gain="25303" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6112">
+    </item>
+    <item item_id="6112">
         <item_action action_type="DRINK_POTION" mp_gain="956" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6114">
+    </item>
+    <item item_id="6114">
         <item_action action_type="DRINK_POTION" mp_gain="1069" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6116">
+    </item>
+    <item item_id="6116">
         <item_action action_type="DRINK_POTION" mp_gain="1181" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6118">
+    </item>
+    <item item_id="6118">
         <item_action action_type="DRINK_POTION" mp_gain="1294" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6120">
+    </item>
+    <item item_id="6120">
         <item_action action_type="DRINK_POTION" mp_gain="1406" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6122">
+    </item>
+    <item item_id="6122">
         <item_action action_type="DRINK_POTION" mp_gain="1519" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6124">
+    </item>
+    <item item_id="6124">
         <item_action action_type="DRINK_POTION" mp_gain="1631" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6126">
+    </item>
+    <item item_id="6126">
         <item_action action_type="DRINK_POTION" mp_gain="1744" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6128">
+    </item>
+    <item item_id="6128">
         <item_action action_type="DRINK_POTION" hp_gain="1001" mp_gain="717" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6130">
+    </item>
+    <item item_id="6130">
         <item_action action_type="DRINK_POTION" hp_gain="1550" mp_gain="802" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6132">
+    </item>
+    <item item_id="6132">
         <item_action action_type="DRINK_POTION" hp_gain="2393" mp_gain="886" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6134">
+    </item>
+    <item item_id="6134">
         <item_action action_type="DRINK_POTION" hp_gain="3686" mp_gain="970" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6136">
+    </item>
+    <item item_id="6136">
         <item_action action_type="DRINK_POTION" hp_gain="5670" mp_gain="1055" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6138">
+    </item>
+    <item item_id="6138">
         <item_action action_type="DRINK_POTION" hp_gain="8718" mp_gain="1139" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6140">
+    </item>
+    <item item_id="6140">
         <item_action action_type="DRINK_POTION" hp_gain="15037" mp_gain="1223" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6142">
+    </item>
+    <item item_id="6142">
         <item_action action_type="DRINK_POTION" hp_gain="21086" mp_gain="1308" rate="1" duration="1" />
-    </item_template>
-    <item_template item_id="6144">
+    </item>
+    <item item_id="6144">
         <item_action action_type="DRINK_POTION" hp_gain="83" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6146">
+    </item>
+    <item item_id="6146">
         <item_action action_type="DRINK_POTION" hp_gain="129" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6148">
+    </item>
+    <item item_id="6148">
         <item_action action_type="DRINK_POTION" hp_gain="199" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6150">
+    </item>
+    <item item_id="6150">
         <item_action action_type="DRINK_POTION" hp_gain="307" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6152">
+    </item>
+    <item item_id="6152">
         <item_action action_type="DRINK_POTION" hp_gain="473" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6154">
+    </item>
+    <item item_id="6154">
         <item_action action_type="DRINK_POTION" hp_gain="726" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6156">
+    </item>
+    <item item_id="6156">
         <item_action action_type="DRINK_POTION" hp_gain="1253" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6158">
+    </item>
+    <item item_id="6158">
         <item_action action_type="DRINK_POTION" hp_gain="1757" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6160">
+    </item>
+    <item item_id="6160">
         <item_action action_type="DRINK_POTION" mp_gain="100" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6162">
+    </item>
+    <item item_id="6162">
         <item_action action_type="DRINK_POTION" mp_gain="111" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6164">
+    </item>
+    <item item_id="6164">
         <item_action action_type="DRINK_POTION" mp_gain="123" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6166">
+    </item>
+    <item item_id="6166">
         <item_action action_type="DRINK_POTION" mp_gain="135" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6168">
+    </item>
+    <item item_id="6168">
         <item_action action_type="DRINK_POTION" mp_gain="146" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6170">
+    </item>
+    <item item_id="6170">
         <item_action action_type="DRINK_POTION" mp_gain="158" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6172">
+    </item>
+    <item item_id="6172">
         <item_action action_type="DRINK_POTION" mp_gain="170" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6174">
+    </item>
+    <item item_id="6174">
         <item_action action_type="DRINK_POTION" mp_gain="182" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6176">
+    </item>
+    <item item_id="6176">
         <item_action action_type="DRINK_POTION" hp_gain="107" mp_gain="75" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6178">
+    </item>
+    <item item_id="6178">
         <item_action action_type="DRINK_POTION" hp_gain="165" mp_gain="83" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6180">
+    </item>
+    <item item_id="6180">
         <item_action action_type="DRINK_POTION" hp_gain="255" mp_gain="92" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6182">
+    </item>
+    <item item_id="6182">
         <item_action action_type="DRINK_POTION" hp_gain="393" mp_gain="101" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6184">
+    </item>
+    <item item_id="6184">
         <item_action action_type="DRINK_POTION" hp_gain="605" mp_gain="110" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6186">
+    </item>
+    <item item_id="6186">
         <item_action action_type="DRINK_POTION" hp_gain="930" mp_gain="119" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6188">
+    </item>
+    <item item_id="6188">
         <item_action action_type="DRINK_POTION" hp_gain="1604" mp_gain="127" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6190">
+    </item>
+    <item item_id="6190">
         <item_action action_type="DRINK_POTION" hp_gain="2249" mp_gain="136" rate="1" duration="12" />
-    </item_template>
-    <item_template item_id="6">
+    </item>
+    <item item_id="6">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="7">
+    </item>
+    <item item_id="7">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="8">
+    </item>
+    <item item_id="8">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="31">
+    </item>
+    <item item_id="31">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="32">
+    </item>
+    <item item_id="32">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="33">
+    </item>
+    <item item_id="33">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="178">
+    </item>
+    <item item_id="178">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="179">
+    </item>
+    <item item_id="179">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="180">
+    </item>
+    <item item_id="180">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="181">
+    </item>
+    <item item_id="181">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="182">
+    </item>
+    <item item_id="182">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="183">
+    </item>
+    <item item_id="183">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="184">
+    </item>
+    <item item_id="184">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="185">
+    </item>
+    <item item_id="185">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="186">
+    </item>
+    <item item_id="186">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="187">
+    </item>
+    <item item_id="187">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="188">
+    </item>
+    <item item_id="188">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="189">
+    </item>
+    <item item_id="189">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="190">
+    </item>
+    <item item_id="190">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="191">
+    </item>
+    <item item_id="191">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="192">
+    </item>
+    <item item_id="192">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="193">
+    </item>
+    <item item_id="193">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="7100">
+    </item>
+    <item item_id="7100">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="7101">
+    </item>
+    <item item_id="7101">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="7102">
+    </item>
+    <item item_id="7102">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="7103">
+    </item>
+    <item item_id="7103">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="7104">
+    </item>
+    <item item_id="7104">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="7105">
+    </item>
+    <item item_id="7105">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="7106">
+    </item>
+    <item item_id="7106">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="7107">
+    </item>
+    <item item_id="7107">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="7108">
+    </item>
+    <item item_id="7108">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="7109">
+    </item>
+    <item item_id="7109">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="7110">
+    </item>
+    <item item_id="7110">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="7111">
+    </item>
+    <item item_id="7111">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="70019">
+    </item>
+    <item item_id="70019">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="70020">
+    </item>
+    <item item_id="70020">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="70021">
+    </item>
+    <item item_id="70021">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="70022">
+    </item>
+    <item item_id="70022">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="70023">
+    </item>
+    <item item_id="70023">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="70024">
+    </item>
+    <item item_id="70024">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="70025">
+    </item>
+    <item item_id="70025">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="70026">
+    </item>
+    <item item_id="70026">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="70027">
+    </item>
+    <item item_id="70027">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="70028">
+    </item>
+    <item item_id="70028">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="70029">
+    </item>
+    <item item_id="70029">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="70030">
+    </item>
+    <item item_id="70030">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="70031">
+    </item>
+    <item item_id="70031">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="70032">
+    </item>
+    <item item_id="70032">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="70033">
+    </item>
+    <item item_id="70033">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="70034">
+    </item>
+    <item item_id="70034">
         <item_action action_type="BURN_CHARM" />
-    </item_template>
-    <item_template item_id="338">
+    </item>
+    <item item_id="338">
         <item_action action_type="CAST_SKILL" skill_id="60401201" />
-    </item_template>
-    <item_template item_id="339">
+    </item>
+    <item item_id="339">
         <item_action action_type="CAST_SKILL" skill_id="60401201" />
-    </item_template>
-    <item_template item_id="181092">
+    </item>
+    <item item_id="181092">
         <item_action action_type="ADD_CHARACTER_SLOT" amount="1" />
-    </item_template>
-</item_templates>
+    </item>
+</items>

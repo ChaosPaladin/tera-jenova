@@ -10,15 +10,14 @@ import com.angelis.tera.game.process.model.template.Template;
 import com.angelis.tera.game.process.model.visible.VisibleTeraObject;
 import com.angelis.tera.game.process.services.BaseStatService;
 
-
 public abstract class AbstractCreature extends VisibleTeraObject {
-    
+
     private CurrentStats currentStats;
     private CreatureBonusStats creatureBonusStats;
     private int level;
     private AbstractCreature target;
     private final Set<Abnormality> abnormalities = new FastSet<>();
-    
+
     public AbstractCreature(final Integer id, final Controller<? extends AbstractCreature> controller, final Template template) {
         super(id, controller, template);
     }
@@ -36,7 +35,7 @@ public abstract class AbstractCreature extends VisibleTeraObject {
     public void setCurrentStats(final CurrentStats currentStats) {
         this.currentStats = currentStats;
     }
-    
+
     public CreatureBonusStats getCreatureBonusStats() {
         return creatureBonusStats;
     }
@@ -60,7 +59,7 @@ public abstract class AbstractCreature extends VisibleTeraObject {
     public void setTarget(final AbstractCreature target) {
         this.target = target;
     }
-    
+
     public Set<Abnormality> getAbnormalities() {
         return abnormalities;
     }

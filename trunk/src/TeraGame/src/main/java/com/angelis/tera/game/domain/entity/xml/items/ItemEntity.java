@@ -13,15 +13,15 @@ import javolution.util.FastSet;
 import com.angelis.tera.common.domain.entity.xml.AbstractXMLEntity;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlRootElement(name = "item_template", namespace = "http://angelis.com/item_templates")
-public class ItemTemplateEntity extends AbstractXMLEntity {
+@XmlRootElement(name = "item", namespace = "http://angelis.com/items")
+public class ItemEntity extends AbstractXMLEntity {
 
     private static final long serialVersionUID = 2022193536022689526L;
 
     @XmlAttribute(name = "item_id")
     private int itemId;
     
-    @XmlElement(name="item_action", namespace = "http://angelis.com/item_templates")
+    @XmlElement(name="item_action", namespace = "http://angelis.com/items")
     private Set<ItemActionEntity> itemActions;
 
     public int getItemId() {

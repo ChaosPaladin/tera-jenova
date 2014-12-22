@@ -9,8 +9,10 @@ import com.angelis.tera.common.domain.entity.xml.AbstractXMLEntity;
 import com.angelis.tera.game.process.model.item.enums.ItemActionTypeEnum;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlRootElement(name = "item_action", namespace = "http://angelis.com/item_templates")
+@XmlRootElement(name = "item_action", namespace = "http://angelis.com/items")
 public class ItemActionEntity extends AbstractXMLEntity {
+
+    private static final long serialVersionUID = -7809536668282893683L;
 
     @XmlAttribute(name = "action_type")
     private ItemActionTypeEnum itemActionType;

@@ -9,19 +9,15 @@ public class CM_LOOKING_FOR_INSTANCE_WINDOW_OPEN extends TeraClientPacket {
 
     public CM_LOOKING_FOR_INSTANCE_WINDOW_OPEN(final ByteBuffer byteBuffer, final TeraGameConnection connection) {
         super(byteBuffer, connection);
-        // TODO Auto-generated constructor stub
     }
 
     @Override
     protected void readImpl() {
-        // TODO Auto-generated method stub
-        
+        // Empty packet
     }
 
     @Override
     protected void runImpl() {
         // TODO Auto-generated method stub
-        
     }
-
 }
