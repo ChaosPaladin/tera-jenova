@@ -65,6 +65,7 @@
                                     <fileset dir="${common}/lib">
                                         <include name="gnu-crypto-2.1.0.jar" />
                                     </fileset>
+                                    <fileset dir="${game}/target/dependencies"/>
                                 </copy>
                                 <copy todir="${build.dist.game}/conf">
                                     <fileset dir="${game}/conf">
@@ -81,6 +82,7 @@
 
                                 <!-- TERA LOGIN -->
                                 <mkdir dir="${build.dist.login}" />
+                                <mkdir dir="${build.dist.login}/lib" />
                                 <copy todir="${build.dist.login}">
                                     <fileset dir="${login}/target">
                                         <include name="TeraLogin.jar" />
@@ -88,6 +90,11 @@
                                     <fileset dir="${login}/bin">
                                         <include name="*.bat" />
                                         <include name="*.sh" />
+                                    </fileset>
+                                </copy>
+                                <copy todir="${build.dist.login}/lib">
+                                    <fileset dir="${login}/lib">
+                                        <include name="nanohttpd-2.1.0.jar" />
                                     </fileset>
                                 </copy>
                                 <copy todir="${build.dist.login}/conf">
