@@ -42,8 +42,4 @@ public class CreatureDropEntity extends AbstractXMLEntity {
         }
         return this.drops;
     }
-
-    @Override
-    public void onLoad() {
-    }
 }

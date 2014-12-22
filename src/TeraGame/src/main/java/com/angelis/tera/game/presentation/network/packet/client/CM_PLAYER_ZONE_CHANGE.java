@@ -4,7 +4,7 @@ import java.nio.ByteBuffer;
 
 import com.angelis.tera.game.presentation.network.connection.TeraGameConnection;
 import com.angelis.tera.game.presentation.network.packet.TeraClientPacket;
-import com.angelis.tera.game.process.services.WorldService;
+import com.angelis.tera.game.process.services.ZoneService;
 
 public class CM_PLAYER_ZONE_CHANGE extends TeraClientPacket {
 
@@ -21,6 +21,6 @@ public class CM_PLAYER_ZONE_CHANGE extends TeraClientPacket {
 
     @Override
     protected void runImpl() {
-        WorldService.getInstance().onPlayerZoneChange(this.getConnection().getActivePlayer(), this.datas);
+        ZoneService.getInstance().onPlayerZoneChange(this.getConnection().getActivePlayer(), this.datas);
     }
 }

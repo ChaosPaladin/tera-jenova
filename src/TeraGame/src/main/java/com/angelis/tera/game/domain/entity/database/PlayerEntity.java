@@ -53,16 +53,16 @@ public class PlayerEntity extends AbstractDatabaseEntity {
 
     @Column
     private int currentRestedExperience;
-    
+
     @Column
     private int maxRestedExperience;
 
     @Column
     private int hp;
-    
+
     @Column
     private int mp;
-    
+
     @Column
     private int stamina;
 
@@ -81,7 +81,7 @@ public class PlayerEntity extends AbstractDatabaseEntity {
     @Column()
     private String description;
 
-    @Column(length=1000)
+    @Column(length = 1000)
     private byte[] userSettings;
 
     @Column()
@@ -119,8 +119,8 @@ public class PlayerEntity extends AbstractDatabaseEntity {
 
     @Column()
     private byte[] currentZoneData;
-    
-    @Column(columnDefinition="INT DEFAULT 0")
+
+    @Column(columnDefinition = "INT DEFAULT 0")
     private int gatherCraftPoints;
 
     @ManyToOne(optional = true)
@@ -138,21 +138,21 @@ public class PlayerEntity extends AbstractDatabaseEntity {
 
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "player")
     private Set<GatherEntity> gathers;
-    
+
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "player")
     private Set<SkillEntity> skills;
-    
+
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "player")
     private Set<QuestEntity> quests;
-    
-    @ManyToMany(cascade=CascadeType.ALL)
-    @JoinTable(name="player_zones",
-        joinColumns={@JoinColumn(name="player_id", referencedColumnName="id")},
-        inverseJoinColumns={@JoinColumn(name="zone_id", referencedColumnName="id")}
-    )
+
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "player")
+    private Set<AchievementEntity> achievements;
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "player_zones", joinColumns = { @JoinColumn(name = "player_id", referencedColumnName = "id") }, inverseJoinColumns = { @JoinColumn(name = "zone_id", referencedColumnName = "id") })
     private Set<ZoneEntity> visitedZones;
 
-    @ManyToMany(mappedBy="owner")
+    @ManyToMany(mappedBy = "owner")
     private List<PlayerRelationEntity> relations;
 
     public PlayerEntity(final Integer id) {
@@ -449,6 +449,14 @@ public class PlayerEntity extends AbstractDatabaseEntity {
 
     public void setQuests(final Set<QuestEntity> quests) {
         this.quests = quests;
+    }
+
+    public Set<AchievementEntity> getAchievements() {
+        return achievements;
+    }
+
+    public void setAchievements(final Set<AchievementEntity> achievements) {
+        this.achievements = achievements;
     }
 
     public Set<ZoneEntity> getVisitedZones() {

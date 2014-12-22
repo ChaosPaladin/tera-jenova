@@ -16,7 +16,6 @@ import com.angelis.tera.common.services.AbstractService;
 import com.angelis.tera.common.utils.Function;
 import com.angelis.tera.game.presentation.network.TeleportLocations;
 import com.angelis.tera.game.presentation.network.connection.TeraGameConnection;
-import com.angelis.tera.game.presentation.network.packet.server.SM_PLAYER_ZONE_CHANGE;
 import com.angelis.tera.game.process.delegate.database.ZoneDelegate;
 import com.angelis.tera.game.process.model.Zone;
 import com.angelis.tera.game.process.model.channel.Channel;
@@ -101,35 +100,6 @@ public class WorldService extends AbstractService {
         player.setLevel(level);
     }
 
-    public void onPlayerZoneChange(final Player player, final byte[] datas) {
-        player.getVisitedZones().add(this.getZoneByData(datas));
-        player.setCurrentZoneData(datas);
-        player.getConnection().sendPacket(new SM_PLAYER_ZONE_CHANGE(datas));
-        
-        QuestService.getInstance().onPlayerZoneChange(player, datas);
-    }
-
-    public Zone getZoneByData(final byte[] datas) {
-        Zone zone = zones.get(datas);
-        if (zone == null) {
-            zone = zoneDelegate.findByDatas(datas);
-            
-            // TODO we should already have all possible zone datas in xml !
-            // We must create the zone if we havent already it in database
-            if (zone == null) {
-                zone = new Zone();
-                zone.setDatas(datas);
-
-                zoneDelegate.create(zone);
-            }
-
-            // TODO
-            //zones.put(datas, zone);
-        }
-
-        return zone;
-    }
-    
     public Player getOnlinePlayerByName(final String name) {
         return this.onlinePlayers.get(name.toUpperCase());
     }

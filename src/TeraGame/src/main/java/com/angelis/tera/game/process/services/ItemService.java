@@ -59,6 +59,10 @@ public class ItemService extends AbstractService {
     }
 
     public void showItemInfo(final Player player, final ViewModeEnum viewMode, final Item item, final String playerName) {
+        if (!player.getName().equals(playerName)) {
+            return;
+        }
+        
         final Storage storage = player.getStorage(StorageTypeEnum.INVENTORY);
         final StorageItem storageItem = storage.getStorageItemByItemId(item.getId());
         if (storageItem == null) {

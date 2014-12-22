@@ -18,24 +18,6 @@ import com.angelis.tera.game.process.model.quest.QuestStepValue;
 
 public class QuestMapper extends AbstractXMLMapper<QuestEntity, Quest> {
 
-    @Override
-    protected QuestEntity createNewEmptyEntity() {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    @Override
-    public void map(final Quest model, final QuestEntity entity) {
-        // TODO Auto-generated method stub
-        
-    }
-
-    @Override
-    protected void finalizeDependencies(final Quest model, final QuestEntity entity) {
-        // TODO Auto-generated method stub
-        
-    }
-
     // ENTITY -> MODEL
     @Override
     protected Quest createNewEmptyModel() {
@@ -59,15 +41,15 @@ public class QuestMapper extends AbstractXMLMapper<QuestEntity, Quest> {
 
     @Override
     protected void finalizeDependencies(final QuestEntity entity, final Quest model) {
-     // REQUIRED QUESTS
+        // REQUIRED QUESTS
         final List<Integer> requiredQuests = new FastList<>();
         if (entity.getRequiredQuests() != null && !entity.getRequiredQuests().isEmpty()) {
-            for (final QuestRequiredEntity questRequiredEntity : entity.getRequiredQuests())  {
+            for (final QuestRequiredEntity questRequiredEntity : entity.getRequiredQuests()) {
                 requiredQuests.add(questRequiredEntity.getQuestId());
             }
         }
         model.setRequiredQuests(requiredQuests);
-        
+
         // STEPS
         final List<QuestStep> questSteps = new LinkedList<>();
         for (final QuestStepEntity questStepEntity : entity.getQuestSteps()) {
@@ -78,7 +60,7 @@ public class QuestMapper extends AbstractXMLMapper<QuestEntity, Quest> {
             questSteps.add(new QuestStep(questStepEntity.getQuestStepType(), questStepValues));
         }
         model.setQuestSteps(questSteps);
-        
+
         final List<QuestReward> questRewards = new FastList<>();
         if (entity.getQuestRewards() != null && !entity.getQuestRewards().isEmpty()) {
             for (final QuestRewardEntity questRewardEntity : entity.getQuestRewards()) {

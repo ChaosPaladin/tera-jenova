@@ -6,24 +6,6 @@ import com.angelis.tera.game.process.model.creature.BaseStats;
 
 public class BaseStatsMapper extends AbstractXMLMapper<BaseStatsEntity, BaseStats> {
 
-    @Override
-    protected BaseStatsEntity createNewEmptyEntity() {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    @Override
-    public void map(final BaseStats model, final BaseStatsEntity entity) {
-        // TODO Auto-generated method stub
-        
-    }
-
-    @Override
-    protected void finalizeDependencies(final BaseStats model, final BaseStatsEntity entity) {
-        // TODO Auto-generated method stub
-        
-    }
-
     // ENTITY -> MODEL
     @Override
     protected BaseStats createNewEmptyModel() {

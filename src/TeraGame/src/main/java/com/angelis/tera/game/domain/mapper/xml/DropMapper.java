@@ -6,25 +6,7 @@ import com.angelis.tera.game.process.model.drop.Drop;
 
 public class DropMapper extends AbstractXMLMapper<DropEntity, Drop> {
 
-    @Override
-    protected DropEntity createNewEmptyEntity() {
-        return new DropEntity();
-    }
-
-    @Override
-    public void map(final Drop model, final DropEntity entity) {
-        entity.setItemCategory(model.getItemCategory());
-        entity.setDropChance(model.getDropChance());
-        entity.setItemId(model.getItemId());
-        entity.setMaxAmount(model.getMaxAmount());
-        entity.setMinAmount(model.getMinAmount());
-    }
-
-    @Override
-    protected void finalizeDependencies(final Drop model, final DropEntity entity) {
-        // No dependency
-    }
-
+    // ENTITY -> MODEL
     @Override
     protected Drop createNewEmptyModel() {
         return new Drop();
@@ -41,10 +23,7 @@ public class DropMapper extends AbstractXMLMapper<DropEntity, Drop> {
 
     @Override
     protected void finalizeDependencies(final DropEntity entity, final Drop model) {
-        // TODO Auto-generated method stub
-        
+        // No dependency
     }
-
-    
 
 }

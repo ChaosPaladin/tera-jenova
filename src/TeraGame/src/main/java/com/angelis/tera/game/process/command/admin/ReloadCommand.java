@@ -15,6 +15,7 @@ import com.angelis.tera.game.process.services.TradelistService;
 import com.angelis.tera.game.process.services.UserService;
 import com.angelis.tera.game.process.services.WorldService;
 import com.angelis.tera.game.process.services.XMLService;
+import com.angelis.tera.game.process.services.ZoneService;
 
 public class ReloadCommand extends AbstractAdminCommand {
 
@@ -41,6 +42,7 @@ public class ReloadCommand extends AbstractAdminCommand {
                 DropService.getInstance().restart();
                 TradelistService.getInstance().restart();
                 PegasusFlyService.getInstance().restart();
+                ZoneService.getInstance().restart();
                 WorldService.getInstance().doOnAllOnlinePlayer(new Function<Player>() {
                     @Override
                     public void call(final Player player) {

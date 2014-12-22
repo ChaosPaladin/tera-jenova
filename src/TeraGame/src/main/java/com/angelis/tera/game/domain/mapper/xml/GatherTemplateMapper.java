@@ -6,23 +6,7 @@ import com.angelis.tera.game.process.model.template.GatherTemplate;
 
 public class GatherTemplateMapper extends AbstractXMLMapper<GatherTemplateEntity, GatherTemplate> {
 
-    @Override
-    protected GatherTemplateEntity createNewEmptyEntity() {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    @Override
-    public void map(final GatherTemplate model, final GatherTemplateEntity entity) {
-        // TODO Auto-generated method stub
-        
-    }
-
-    @Override
-    protected void finalizeDependencies(final GatherTemplate model, final GatherTemplateEntity entity) {
-        // No dependency
-    }
-
+    // ENTITY -> MODEL
     @Override
     protected GatherTemplate createNewEmptyModel() {
         return new GatherTemplate();

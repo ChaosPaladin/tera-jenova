@@ -9,7 +9,6 @@ import com.angelis.tera.game.process.services.ItemService;
 
 public class CM_ITEM_USE extends TeraClientPacket {
 
-    private long playerUId;
     private int itemId;
     private final WorldPosition worldPosition;
     
@@ -20,7 +19,7 @@ public class CM_ITEM_USE extends TeraClientPacket {
 
     @Override
     protected void readImpl() {
-        this.playerUId = readQ();
+        readQ(); // playerUID
         this.itemId = readD();
         readB(28);
         this.worldPosition.setXYZ(readF(), readF(), readF());

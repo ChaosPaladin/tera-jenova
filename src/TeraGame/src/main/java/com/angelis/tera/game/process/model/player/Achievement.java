@@ -7,5 +7,9 @@ public class Achievement extends AbstractTeraModel {
     public Achievement(final Integer id) {
         super(id);
     }
+    
+    public Achievement() {
+        super(null);
+    }
 
 }

@@ -31,6 +31,7 @@ public class CM_PLAYER_EQUIPEMENT_ITEM_INFO extends TeraClientPacket {
 
     @Override
     protected void runImpl() {
-        ItemService.getInstance().showItemInfo(this.getConnection().getActivePlayer(), this.viewMode, (Item) ObjectIDService.getInstance().getObjectByUId(ObjectFamilyEnum.INVENTORY_ITEM, this.itemUid), this.playerName);
+        final Item item = ObjectIDService.getInstance().getObjectByUId(ObjectFamilyEnum.INVENTORY_ITEM, this.itemUid);
+        ItemService.getInstance().showItemInfo(this.getConnection().getActivePlayer(), this.viewMode, item, this.playerName);
     }
 }

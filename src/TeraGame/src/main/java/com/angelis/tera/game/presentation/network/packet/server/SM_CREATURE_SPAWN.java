@@ -24,6 +24,8 @@ public class SM_CREATURE_SPAWN extends TeraServerPacket {
         final CreatureTemplate template = this.teraCreature.getTemplate();
 
         writeD(byteBuffer, 0); //???
+        
+        final int shitShift = byteBuffer.position();
         writeH(byteBuffer, 0); //Shit shift
 
         writeUid(byteBuffer, this.teraCreature);
@@ -44,8 +46,7 @@ public class SM_CREATURE_SPAWN extends TeraServerPacket {
 
         writeB(byteBuffer, "00000000000000000000000000000000000000000000");
 
-        this.writeBufferPosition(byteBuffer, 8);
-
-        writeB(byteBuffer, "D8C5ACB974CE0000"); //Shit
+        this.writeBufferPosition(byteBuffer, shitShift);
+        writeB(byteBuffer, "28B1DCC220001CBC7CB7DCB40000"); //Shit
     }
 }

@@ -54,12 +54,12 @@ public class ClientPacketHandler {
 
         // OPTIONS
         addPacket((short) 0xAD59, CM_OPTION_SHOW_MASK.class);
-        addPacket((short) 0xB036, CM_OPTION_SET_VISIBILITY_DISTANCE.class);
+        addPacket((short) 0x6CCD, CM_OPTION_SET_VISIBILITY_DISTANCE.class); // OK
 
         // CHAT
         addPacket((short) 0xA951, CM_CHAT.class); // OK
-        addPacket((short) 0xBC19, CM_CHAT_INFO.class);
-        addPacket((short) 0xB946, CM_WHISP.class);
+        addPacket((short) 0x5F0E, CM_CHAT_INFO.class); // OK
+        addPacket((short) 0xECF7, CM_WHISP.class); // OK
 
         // DIALOG
         addPacket((short) 0xE42C, CM_NPC_CONTACT.class);
@@ -73,14 +73,14 @@ public class ClientPacketHandler {
         addPacket((short) 0x89F9, CM_GAMEOBJECT_REMOVE.class);
 
         // SKILL
-        addPacket((short) 0x949B, CM_SKILL_START.class);
+        addPacket((short) 0xF8DD, CM_SKILL_START.class); // OK
         addPacket((short) 0xE29D, CM_SKILL_INSTANCE_START.class);
         addPacket((short) 0x76A8, CM_SKILL_CANCEL.class);
         addPacket((short) 0x738A, CM_GLYPH_REINIT.class);
 
         // PLAYER
         addPacket((short) 0x4E90, CM_PLAYER_MOVE.class); // OK
-        addPacket((short) 0xF575, CM_PLAYER_ZONE_CHANGE.class);
+        addPacket((short) 0x6797, CM_PLAYER_ZONE_CHANGE.class); // OK
         addPacket((short) 0xAF8D, CM_LOOKING_FOR_BATTLEGROUND_WINDOW_OPEN.class); // TODO
         addPacket((short) 0x927E, CM_LOOKING_FOR_INSTANCE_WINDOW_OPEN.class); // TODO
         addPacket((short) 0xE8A2, CM_PLAYER_REPORT.class); // TODO
@@ -88,7 +88,6 @@ public class ClientPacketHandler {
         addPacket((short) 0xB532, CM_PLAYER_INSPECT.class); // TODO
         addPacket((short) 0xA5E7, CM_PLAYER_SELECT_CREATURE.class);
         addPacket((short) 0xE195, CM_PLAYER_DONJON_CLEAR_COUNT_LIST.class);
-        addPacket((short) 0x8FDE, CM_PLAYER_REVIVE_DIALOG_CHOICE.class);
 
         // GATHER
         addPacket((short) 0x885F, CM_GATHER_START.class);
@@ -101,13 +100,13 @@ public class ClientPacketHandler {
 
         // INVENTORY
         addPacket((short) 0xF9FD, CM_INVENTORY_SHOW.class); // OK
-        addPacket((short) 0xFC18, CM_ITEM_MOVE.class);
-        addPacket((short) 0xD3D3, CM_ITEM_USE.class);
+        addPacket((short) 0x7EEF, CM_ITEM_MOVE.class); // OK
+        addPacket((short) 0xB139, CM_ITEM_USE.class); // OK
         addPacket((short) 0xD1F6, CM_ITEM_SIMPLE_INFO.class);
-        addPacket((short) 0xEEA5, CM_INVENTORY_ORDER.class);
+        addPacket((short) 0x83A1, CM_INVENTORY_ORDER.class); // OK
         addPacket((short) 0xB0FA, CM_PLAYER_UNEQUIP.class);
         addPacket((short) 0xF8D3, CM_PLAYER_EQUIP.class);
-        addPacket((short) 0x7FE7, CM_PLAYER_EQUIPEMENT_ITEM_INFO.class);
+        addPacket((short) 0xF772, CM_PLAYER_EQUIPEMENT_ITEM_INFO.class); // OK
         addPacket((short) 0xACA1, CM_PLAYER_DUNGEON_COOLTIME_LIST.class);
         addPacket((short) 0xB106, CM_PLAYER_ITEM_TRASH.class);
         addPacket((short) 0xB663, CM_PLAYER_DROP_ITEM_PICKUP.class);
@@ -124,7 +123,7 @@ public class ClientPacketHandler {
         addPacket((short) 0x8D02, CM_MAP_SHOW.class); // TODO
 
         // ACTIVITIES
-        addPacket((short) 0xED92, CM_PLAYER_EMOTE.class);
+        addPacket((short) 0x88B2, CM_PLAYER_EMOTE.class); // OK
         addPacket((short) 0x5761, CM_ENCHANT_WINDOW_OPEN.class);
         addPacket((short) 0xB5E3, CM_INSTANCERANK_WINDOW_OPEN.class);
         addPacket((short) 0x62EB, CM_BATTLEGROUND_WINDOW_OPEN.class);
@@ -162,9 +161,9 @@ public class ClientPacketHandler {
         // SYSTEM
         addPacket((short) 0x74DF, CM_WELCOME_MESSAGE.class); // OK
         addPacket((short) 0xCDBD, CM_QUIT_TO_CHARACTER_LIST.class); // OK
-        addPacket((short) 0xA999, CM_QUIT_TO_CHARACTER_LIST_CANCEL.class);
+        addPacket((short) 0xA765, CM_QUIT_TO_CHARACTER_LIST_CANCEL.class); // OK
         addPacket((short) 0xD250, CM_QUIT_GAME.class); // OK
-        addPacket((short) 0xD885, CM_QUIT_GAME_CANCEL.class);
+        addPacket((short) 0xBEE0, CM_QUIT_GAME_CANCEL.class); // OK
 
         // PEGASUS
         addPacket((short) 0xC0E4, CM_PEGASUS_START.class);
