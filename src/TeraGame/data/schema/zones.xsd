@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://angelis.com/zones" xmlns:xsd="http://angelis.com/zones" xmlns:base="http://angelis.com/base" elementFormDefault="qualified">
+    <!-- IMPORTS -->
+    <import schemaLocation="base.xsd" namespace="http://angelis.com/base" />
+
+    <!-- TYPES -->
+    <complexType name="ZoneType">
+        <attribute name="datas" type="string" />
+    </complexType>
+    
+    <complexType name="ZonesType">
+        <sequence>
+            <element name="import" type="base:ImportType" minOccurs="0" maxOccurs="unbounded" />
+            <element name="zone" type="xsd:ZoneType" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+    </complexType>
+
+    <!-- CONTENT -->
+    <element name="zones" type="xsd:ZonesType" />
+</schema>

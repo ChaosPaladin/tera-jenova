@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tradelists xmlns="http://angelis.com/zones" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/zones ../schema/zones.xsd ">
-    <import file="tradelists" skipRoot="true" />
-</tradelists>
+<zones xmlns="http://angelis.com/zones" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/zones ../schema/zones.xsd ">
+    <import file="zones" skipRoot="true" />
+</zones>
