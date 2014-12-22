@@ -25,6 +25,7 @@ import com.angelis.tera.game.process.services.RequestService;
 import com.angelis.tera.game.process.services.SkillService;
 import com.angelis.tera.game.process.services.SpawnService;
 import com.angelis.tera.game.process.services.StorageService;
+import com.angelis.tera.game.process.services.TemplateService;
 import com.angelis.tera.game.process.services.ThreadPoolService;
 import com.angelis.tera.game.process.services.TradelistService;
 import com.angelis.tera.game.process.services.UserService;
@@ -54,6 +55,7 @@ public class MainGame {
         WorldService.getInstance().start();
         StorageService.getInstance().start();
         CreatureService.getInstance().start();
+        TemplateService.getInstance().start();
         SpawnService.getInstance().start();
         DialogService.getInstance().start();
         RequestService.getInstance().start();
