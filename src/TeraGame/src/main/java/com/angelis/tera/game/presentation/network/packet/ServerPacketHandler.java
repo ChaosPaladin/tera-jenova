@@ -152,10 +152,10 @@ public class ServerPacketHandler {
         addPacket((short) 0xA769, SM_DROP_ITEM_SPAWN.class);
 
         // DIALOG
-        addPacket((short) 0x928B, SM_DIALOG.class);
+        addPacket((short) 0x5A8A, SM_DIALOG.class); // OK
         addPacket((short) 0xAE4F, SM_DIALOG_CLOSE.class);
-        addPacket((short) 0xD06E, SM_DIALOG_EVENT.class);
-        addPacket((short) 0xA8F5, SM_DIALOG_MENU_SELECT.class);
+        addPacket((short) 0xFD90, SM_DIALOG_EVENT.class); // OK
+        addPacket((short) 0x819E, SM_DIALOG_MENU_SELECT.class); // OK
 
         // CAMPFIRE
         addPacket((short) 0xCCE4, SM_CAMPFIRE_SPAWN.class);

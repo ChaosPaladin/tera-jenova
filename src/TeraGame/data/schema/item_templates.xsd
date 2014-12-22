@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://angelis.com/item_templates"
-    xmlns:xsd="http://angelis.com/item_templates" xmlns:base="http://angelis.com/base" elementFormDefault="qualified"
->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://angelis.com/item_templates" xmlns:xsd="http://angelis.com/item_templates" xmlns:base="http://angelis.com/base" elementFormDefault="qualified">
     <!-- IMPORTS -->
     <import schemaLocation="base.xsd" namespace="http://angelis.com/base" />
-    
     <!-- TYPES -->
     <simpleType name="ActionType">
         <restriction base="string">
@@ -15,11 +12,11 @@
             <enumeration value="READ" />
             <enumeration value="BURN_CHARM" />
             <enumeration value="DRINK_POTION" />
+            <enumeration value="ADD_CHARACTER_SLOT" />
         </restriction>
     </simpleType>
-
     <complexType name="ItemActionType">
-        <attribute name="action_type" type="xsd:ActionType"/>
+        <attribute name="action_type" type="xsd:ActionType" />
         <attribute name="hp_gain" type="integer" use="optional" />
         <attribute name="mp_gain" type="integer" use="optional" />
         <attribute name="stamina_gain" type="integer" use="optional" />
@@ -30,7 +27,6 @@
         <attribute name="rate" type="integer" use="optional" />
         <attribute name="duration" type="integer" use="optional" />
     </complexType>
-
     <complexType name="ItemTemplateType">
         <sequence>
             <element name="item_action" type="xsd:ItemActionType" />
@@ -40,13 +36,11 @@
         <attribute name="armor_matter_type" type="base:ArmorMatterType" />
         <attribute name="weapon_type" type="base:WeaponType" />
     </complexType>
-
     <complexType name="ItemTemplatesType">
         <sequence>
-            <element name="item_template" type="xsd:ItemTemplateType" minOccurs="0" maxOccurs="unbounded"/>
+            <element name="item_template" type="xsd:ItemTemplateType" minOccurs="0" maxOccurs="unbounded" />
         </sequence>
     </complexType>
-    
     <!-- CONTENT -->
     <element name="item_templates" type="xsd:ItemTemplatesType" />
 </schema>

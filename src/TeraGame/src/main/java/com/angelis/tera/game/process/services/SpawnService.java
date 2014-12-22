@@ -65,6 +65,8 @@ public class SpawnService extends AbstractService {
                 } else {
                     teraCreature = new Npc(creatureEntity.getId());
                 }
+                
+                TemplateService.getInstance().affectCreatureTemplate(teraCreature, template);
 
                 BaseStatService.getInstance().affectVisibleObjectBaseStats(teraCreature, template.getBaseStats());
                 BaseStatService.getInstance().affectCreatureCurrentStats(teraCreature);

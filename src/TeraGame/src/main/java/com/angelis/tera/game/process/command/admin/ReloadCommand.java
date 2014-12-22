@@ -11,6 +11,7 @@ import com.angelis.tera.game.process.services.MountService;
 import com.angelis.tera.game.process.services.PegasusFlyService;
 import com.angelis.tera.game.process.services.QuestService;
 import com.angelis.tera.game.process.services.SpawnService;
+import com.angelis.tera.game.process.services.TemplateService;
 import com.angelis.tera.game.process.services.TradelistService;
 import com.angelis.tera.game.process.services.UserService;
 import com.angelis.tera.game.process.services.WorldService;
@@ -36,6 +37,7 @@ public class ReloadCommand extends AbstractAdminCommand {
             
             case XML:
                 XMLService.getInstance().restart();
+                TemplateService.getInstance().restart();
                 SpawnService.getInstance().restart();
                 MountService.getInstance().restart();
                 QuestService.getInstance().restart();
