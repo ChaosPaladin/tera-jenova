@@ -9,7 +9,6 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
-import com.angelis.tera.common.network.AbstractHttpServer;
 import com.angelis.tera.common.network.config.ServerConfig;
 import com.angelis.tera.common.process.exceptions.AccountNotFoundException;
 import com.angelis.tera.common.process.exceptions.AccountWithIncorrectPasswordException;
@@ -27,10 +26,12 @@ import com.angelis.tera.login.process.services.ServerService;
 import com.angelis.tera.login.utils.xml.XMLUtils;
 import com.angelis.tera.login.utils.xml.XmlCharacterHandler;
 
-public class TeraLoginServer extends AbstractHttpServer {
+import fi.iki.elonen.NanoHTTPD;
+
+public class TeraLoginServer extends NanoHTTPD {
 
     public TeraLoginServer(final ServerConfig serverConfig) throws IOException {
-        super(serverConfig);
+        super(serverConfig.getPort());
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.angelis.tera.common.network.http;
+package com.angelis.tera.login.http;
 
 import java.io.IOException;
 

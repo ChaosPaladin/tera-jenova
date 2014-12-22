@@ -22,28 +22,45 @@
             <artifactId>jaxb-impl</artifactId>
             <version>2.1</version>
         </dependency>
+        <dependency>
+            <groupId>fi.iki.elonen</groupId>
+            <artifactId>fi.iki.elonen.nanohttp</artifactId>
+            <version>2.1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/nanohttpd-2.1.0.jar</systemPath>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
             <plugin>
-                <artifactId>maven-assembly-plugin</artifactId>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.9</version>
                 <executions>
                     <execution>
+                        <id>copy-dependencies</id>
                         <phase>package</phase>
                         <goals>
-                            <goal>single</goal>
+                            <goal>copy-dependencies</goal>
                         </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/dependencies</outputDirectory>
+                            <overWriteReleases>false</overWriteReleases>
+                            <overWriteSnapshots>false</overWriteSnapshots>
+                            <overWriteIfNewer>true</overWriteIfNewer>
+                        </configuration>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.3.2</version>
                 <configuration>
-                    <descriptorRefs>
-                        <descriptorRef>jar-with-dependencies</descriptorRef>
-                    </descriptorRefs>
                     <finalName>TeraLogin</finalName>
-                    <appendAssemblyId>false</appendAssemblyId>
                     <archive>
                         <manifest>
-                            <mainClass>com.angelis.tera.game.MainLogin</mainClass>
+                            <mainClass>com.angelis.tera.login.MainLogin</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
