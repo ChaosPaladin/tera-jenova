@@ -62,9 +62,9 @@ public class ClientPacketHandler {
         addPacket((short) 0xECF7, CM_WHISP.class); // OK
 
         // DIALOG
-        addPacket((short) 0xE42C, CM_NPC_CONTACT.class);
-        addPacket((short) 0xCE77, CM_DIALOG_EVENT.class);
-        addPacket((short) 0xC1DC, CM_DIALOG.class);
+        addPacket((short) 0x94BE, CM_NPC_CONTACT.class); // OK
+        addPacket((short) 0x9A93, CM_DIALOG_EVENT.class); // OK
+        addPacket((short) 0xA308, CM_DIALOG.class); // OK
 
         // ALLIANCE
         addPacket((short) 0x7E06, CM_ALLIANCE_INFO.class); // OK

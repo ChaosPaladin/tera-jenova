@@ -9,12 +9,14 @@ import org.apache.log4j.Logger;
 
 import com.angelis.tera.common.domain.mapper.MapperManager;
 import com.angelis.tera.common.services.AbstractService;
+import com.angelis.tera.common.utils.BeanUtils;
 import com.angelis.tera.game.domain.entity.xml.creatures.template.CreatureTemplateEntity;
 import com.angelis.tera.game.domain.entity.xml.creatures.template.CreatureTemplateEntityHolder;
 import com.angelis.tera.game.domain.entity.xml.gathers.GatherTemplateEntity;
 import com.angelis.tera.game.domain.entity.xml.gathers.GatherTemplateEntityHolder;
 import com.angelis.tera.game.domain.mapper.xml.CreatureTemplateMapper;
 import com.angelis.tera.game.domain.mapper.xml.GatherTemplateMapper;
+import com.angelis.tera.game.process.model.creature.Creature;
 import com.angelis.tera.game.process.model.template.CreatureTemplate;
 import com.angelis.tera.game.process.model.template.GatherTemplate;
 
@@ -60,6 +62,10 @@ public class TemplateService extends AbstractService {
 
     public GatherTemplate getGatherTemplateById(final Integer id) {
         return this.gatherTemplates.get(id);
+    }
+    
+    public void affectCreatureTemplate(final Creature creature, final CreatureTemplate template) {
+        BeanUtils.fill(CreatureTemplate.class, template, creature.getTemplate());
     }
 
     /** SINGLETON */

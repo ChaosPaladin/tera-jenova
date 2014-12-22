@@ -107,6 +107,13 @@ public enum ItemActionTypeEnum {
             SkillService.getInstance().applyAbnormality(player, abnormality);
             return true;
         }
+    },
+    ADD_CHARACTER_SLOT {
+        @Override
+        public boolean doAction(final Item item, final ItemAction itemAction, final Player player, final WorldPosition worldPosition) {
+            // TODO
+            return true;
+        }
     };
 
     public abstract boolean doAction(final Item item, final ItemAction itemAction, final Player player, final WorldPosition worldPosition);
