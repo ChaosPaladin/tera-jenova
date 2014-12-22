@@ -1,9 +1,10 @@
 package com.angelis.tera.game.process.model.item;
 
+import com.angelis.tera.common.process.model.AbstractModel;
 import com.angelis.tera.game.process.model.item.enums.ItemActionTypeEnum;
 
-public class ItemAction {
-    
+public class ItemAction extends AbstractModel {
+
     private ItemActionTypeEnum itemActionType;
     private int hpGain;
     private int mpGain;
@@ -14,6 +15,11 @@ public class ItemAction {
     private int effectId;
     private int rate;
     private int duration;
+    private int amount;
+
+    public ItemAction() {
+        super(null);
+    }
 
     public ItemActionTypeEnum getItemActionType() {
         return itemActionType;
@@ -93,5 +99,13 @@ public class ItemAction {
 
     public void setDuration(final int duration) {
         this.duration = duration;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public void setAmount(final int amount) {
+        this.amount = amount;
     }
 }

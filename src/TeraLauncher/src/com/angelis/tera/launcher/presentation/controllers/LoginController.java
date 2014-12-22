@@ -25,6 +25,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.LocaleUtils;
 
 import com.angelis.tera.common.utils.Function;
+import com.angelis.tera.launcher.config.FileConfig;
 import com.angelis.tera.launcher.config.LoginConfig;
 import com.angelis.tera.launcher.presentation.json.results.ResultObject;
 import com.angelis.tera.launcher.presentation.utils.HTTPUtils;
@@ -93,9 +94,8 @@ public class LoginController {
         final String password = passwordTextField.getText();
         final String login = loginTextField.getText();
 
-        final String dir = "E:\\Program Files (x86)\\TERA\\";
-        final File baseFile = new File(dir+"Tera.launcher.exe");
-        final File launcherFile = new File(dir+"Tera-temp.exe");
+        final File baseFile = new File(FileConfig.TERA_FOLDER+"Tera.launcher.exe");
+        final File launcherFile = new File(FileConfig.TERA_FOLDER+"Tera-temp.exe");
         if (launcherFile.exists()) {
             launcherFile.delete();
         }
@@ -125,7 +125,7 @@ public class LoginController {
         commands.add(lang);
         
         final ProcessBuilder builder = new ProcessBuilder(commands);
-        builder.directory(new File(dir));
+        builder.directory(new File(FileConfig.TERA_FOLDER));
 
         try {
             builder.start();

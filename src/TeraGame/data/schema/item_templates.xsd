@@ -26,6 +26,7 @@
         <attribute name="effect_id" type="integer" use="optional" />
         <attribute name="rate" type="integer" use="optional" />
         <attribute name="duration" type="integer" use="optional" />
+        <attribute name="amount" type="integer" use="optional" />
     </complexType>
     <complexType name="ItemTemplateType">
         <sequence>

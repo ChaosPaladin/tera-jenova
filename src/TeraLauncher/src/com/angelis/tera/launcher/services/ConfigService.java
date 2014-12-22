@@ -5,6 +5,7 @@ import java.util.Properties;
 import com.angelis.tera.common.config.ConfigurableProcessor;
 import com.angelis.tera.common.services.AbstractService;
 import com.angelis.tera.common.utils.PropertiesUtils;
+import com.angelis.tera.launcher.config.FileConfig;
 import com.angelis.tera.launcher.config.LoginConfig;
 
 public class ConfigService extends AbstractService {
@@ -17,6 +18,7 @@ public class ConfigService extends AbstractService {
         try {
             final Properties[] properties = PropertiesUtils.loadAllFromDirectory("conf");
             ConfigurableProcessor.process(LoginConfig.class, properties);
+            ConfigurableProcessor.process(FileConfig.class, properties);
         }
         catch (final Exception e) {
             throw new Error("Can't load gameserver configurations", e);

@@ -462,4 +462,7 @@
     <item_template item_id="339">
         <item_action action_type="CAST_SKILL" skill_id="60401201" />
     </item_template>
+    <item_template item_id="181092">
+        <item_action action_type="ADD_CHARACTER_SLOT" amount="1" />
+    </item_template>
 </item_templates>

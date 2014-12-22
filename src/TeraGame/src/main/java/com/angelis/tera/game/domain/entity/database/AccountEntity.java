@@ -19,6 +19,8 @@ public class AccountEntity extends BaseAccountEntity {
 
     private static final long serialVersionUID = -4034792019245322102L;
 
+    private int extraCharacterSlotCount;
+    
     @Column(name = "displayRange")
     private DisplayRangeEnum displayRange;
 
@@ -34,6 +36,14 @@ public class AccountEntity extends BaseAccountEntity {
 
     public AccountEntity() {
         super();
+    }
+
+    public int getExtraCharacterSlotCount() {
+        return extraCharacterSlotCount;
+    }
+
+    public void setExtraCharacterSlotCount(final int extraCharacterSlotCount) {
+        this.extraCharacterSlotCount = extraCharacterSlotCount;
     }
 
     public DisplayRangeEnum getDisplayRange() {

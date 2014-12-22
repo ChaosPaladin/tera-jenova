@@ -111,7 +111,7 @@ public enum ItemActionTypeEnum {
     ADD_CHARACTER_SLOT {
         @Override
         public boolean doAction(final Item item, final ItemAction itemAction, final Player player, final WorldPosition worldPosition) {
-            // TODO
+            player.getAccount().addExtractCharacterSlot(itemAction.getAmount());
             return true;
         }
     };

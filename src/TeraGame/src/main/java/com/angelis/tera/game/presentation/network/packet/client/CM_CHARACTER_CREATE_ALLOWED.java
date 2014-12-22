@@ -5,13 +5,14 @@ import java.nio.ByteBuffer;
 import com.angelis.tera.game.presentation.network.connection.TeraGameConnection;
 import com.angelis.tera.game.presentation.network.packet.TeraClientPacket;
 import com.angelis.tera.game.presentation.network.packet.server.SM_CHARACTER_CREATE_ALLOWED;
+import com.angelis.tera.game.process.model.account.Account;
 import com.angelis.tera.game.process.model.account.enums.AccountTypeEnum;
 
 /**
  * 
  * @author Angelis
  * 
- * Client ask server if he can create moer characters
+ * Client ask server if he can create more characters
  */
 public class CM_CHARACTER_CREATE_ALLOWED extends TeraClientPacket {
 
@@ -26,8 +27,12 @@ public class CM_CHARACTER_CREATE_ALLOWED extends TeraClientPacket {
 
     @Override
     protected void runImpl() {
-        final AccountTypeEnum accountType = this.getConnection().getAccount().getAccountType();
-        final int playerCount = this.getConnection().getAccount().getPlayers().size();
-        this.getConnection().sendPacket(new SM_CHARACTER_CREATE_ALLOWED(playerCount < accountType.maxPlayerCount));
+        final TeraGameConnection connection = this.getConnection();
+        final Account account = connection.getAccount();
+        final AccountTypeEnum accountType = account.getAccountType();
+        
+        final int playerCount = account.getPlayers().size();
+        final int maxAllowed = accountType.maxPlayerCount + account.getExtraCharacterSlotCount();
+        connection.sendPacket(new SM_CHARACTER_CREATE_ALLOWED(playerCount < maxAllowed));
     }
 }

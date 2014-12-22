@@ -1,1 +1,1 @@
-java -cp ./lib/*:TeraLogin.jar com.angelis.tera.game.MainLogin > logs/console.log 2>&1
+java -cp ./lib/*:TeraLogin.jar com.angelis.tera.login.MainLogin > logs/console.log 2>&1
