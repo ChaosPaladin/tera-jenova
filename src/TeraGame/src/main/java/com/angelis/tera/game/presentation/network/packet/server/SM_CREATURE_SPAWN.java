@@ -38,15 +38,26 @@ public class SM_CREATURE_SPAWN extends TeraServerPacket {
         writeD(byteBuffer, currentStats.getSpeed());
         writeD(byteBuffer, this.teraCreature.getId());
         writeH(byteBuffer, template.getHuntingZoneId());
+        writeH(byteBuffer, template.getHuntingZoneId());
         writeD(byteBuffer, template.getModelId());
 
-        writeB(byteBuffer, "000000000500000001010100000000000000000000000000000000000000");
+        writeB(byteBuffer, "0000050000000101");
+        writeD(byteBuffer, 1);
+        writeD(byteBuffer, 0);
+        writeD(byteBuffer, 0);
+        writeD(byteBuffer, 0);
+        writeD(byteBuffer, 0);
 
         writeUid(byteBuffer, this.teraCreature.getTarget());
 
-        writeB(byteBuffer, "00000000000000000000000000000000000000000000");
+        writeD(byteBuffer, 0);
+        writeD(byteBuffer, 0);
+        writeD(byteBuffer, 0);
+        writeD(byteBuffer, 0);
+        writeD(byteBuffer, 0);
+        writeH(byteBuffer, 0);
 
         this.writeBufferPosition(byteBuffer, shitShift);
-        writeB(byteBuffer, "28B1DCC220001CBC7CB7DCB40000"); //Shit
+        writeB(byteBuffer, "64B8ACB921D30000"); //Shit
     }
 }
