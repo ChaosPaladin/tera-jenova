@@ -7,8 +7,8 @@ import org.apache.commons.lang3.StringUtils;
 
 public class PrintUtils {
     
-    public static void printSection(String sectionName) {
-        StringBuilder sb = new StringBuilder();
+    public static void printSection(final String sectionName) {
+        final StringBuilder sb = new StringBuilder();
         sb.append("-[ "+sectionName+" ]");
 
         while (sb.length() < 79) {
@@ -19,26 +19,30 @@ public class PrintUtils {
     }
     
     public static byte[] hex2bytes(String string) {
+        if (string == null) {
+            string = "";
+        }
+
         final String finalString = string.replaceAll("\\s+","");
-        byte[] bytes = new byte[finalString.length() / 2];
+        final byte[] bytes = new byte[finalString.length() / 2];
         for (int i = 0; i < bytes.length; i++) {
            bytes[i] = (byte) Integer.parseInt(finalString.substring(2 * i, 2 * i + 2), 16);
         }
         return bytes;
     }
     
-    public static String bytes2hex(byte[] bytes) {
-        StringBuilder result = new StringBuilder();
+    public static String bytes2hex(final byte[] bytes) {
+        final StringBuilder result = new StringBuilder();
         int value;
-        for (byte b : bytes) {
+        for (final byte b : bytes) {
             value = b & 0xff;
             result.append(String.format("%02X", value));
         }
         return result.toString();
     }
     
-    public static String reverseHex(String input) {
-        String[] chunked = new String[input.length()/2];
+    public static String reverseHex(final String input) {
+        final String[] chunked = new String[input.length()/2];
         
         int position = 0;
         for (int i = 0 ; i < input.length() ; i+=2) {
@@ -50,14 +54,15 @@ public class PrintUtils {
         return StringUtils.join(chunked);
     }
     
-    public static String toHex(ByteBuffer data) {
-        int position = data.position();
-        StringBuilder result = new StringBuilder();
+    public static String toHex(final ByteBuffer data) {
+        final int position = data.position();
+        final StringBuilder result = new StringBuilder();
         int counter = 0;
         int b;
         while (data.hasRemaining()) {
-            if (counter % 16 == 0)
+            if (counter % 16 == 0) {
                 result.append(String.format("%04X: ", counter));
+            }
 
             b = data.get() & 0xff;
             result.append(String.format("%02X ", b));
@@ -69,7 +74,7 @@ public class PrintUtils {
                 result.append("\n");
             }
         }
-        int rest = counter % 16;
+        final int rest = counter % 16;
         if (rest > 0) {
             for (int i = 0; i < 17 - rest; i++) {
                 result.append("   ");
@@ -93,14 +98,16 @@ public class PrintUtils {
      * @param result
      * @param cnt
      */
-    private static void toText(ByteBuffer data, StringBuilder result, int cnt) {
+    private static void toText(final ByteBuffer data, final StringBuilder result, final int cnt) {
         int charPos = data.position() - cnt;
         for (int a = 0; a < cnt; a++) {
-            int c = data.get(charPos++);
-            if (c > 0x1f && c < 0x80)
+            final int c = data.get(charPos++);
+            if (c > 0x1f && c < 0x80) {
                 result.append((char) c);
-            else
+            }
+            else {
                 result.append('.');
+            }
         }
     }
 }
