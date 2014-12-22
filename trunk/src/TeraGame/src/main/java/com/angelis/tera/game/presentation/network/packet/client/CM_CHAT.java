@@ -30,7 +30,6 @@ public class CM_CHAT extends TeraClientPacket {
     @Override
     protected void readImpl() {
         readH(); // length
-
         this.chatType = ChatTypeEnum.fromValue(readD());
         this.chat = readS();
     }

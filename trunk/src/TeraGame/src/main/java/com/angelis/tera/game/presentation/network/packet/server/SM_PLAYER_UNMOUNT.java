@@ -20,7 +20,7 @@ public class SM_PLAYER_UNMOUNT extends TeraServerPacket {
     @Override
     protected void writeImpl(final TeraGameConnection connection, final ByteBuffer byteBuffer) {
         writeUid(byteBuffer, this.player);
-        writeD(byteBuffer, this.mount.getId() + 111110);
+        writeD(byteBuffer, this.mount.getSkillId());
     }
 
 }

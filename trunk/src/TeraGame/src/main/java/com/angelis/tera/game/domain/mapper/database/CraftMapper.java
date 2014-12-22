@@ -11,6 +11,7 @@ import com.angelis.tera.game.process.model.player.craft.Craft;
 
 public class CraftMapper extends AbstractDatabaseMapper<CraftEntity, Craft> {
 
+    // MODEL -> ENTITY
     @Override
     protected CraftEntity createNewEmptyEntity() {
         return new CraftEntity();
@@ -27,6 +28,7 @@ public class CraftMapper extends AbstractDatabaseMapper<CraftEntity, Craft> {
         // No dependency
     }
 
+    // ENTITY -> MODEL
     @Override
     protected Craft createNewEmptyModel() {
         return new Craft();

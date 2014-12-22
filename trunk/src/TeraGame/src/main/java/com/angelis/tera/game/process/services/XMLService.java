@@ -45,6 +45,7 @@ import com.angelis.tera.game.domain.entity.xml.players.PlayerItemSetEntityHolder
 import com.angelis.tera.game.domain.entity.xml.players.PlayerRaceSkillsEntityHolder;
 import com.angelis.tera.game.domain.entity.xml.quests.QuestEntityHolder;
 import com.angelis.tera.game.domain.entity.xml.tradelist.TradelistEntityHolder;
+import com.angelis.tera.game.domain.entity.xml.zones.ZoneEntityHolder;
 import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.io.Input;
 import com.esotericsoftware.kryo.io.Output;
@@ -103,6 +104,8 @@ public class XMLService extends AbstractService {
         this.checkBinFile(GatherDropEntityHolder.class, "gather_drops");
         
         this.checkBinFile(ItemTemplateEntityHolder.class, "item_templates");
+        
+        this.checkBinFile(ZoneEntityHolder.class, "zones");
 
         log.info("XMLService started");
     }

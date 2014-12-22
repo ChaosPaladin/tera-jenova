@@ -3,6 +3,7 @@ package com.angelis.tera.game.domain.mapper.database;
 import java.util.List;
 import java.util.Set;
 
+import javolution.util.FastList;
 import javolution.util.FastSet;
 
 import com.angelis.tera.common.domain.entity.database.AbstractDatabaseEntity;
@@ -12,7 +13,9 @@ import com.angelis.tera.common.process.model.AbstractModel;
 import com.angelis.tera.common.utils.BeanUtils;
 import com.angelis.tera.common.utils.CollectionUtils;
 import com.angelis.tera.game.domain.entity.database.AccountEntity;
+import com.angelis.tera.game.domain.entity.database.AchievementEntity;
 import com.angelis.tera.game.domain.entity.database.CraftEntity;
+import com.angelis.tera.game.domain.entity.database.GatherEntity;
 import com.angelis.tera.game.domain.entity.database.PlayerEntity;
 import com.angelis.tera.game.domain.entity.database.SkillEntity;
 import com.angelis.tera.game.domain.entity.database.StorageEntity;
@@ -20,11 +23,14 @@ import com.angelis.tera.game.domain.entity.database.ZoneEntity;
 import com.angelis.tera.game.process.model.Zone;
 import com.angelis.tera.game.process.model.account.Account;
 import com.angelis.tera.game.process.model.creature.CurrentStats;
+import com.angelis.tera.game.process.model.player.Achievement;
 import com.angelis.tera.game.process.model.player.Player;
 import com.angelis.tera.game.process.model.player.PlayerAppearance;
 import com.angelis.tera.game.process.model.player.SkillList;
 import com.angelis.tera.game.process.model.player.craft.Craft;
 import com.angelis.tera.game.process.model.player.craft.CraftStats;
+import com.angelis.tera.game.process.model.player.gather.Gather;
+import com.angelis.tera.game.process.model.player.gather.GatherStats;
 import com.angelis.tera.game.process.model.player.quest.QuestList;
 import com.angelis.tera.game.process.model.skill.Skill;
 import com.angelis.tera.game.process.model.storage.Storage;
@@ -123,6 +129,31 @@ public class PlayerMapper extends AbstractDatabaseMapper<PlayerEntity, Player> {
             }
             entity.setSkills(skillEntities);
         }
+
+        // GATHER
+        if (!excludedDependencies.contains(Gather.class)) {
+            final GatherMapper gatherMapper = MapperManager.getDatabaseMapper(GatherMapper.class);
+            final Set<GatherEntity> gatherEntities = new FastSet<>();
+            for (final Gather gather : model.getGatherStats().getGathers()) {
+                final GatherEntity gatherEntity = gatherMapper.map(gather);
+                gatherEntity.setPlayer(entity);
+                gatherEntities.add(gatherEntity);
+            }
+
+            entity.setGathers(gatherEntities);
+        }
+
+        // ACHIEVEMENTS
+        if (!excludedDependencies.contains(Achievement.class)) {
+            final AchievementMapper achievementMapper = MapperManager.getDatabaseMapper(AchievementMapper.class);
+            final Set<AchievementEntity> achievementEntities = new FastSet<>();
+            for (final Achievement achievement : model.getAchievements()) {
+                final AchievementEntity achievementEntity = achievementMapper.map(achievement);
+                achievementEntity.setPlayer(entity);
+                achievementEntities.add(achievementEntity);
+            }
+            entity.setAchievements(achievementEntities);
+        }
     }
 
     // ENTITY -> MODEL
@@ -207,15 +238,35 @@ public class PlayerMapper extends AbstractDatabaseMapper<PlayerEntity, Player> {
             }
             model.setStorages(storages);
         }
-        
+
         // SKILL
         if (!excludedDependencies.contains(SkillEntity.class)) {
             final SkillMapper skillMapper = MapperManager.getDatabaseMapper(SkillMapper.class);
-            final Set<Skill> skills = new FastSet<Skill>();
+            final Set<Skill> skills = new FastSet<>();
             for (final SkillEntity skillEntity : entity.getSkills()) {
                 skills.add(skillMapper.map(skillEntity));
             }
-            model.setSkillList(new SkillList(skills ) );
+            model.setSkillList(new SkillList(skills));
+        }
+
+        // GATHER
+        if (!excludedDependencies.contains(GatherEntity.class)) {
+            final GatherMapper gatherMapper = MapperManager.getDatabaseMapper(GatherMapper.class);
+            final Set<Gather> gathers = new FastSet<>();
+            for (final GatherEntity gatherEntity : entity.getGathers()) {
+                gathers.add(gatherMapper.map(gatherEntity));
+            }
+            model.setGatherStats(new GatherStats(gathers));
+        }
+
+        // ACHIEVEMENTS
+        if (!excludedDependencies.contains(AchievementEntity.class)) {
+            final AchievementMapper achievementMapper = MapperManager.getDatabaseMapper(AchievementMapper.class);
+            final List<Achievement> achievements = new FastList<>();
+            for (final AchievementEntity achievementEntity : entity.getAchievements()) {
+                achievements.add(achievementMapper.map(achievementEntity));
+            }
+            model.setAchievements(achievements);
         }
 
         // VISITED ZONES

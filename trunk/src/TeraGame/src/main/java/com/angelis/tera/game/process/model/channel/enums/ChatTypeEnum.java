@@ -32,14 +32,10 @@ public enum ChatTypeEnum {
     SOCIAL(26),
     GENERAL(27);
 
-    private final int value;
-    
+    public final int value;
+
     ChatTypeEnum(final int value) {
         this.value = value;
-    }
-    
-    public int getValue() {
-        return this.value;
     }
 
     public static ChatTypeEnum fromValue(final int value) {
@@ -48,8 +44,8 @@ public enum ChatTypeEnum {
                 return chatType;
             }
         }
-        
-        Logger.getLogger(ChatTypeEnum.class.getName()).error("Can't find ChatTypeEnum with value "+value);
+
+        Logger.getLogger(ChatTypeEnum.class.getName()).error("Can't find ChatTypeEnum with value " + value);
         return null;
     }
 }

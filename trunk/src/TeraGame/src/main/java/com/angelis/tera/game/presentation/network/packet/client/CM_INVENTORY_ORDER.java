@@ -20,7 +20,6 @@ public class CM_INVENTORY_ORDER extends TeraClientPacket {
         readD(); // 00000000
         readD(); // FFFFFFFF
         readD(); // FFFFFFFF
-        
     }
 
     @Override

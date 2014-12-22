@@ -85,12 +85,11 @@ public class SkillService extends AbstractService {
     public void onPlayerSkillUse(final Player player, final SkillArgs skillArgs) {
         final Mount mount = MountService.getInstance().getMountBySkillId(skillArgs.getSkillId());
         if (mount != null) {
+            this.sendSkillCoolTime(player, skillArgs.getSkillId(), 1000);
             MountService.getInstance().processMount(player, mount);
-            this.sendSkillCoolTime(player, skillArgs.getSkillId(), 10);
-            return;
+        } else {
+            BattleService.getInstance().onPlayerAttack(player, skillArgs);
         }
-
-        BattleService.getInstance().onPlayerAttack(player, skillArgs);
     }
 
     public void onPlayerSkillUse(final Player player, final int skillId) {

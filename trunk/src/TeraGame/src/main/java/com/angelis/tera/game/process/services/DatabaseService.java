@@ -8,6 +8,7 @@ import org.hibernate.cfg.AnnotationConfiguration;
 
 import com.angelis.tera.common.services.AbstractService;
 import com.angelis.tera.game.domain.entity.database.AccountEntity;
+import com.angelis.tera.game.domain.entity.database.AchievementEntity;
 import com.angelis.tera.game.domain.entity.database.CraftEntity;
 import com.angelis.tera.game.domain.entity.database.GatherEntity;
 import com.angelis.tera.game.domain.entity.database.GuildEntity;
@@ -45,6 +46,7 @@ public class DatabaseService extends AbstractService {
                 .addAnnotatedClass(SkillEntity.class)
                 .addAnnotatedClass(QuestEntity.class)
                 .addAnnotatedClass(ZoneEntity.class)
+                .addAnnotatedClass(AchievementEntity.class)
             ;
 
             this.sessionFactory = this.annotationConfiguration.buildSessionFactory();

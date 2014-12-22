@@ -3,16 +3,20 @@ package com.angelis.tera.game.process.model.player.gather;
 import com.angelis.tera.game.process.model.AbstractTeraModel;
 import com.angelis.tera.game.process.model.player.gather.enums.GatherTypeEnum;
 
-public class GatherStatInfo extends AbstractTeraModel {
+public class Gather extends AbstractTeraModel {
 
     private GatherTypeEnum gatherType;
     private int level;
 
-    public GatherStatInfo(final Integer id) {
+    public Gather() {
+        super(null);
+    }
+    
+    public Gather(final Integer id) {
         super(id);
     }
     
-    public GatherStatInfo(final GatherTypeEnum gatherType, final int level) {
+    public Gather(final GatherTypeEnum gatherType, final int level) {
         this(null);
         this.gatherType = gatherType;
         this.level = level;
@@ -51,10 +55,10 @@ public class GatherStatInfo extends AbstractTeraModel {
         if (!super.equals(obj)) {
             return false;
         }
-        if (!(obj instanceof GatherStatInfo)) {
+        if (!(obj instanceof Gather)) {
             return false;
         }
-        final GatherStatInfo other = (GatherStatInfo) obj;
+        final Gather other = (Gather) obj;
         if (gatherType != other.gatherType) {
             return false;
         }
