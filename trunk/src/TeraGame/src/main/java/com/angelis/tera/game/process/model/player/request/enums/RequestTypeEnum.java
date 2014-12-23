@@ -6,11 +6,11 @@ public enum RequestTypeEnum {
     PLAYER_TRADE(3),
     PARTY_INVITE(4),
     MAILBOX(8),
+    NPC_TRADE(9),
     DUEL(12),
     PEGASUS(15),
     TELEPORT(16),
     DEATH_MATCH_INVITE(19),
-    NPC_TRADE(768),
     ;
     
     public final int value;
