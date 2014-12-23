@@ -68,6 +68,7 @@ public class UserService extends AbstractService {
                 }
 
                 entry.getValue().execute(player.getConnection(), commandArguments);
+                break;
             }
         }
     }

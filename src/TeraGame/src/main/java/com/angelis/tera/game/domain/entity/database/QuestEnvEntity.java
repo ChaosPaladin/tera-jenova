@@ -10,8 +10,8 @@ import javax.persistence.Table;
 import com.angelis.tera.common.domain.entity.database.AbstractDatabaseEntity;
 
 @Entity
-@Table(name = "player_quests")
-public class QuestEntity extends AbstractDatabaseEntity {
+@Table(name = "player_quest_envs")
+public class QuestEnvEntity extends AbstractDatabaseEntity {
 
     private static final long serialVersionUID = -5365265045972985699L;
 
@@ -28,11 +28,11 @@ public class QuestEntity extends AbstractDatabaseEntity {
     @JoinColumn(name = "player_id", nullable = false)
     private PlayerEntity player;
 
-    public QuestEntity(final Integer id) {
+    public QuestEnvEntity(final Integer id) {
         super(id);
     }
 
-    public QuestEntity() {
+    public QuestEnvEntity() {
     }
 
     public int getQuestId() {
@@ -80,10 +80,10 @@ public class QuestEntity extends AbstractDatabaseEntity {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof QuestEntity)) {
+        if (!(obj instanceof QuestEnvEntity)) {
             return false;
         }
-        final QuestEntity other = (QuestEntity) obj;
+        final QuestEnvEntity other = (QuestEnvEntity) obj;
         if (player == null) {
             if (other.player != null) {
                 return false;

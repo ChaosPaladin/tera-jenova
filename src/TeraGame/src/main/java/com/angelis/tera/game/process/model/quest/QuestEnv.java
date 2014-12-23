@@ -4,7 +4,9 @@ import java.util.Map;
 
 import javolution.util.FastMap;
 
-public class QuestEnv {
+import com.angelis.tera.game.process.model.AbstractTeraModel;
+
+public class QuestEnv extends AbstractTeraModel {
 
     private final Quest quest;
 
@@ -13,6 +15,7 @@ public class QuestEnv {
     private boolean complited;
 
     public QuestEnv(final Quest quest) {
+        super(null);
         this.quest = quest;
     }
 

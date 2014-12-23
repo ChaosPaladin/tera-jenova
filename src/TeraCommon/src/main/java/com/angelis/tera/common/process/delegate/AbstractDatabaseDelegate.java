@@ -34,13 +34,11 @@ public abstract class AbstractDatabaseDelegate<E extends AbstractDatabaseEntity,
     
     public final List<M> findAll() {
         final List<E> entities = getDAO().findAll();
-        if (entities == null || entities.isEmpty()) {
-            return null;
-        }
-        
         final List<M> models = new FastList<>();
-        for (final E entity : entities) {
-            models.add(getMapper().map(entity));
+        if (entities != null && !entities.isEmpty()) {
+            for (final E entity : entities) {
+                models.add(getMapper().map(entity));
+            }
         }
         return models;
     }

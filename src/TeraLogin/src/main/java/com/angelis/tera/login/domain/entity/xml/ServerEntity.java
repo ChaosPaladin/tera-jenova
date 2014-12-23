@@ -14,7 +14,7 @@ public class ServerEntity extends AbstractXMLEntity {
     private static final long serialVersionUID = 8506717527338223279L;
 
     @XmlElement(name = "id")
-    private int id;
+    private Integer id;
 
     @XmlElement(name = "ip")
     private String ip;
@@ -45,16 +45,6 @@ public class ServerEntity extends AbstractXMLEntity {
 
     @XmlElement(name = "language")
     private String language;
-
-    @Override
-    public Integer getId() {
-        return id;
-    }
-
-    @Override
-    public void setId(final Integer id) {
-        this.id = id;
-    }
 
     public String getIp() {
         return ip;
@@ -139,6 +129,6 @@ public class ServerEntity extends AbstractXMLEntity {
     @Override
     public void onLoad() {
         // TODO Auto-generated method stub
-        
+
     }
 }

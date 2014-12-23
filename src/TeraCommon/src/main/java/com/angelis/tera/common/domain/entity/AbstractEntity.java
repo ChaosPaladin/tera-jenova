@@ -10,6 +10,5 @@ public abstract class AbstractEntity implements HasId {
     }
 
     public void setId(final Integer id) {
-        
     }
 }

@@ -20,8 +20,8 @@ public class QuestList {
         this.questEnvs = new FastSet<>();
     }
     
-    public QuestList(final Set<QuestEnv> questDatas) {
-        this.questEnvs = questDatas;
+    public QuestList(final Set<QuestEnv> questEnvs) {
+        this.questEnvs = questEnvs;
     }
     
     public QuestEnv addQuest(final Quest quest) {

@@ -30,12 +30,12 @@ public class WorldService extends AbstractService {
 
     /** DELEGATES */
     private final ZoneDelegate zoneDelegate = new ZoneDelegate();
-    
+
     private final Map<String, Player> allPlayers = new FastMap<>();
     private final Map<String, Player> onlinePlayers = new FastMap<>();
-    
+
     private final Map<Integer, Channel> channels = new FastMap<>();
-    
+
     private final Map<Byte[], Zone> zones = new FastMap<Byte[], Zone>();
 
     @Override
@@ -50,38 +50,38 @@ public class WorldService extends AbstractService {
     public void onPlayerConnect(final Player player) {
         this.onlinePlayers.put(player.getName().toUpperCase(), player);
         this.allPlayers.put(player.getName().toUpperCase(), player);
-        
+
         Channel channel = this.channels.get(player.getWorldPosition().getMapId());
         if (channel == null) {
             channel = new Channel(1);
             this.channels.put(player.getWorldPosition().getMapId(), channel);
         }
-        
+
         player.setChannel(channel);
         channel.addPlayer(player);
     }
-    
+
     public void onPlayerEnterWorld(final Player player) {
         QuestService.getInstance().onPlayerEnterWorld(player);
     }
 
     public void onPlayerDisconnect(final Player player) {
         this.onlinePlayers.remove(player);
-        
+
         final Channel channel = this.channels.get(player.getWorldPosition().getMapId());
         if (channel == null) {
             return;
         }
-        
+
         player.setChannel(null);
         channel.removePlayer(player);
     }
-    
+
     public void onPlayerCreate(final Player player) {
         // TODO startZoneData for REAPER
         final byte[] startZoneData = new byte[] { 1, 0, 0, 0, 2, 0, 0, 0, 7, 0, 0, 0 };
         final Set<Zone> zones = new FastSet<>();
-        
+
         player.setCreationTime(new Date());
         player.setDeletionTime(null);
         player.setLastOnlineTime(null);
@@ -89,12 +89,13 @@ public class WorldService extends AbstractService {
         player.setCurrentZoneData(startZoneData);
         player.setVisitedZones(zones);
         player.setWorldPosition(TeleportLocations.getStandardStartingPoint());
-        
+
         int level = 1;
         if (player.getPlayerClass() == PlayerClassEnum.REAPER) {
             level = 50;
             player.setWorldPosition(TeleportLocations.getReaperStartingPoint());
-        } else {
+        }
+        else {
             player.setWorldPosition(TeleportLocations.getStandardStartingPoint());
         }
         player.setLevel(level);
@@ -103,7 +104,7 @@ public class WorldService extends AbstractService {
     public Player getOnlinePlayerByName(final String name) {
         return this.onlinePlayers.get(name.toUpperCase());
     }
-    
+
     public Player getPlayerByName(final String name) {
         Player player = this.getOnlinePlayerByName(name);
         if (player == null) {

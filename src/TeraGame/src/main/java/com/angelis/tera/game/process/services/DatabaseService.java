@@ -14,10 +14,11 @@ import com.angelis.tera.game.domain.entity.database.GatherEntity;
 import com.angelis.tera.game.domain.entity.database.GuildEntity;
 import com.angelis.tera.game.domain.entity.database.PlayerEntity;
 import com.angelis.tera.game.domain.entity.database.PlayerRelationEntity;
-import com.angelis.tera.game.domain.entity.database.QuestEntity;
+import com.angelis.tera.game.domain.entity.database.QuestEnvEntity;
 import com.angelis.tera.game.domain.entity.database.SkillEntity;
 import com.angelis.tera.game.domain.entity.database.StorageEntity;
 import com.angelis.tera.game.domain.entity.database.StorageItemEntity;
+import com.angelis.tera.game.domain.entity.database.WelcomeMessageEntity;
 import com.angelis.tera.game.domain.entity.database.ZoneEntity;
 
 public class DatabaseService extends AbstractService {
@@ -44,9 +45,10 @@ public class DatabaseService extends AbstractService {
                 .addAnnotatedClass(CraftEntity.class)
                 .addAnnotatedClass(GatherEntity.class)
                 .addAnnotatedClass(SkillEntity.class)
-                .addAnnotatedClass(QuestEntity.class)
+                .addAnnotatedClass(QuestEnvEntity.class)
                 .addAnnotatedClass(ZoneEntity.class)
                 .addAnnotatedClass(AchievementEntity.class)
+                .addAnnotatedClass(WelcomeMessageEntity.class)
             ;
 
             this.sessionFactory = this.annotationConfiguration.buildSessionFactory();

@@ -81,7 +81,7 @@ public abstract class TeraServerPacket extends AbstractServerPacket<TeraGameConn
         byteBuffer.position(position);
     }
     
-    protected final void writeBufferPosition(final ByteBuffer byteBuffer, final int overrideValue, final int newPosition) {
+    protected final void writeBufferPosition(final ByteBuffer byteBuffer, final int newPosition, final int overrideValue) {
         final int position = byteBuffer.position();
         writeH(byteBuffer, overrideValue);
         byteBuffer.position(position);

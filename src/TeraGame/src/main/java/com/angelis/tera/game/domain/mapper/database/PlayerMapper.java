@@ -17,6 +17,7 @@ import com.angelis.tera.game.domain.entity.database.AchievementEntity;
 import com.angelis.tera.game.domain.entity.database.CraftEntity;
 import com.angelis.tera.game.domain.entity.database.GatherEntity;
 import com.angelis.tera.game.domain.entity.database.PlayerEntity;
+import com.angelis.tera.game.domain.entity.database.QuestEnvEntity;
 import com.angelis.tera.game.domain.entity.database.SkillEntity;
 import com.angelis.tera.game.domain.entity.database.StorageEntity;
 import com.angelis.tera.game.domain.entity.database.ZoneEntity;
@@ -154,6 +155,18 @@ public class PlayerMapper extends AbstractDatabaseMapper<PlayerEntity, Player> {
             }
             entity.setAchievements(achievementEntities);
         }
+
+        // VISITED ZONES
+        if (!excludedDependencies.contains(Zone.class)) {
+            final ZoneMapper zoneMapper = MapperManager.getDatabaseMapper(ZoneMapper.class);
+            final Set<ZoneEntity> visitedZoneEntities = new FastSet<>();
+            for (final Zone zone : model.getVisitedZones()) {
+                final ZoneEntity zoneEntity = zoneMapper.map(zone);
+                zoneEntity.setPlayer(entity);
+                visitedZoneEntities.add(zoneEntity);
+            }
+            entity.setVisitedZones(visitedZoneEntities );
+        }
     }
 
     // ENTITY -> MODEL
@@ -184,14 +197,20 @@ public class PlayerMapper extends AbstractDatabaseMapper<PlayerEntity, Player> {
         model.setCurrentZoneData(entity.getCurrentZoneData());
 
         // CREATURE STATS
-        final CurrentStats currentStats = new CurrentStats();
+        CurrentStats currentStats = model.getCurrentStats();
+        if (currentStats == null) {
+            currentStats = new CurrentStats();
+        }
         currentStats.setHp(entity.getHp());
         currentStats.setMp(entity.getMp());
         currentStats.setStamina(entity.getStamina());
         model.setCurrentStats(currentStats);
 
         // WORLD POSITION
-        final WorldPosition worldPosition = new WorldPosition();
+        WorldPosition worldPosition = model.getWorldPosition();
+        if (worldPosition == null) {
+            worldPosition = new WorldPosition();
+        }
         worldPosition.setMapId(entity.getMapId());
         worldPosition.setX(entity.getX());
         worldPosition.setY(entity.getY());
@@ -200,7 +219,10 @@ public class PlayerMapper extends AbstractDatabaseMapper<PlayerEntity, Player> {
         model.setWorldPosition(worldPosition);
 
         // PLAYER APPEARANCE
-        final PlayerAppearance playerAppearance = new PlayerAppearance();
+        PlayerAppearance playerAppearance = model.getPlayerAppearance();
+        if (playerAppearance == null) {
+            playerAppearance = new PlayerAppearance();
+        }
         playerAppearance.setData(entity.getData());
         playerAppearance.setDetails1(entity.getDetails1());
         playerAppearance.setDetails2(entity.getDetails2());
@@ -270,19 +292,25 @@ public class PlayerMapper extends AbstractDatabaseMapper<PlayerEntity, Player> {
         }
 
         // VISITED ZONES
-        final ZoneMapper zoneMapper = MapperManager.getDatabaseMapper(ZoneMapper.class);
-        final Set<Zone> zones = new FastSet<>();
-        for (final ZoneEntity zoneEntity : entity.getVisitedZones()) {
-            zones.add(zoneMapper.map(zoneEntity));
+        if (!excludedDependencies.contains(ZoneEntity.class)) {
+            final ZoneMapper zoneMapper = MapperManager.getDatabaseMapper(ZoneMapper.class);
+            final Set<Zone> zones = new FastSet<>();
+            for (final ZoneEntity zoneEntity : entity.getVisitedZones()) {
+                zones.add(zoneMapper.map(zoneEntity));
+            }
+            model.setVisitedZones(zones);
         }
-        model.setVisitedZones(zones);
 
         // QUEST
-        final QuestMapper questMapper = MapperManager.getDatabaseMapper(QuestMapper.class);
-        final QuestList questList = new QuestList();
-        // TODO
-        model.setQuestList(questList);
-
+        if (!excludedDependencies.contains(QuestEnvEntity.class)) {
+            final QuestMapper questMapper = MapperManager.getDatabaseMapper(QuestMapper.class);
+            
+            /*for (final QuestEnvEntity questEntity : entity.getQuests()) {
+                questList.add(questMapper.map(questEntity));
+            }*/
+            model.setQuestList(new QuestList());
+        }
+        
         // RELATIONS
         // TODO
     }

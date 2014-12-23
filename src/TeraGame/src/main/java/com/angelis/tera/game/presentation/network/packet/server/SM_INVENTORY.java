@@ -74,7 +74,7 @@ public class SM_INVENTORY extends TeraServerPacket {
             writeD(byteBuffer, 30); // enchantment bonus
             writeB(byteBuffer, "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000FFFFFFFF00000000");
 
-            this.writeBufferPosition(byteBuffer, byteBuffer.position(), nextShift2);
+            this.writeBufferPosition(byteBuffer, nextShift2);
 
             writeH(byteBuffer, 0);
 

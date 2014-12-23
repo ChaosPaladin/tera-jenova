@@ -34,6 +34,7 @@ import com.angelis.tera.game.process.command.admin.SpawnCommand;
 import com.angelis.tera.game.process.command.admin.SummonCommand;
 import com.angelis.tera.game.process.command.admin.TeleportCommand;
 import com.angelis.tera.game.process.command.admin.UnMountCommand;
+import com.angelis.tera.game.process.command.admin.WelcomeMessageCommand;
 import com.angelis.tera.game.process.exceptions.command.CommandEmptyException;
 import com.angelis.tera.game.process.exceptions.command.NotEnoughArgumentForCommand;
 import com.angelis.tera.game.process.exceptions.command.admin.NoSuchAdminCommandException;
@@ -74,6 +75,7 @@ public class AdminService extends AbstractService {
         commands.put("quest", new QuestCommand());
         commands.put("kill", new KillCommand());
         commands.put("recall", new RecallCommand());
+        commands.put("welcomemessage", new WelcomeMessageCommand());
 
         log.info("AdminService started");
     }

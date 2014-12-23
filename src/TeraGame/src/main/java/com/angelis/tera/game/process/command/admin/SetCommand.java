@@ -85,6 +85,6 @@ public class SetCommand extends AbstractAdminCommand {
 
     @Override
     public String getSyntax() {
-        return "set {level|speed|attack|hp} [targetName] [value]";
+        return "set {level|speed|attack|hp|size} [targetName] [value]";
     }
 }
