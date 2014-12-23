@@ -3,6 +3,13 @@
     <groupId>com.angelis</groupId>
     <artifactId>TeraLauncher</artifactId>
     <version>1.0.0</version>
+    <packaging>jar</packaging>
+    <name>TeraLauncher</name>
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>com.angelis</groupId>
