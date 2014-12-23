@@ -24,6 +24,6 @@ public class SM_QUEST_BALLOON extends TeraServerPacket {
     protected void writeImpl(final TeraGameConnection connection, final ByteBuffer byteBuffer) {
         writeB(byteBuffer, "0E00");
         writeUid(byteBuffer, this.npc);
-        writeS(byteBuffer, "@quest:"+(this.quest.getId()*1000+2));
+        writeS(byteBuffer, "@quest:"+(this.quest.getId()*1000+10));
     }
 }
