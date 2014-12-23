@@ -12,7 +12,7 @@
         <module>../TeraLogin</module>
         <module>../TeraLauncher</module>
         <module>../TeraTools</module>
-        <module>../TeraPacket</module>
+        <!-- <module>../TeraPacket</module>  -->
     </modules>
     <build>
         <plugins>
