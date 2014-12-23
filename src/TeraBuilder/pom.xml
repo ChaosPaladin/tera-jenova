@@ -96,6 +96,7 @@
                                     <fileset dir="${login}/lib">
                                         <include name="nanohttpd-2.1.0.jar" />
                                     </fileset>
+                                    <fileset dir="${login}/target/dependencies"/>
                                 </copy>
                                 <copy todir="${build.dist.login}/conf">
                                     <fileset dir="${login}/conf">
@@ -108,12 +109,12 @@
 
 
                                 <!-- TERA TOOLS -->
-                                <mkdir dir="${build.dist.tools}" />
+                                <!-- <mkdir dir="${build.dist.tools}" />
                                 <copy todir="${build.dist.tools}">
                                     <fileset dir="${tools}/target">
                                         <include name="TeraTools.jar" />
                                     </fileset>
-                                </copy>
+                                </copy> -->
 
 
 
@@ -150,8 +151,23 @@
 
                                 <!-- TERA LAUNCHER -->
                                 <mkdir dir="${build.dist.launcher}" />
+                                <mkdir dir="${build.dist.launcher}/lib" />
                                 <copy todir="${build.dist.launcher}">
-                                    <fileset dir="${launcher}/target"/>
+                                    <fileset dir="${launcher}/target">
+                                        <include name="TeraLauncher.jar" />
+                                    </fileset>
+                                    <fileset dir="${launcher}/bin">
+                                        <include name="*.bat" />
+                                        <include name="*.sh" />
+                                    </fileset>
+                                </copy>
+                                <copy todir="${build.dist.launcher}/lib">
+                                    <fileset dir="${launcher}/target/dependencies"/>
+                                </copy>
+                                <copy todir="${build.dist.launcher}/conf">
+                                    <fileset dir="${launcher}/conf">
+                                        <include name="*.properties" />
+                                    </fileset>
                                 </copy>
                             </tasks>
                         </configuration>
