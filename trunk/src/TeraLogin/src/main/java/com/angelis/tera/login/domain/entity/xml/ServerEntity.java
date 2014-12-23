@@ -46,6 +46,14 @@ public class ServerEntity extends AbstractXMLEntity {
     @XmlElement(name = "language")
     private String language;
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(final Integer id) {
+        this.id = id;
+    }
+
     public String getIp() {
         return ip;
     }

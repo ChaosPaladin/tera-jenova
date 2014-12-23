@@ -15,6 +15,7 @@ public class GatherTemplateMapper extends AbstractXMLMapper<GatherTemplateEntity
     @Override
     public void map(final GatherTemplateEntity entity, final GatherTemplate model) {
         // DIRECT
+        model.setId(entity.getId());
         model.setGatherType(entity.getGatherType());
         model.setMinLevel(entity.getMinLevel());
         model.setMaxLevel(entity.getMaxLevel());

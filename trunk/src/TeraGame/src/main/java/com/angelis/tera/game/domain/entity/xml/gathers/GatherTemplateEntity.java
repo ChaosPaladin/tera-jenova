@@ -29,7 +29,6 @@ public class GatherTemplateEntity extends AbstractXMLEntity {
     @XmlAttribute(name="gather_cost_point")
     private int gatherCostPoint;
 
-    @Override
     public Integer getId() {
         return id;
     }

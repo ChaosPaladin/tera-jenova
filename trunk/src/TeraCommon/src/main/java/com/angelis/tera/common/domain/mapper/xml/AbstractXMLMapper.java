@@ -8,7 +8,6 @@ public abstract class AbstractXMLMapper<E extends AbstractXMLEntity, M extends A
     // ENTITY RELATED
     public final E map(final M model) {
         final E entity = createNewEmptyEntity();
-        entity.setId(model.getId());
         this.map(model, entity);
         this.finalizeDependencies(model, entity);
 
@@ -30,7 +29,6 @@ public abstract class AbstractXMLMapper<E extends AbstractXMLEntity, M extends A
     // MODEL RELATED
     public final M map(final E entity) {
         final M model = createNewEmptyModel();
-        model.setId(entity.getId());
         this.map(entity, model);
         this.finalizeDependencies(entity, model);
 
