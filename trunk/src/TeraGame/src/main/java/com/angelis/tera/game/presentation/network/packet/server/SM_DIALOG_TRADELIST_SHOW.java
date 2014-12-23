@@ -12,14 +12,14 @@ import com.angelis.tera.game.process.model.player.request.AbstractRequest;
 import com.angelis.tera.game.process.model.tradelist.Tradelist;
 import com.angelis.tera.game.process.model.tradelist.enums.TradelistTabNameEnum;
 
-public class SM_NPC_TRADELIST extends TeraServerPacket {
+public class SM_DIALOG_TRADELIST_SHOW extends TeraServerPacket {
 
     private final Npc npc;
     private final AbstractRequest<?, ?> request;
     private final Tradelist tradelist;
     private final DialogStringEnum dialogString;
     
-    public SM_NPC_TRADELIST(final Npc npc, final AbstractRequest<?, ?> request, final Tradelist tradelist, final DialogStringEnum dialogString) {
+    public SM_DIALOG_TRADELIST_SHOW(final Npc npc, final AbstractRequest<?, ?> request, final Tradelist tradelist, final DialogStringEnum dialogString) {
         this.npc = npc;
         this.request = request;
         this.tradelist = tradelist;

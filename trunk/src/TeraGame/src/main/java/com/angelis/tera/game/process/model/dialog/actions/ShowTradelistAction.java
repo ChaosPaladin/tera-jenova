@@ -1,6 +1,6 @@
 package com.angelis.tera.game.process.model.dialog.actions;
 
-import com.angelis.tera.game.presentation.network.packet.server.SM_NPC_TRADELIST;
+import com.angelis.tera.game.presentation.network.packet.server.SM_DIALOG_TRADELIST_SHOW;
 import com.angelis.tera.game.presentation.network.packet.server.SM_REQUEST_CONTRACT;
 import com.angelis.tera.game.process.model.creature.Npc;
 import com.angelis.tera.game.process.model.dialog.AbstractDialogAction;
@@ -26,6 +26,6 @@ public class ShowTradelistAction extends AbstractDialogAction {
 
         final NpcTradeRequest request = new NpcTradeRequest(npc, this.player);
         this.player.getConnection().sendPacket(new SM_REQUEST_CONTRACT(request));
-        this.player.getConnection().sendPacket(new SM_NPC_TRADELIST(npc, request, tradelist, this.dialog.getLastClickedButton().getDialogString()));
+        this.player.getConnection().sendPacket(new SM_DIALOG_TRADELIST_SHOW(npc, request, tradelist, this.dialog.getLastClickedButton().getDialogString()));
     }
 }

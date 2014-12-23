@@ -21,7 +21,6 @@ public class SM_ACTION_STAGE extends TeraServerPacket {
     @Override
     protected void writeImpl(final TeraGameConnection connection, final ByteBuffer byteBuffer) {
         int model = 0;
-        
         if (this.creature instanceof Player) {
             model = ((Player) this.creature).getRaceGenderClassValue();
         }

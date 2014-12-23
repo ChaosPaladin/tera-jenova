@@ -74,7 +74,7 @@ public class ClientPacketHandler {
 
         // SKILL
         addPacket((short) 0xF8DD, CM_SKILL_START.class); // OK
-        addPacket((short) 0xE29D, CM_SKILL_INSTANCE_START.class);
+        addPacket((short) 0x70AB, CM_SKILL_INSTANCE_START.class); // OK
         addPacket((short) 0x76A8, CM_SKILL_CANCEL.class);
         addPacket((short) 0x738A, CM_GLYPH_REINIT.class);
 
@@ -85,7 +85,7 @@ public class ClientPacketHandler {
         addPacket((short) 0xC590, CM_LOOKING_FOR_INSTANCE_WINDOW_OPEN.class); // OK
         addPacket((short) 0xE8A2, CM_PLAYER_REPORT.class); // TODO
         addPacket((short) 0x8DA7, CM_PLAYER_COMPARE_ACHIEVEMENTS.class);
-        addPacket((short) 0xB532, CM_PLAYER_INSPECT.class); // TODO
+        addPacket((short) 0xADCF, CM_PLAYER_INSPECT.class); // Not sure // TODO
         addPacket((short) 0x9520, CM_PLAYER_SELECT_CREATURE.class); // OK
         addPacket((short) 0xE195, CM_PLAYER_DONJON_CLEAR_COUNT_LIST.class);
 

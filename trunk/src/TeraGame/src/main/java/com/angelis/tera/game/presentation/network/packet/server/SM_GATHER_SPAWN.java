@@ -27,6 +27,6 @@ public class SM_GATHER_SPAWN extends TeraServerPacket {
         writeF(byteBuffer, worldPosition.getZ());
         
         writeD(byteBuffer, 0);
-        writeH(byteBuffer, 0);
+        writeD(byteBuffer, 0);
     }
 }

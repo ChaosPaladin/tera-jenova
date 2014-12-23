@@ -53,7 +53,6 @@ public class BattleService extends AbstractService {
         }
 
         PlayerService.getInstance().onPlayerAttack(player, skillArgs);
-
         player.getWorldPosition().setPoint3D(skillArgs.getStartPosition().getPoint3D());
 
         final List<TeraServerPacket> packets = new FastList<>();

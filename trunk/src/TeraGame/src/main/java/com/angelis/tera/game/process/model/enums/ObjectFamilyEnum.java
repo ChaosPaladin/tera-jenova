@@ -18,11 +18,11 @@ import com.angelis.tera.game.process.model.player.request.PartyInviteRequest;
 import com.angelis.tera.game.process.model.player.request.PegasusShowMapRequest;
 
 public enum ObjectFamilyEnum {
-    //Abstract
+    // Abstract
     ATTACK("0", Action.class),
     REQUEST("0", AbstractRequest.class, PartyInviteRequest.class, NpcTradeRequest.class, PegasusShowMapRequest.class),
 
-    //Visible
+    // Visible
     PLAYER("00800001", Player.class),
     CREATURE("00800C00", Npc.class, Monster.class),
     GATHER("00800400", Gather.class),
@@ -31,19 +31,19 @@ public enum ObjectFamilyEnum {
     DROP_ITEM("00800900", DropItem.class),
     CAMPFIRE("00801000", CampFire.class),
     INVENTORY_ITEM("0", Item.class),
-    
+
     SYSTEM("0", Void.class), // TODO
     PROJECTILE("0", Void.class), // TODO
     GUILD("0", Void.class); // TODO
-    
+
     public final Class<?>[] associatedClass;
     public final String value;
-    
+
     ObjectFamilyEnum(final String value, final Class<?>... associatedClass) {
         this.value = value;
         this.associatedClass = associatedClass;
     }
-    
+
     public static final ObjectFamilyEnum fromClass(final Class<?> clazz) {
         for (final ObjectFamilyEnum objectFamily : ObjectFamilyEnum.values()) {
             for (final Class<?> associatedClass : objectFamily.associatedClass) {
@@ -52,8 +52,8 @@ public enum ObjectFamilyEnum {
                 }
             }
         }
-        
-        Logger.getLogger(ObjectFamilyEnum.class.getName()).error("Can't find ObjectFamilyEnum with class "+clazz.getName());
+
+        Logger.getLogger(ObjectFamilyEnum.class.getName()).error("Can't find ObjectFamilyEnum with class " + clazz.getName());
         return null;
     }
 
@@ -63,8 +63,8 @@ public enum ObjectFamilyEnum {
                 return objectFamily;
             }
         }
-        
-        Logger.getLogger(ObjectFamilyEnum.class.getName()).error("Can't find ObjectFamilyEnum with value "+value);
+
+        Logger.getLogger(ObjectFamilyEnum.class.getName()).error("Can't find ObjectFamilyEnum with value " + value);
         return null;
     }
 }
