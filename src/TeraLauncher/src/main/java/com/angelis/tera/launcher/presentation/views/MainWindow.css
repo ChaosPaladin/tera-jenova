@@ -1,0 +1,26 @@
+.root {
+    -fx-background-image: url("../images/bg.jpg");
+}
+
+TextField {
+    -fx-background-insets: 0, 0, 1, 2;
+}
+
+Button {
+    -fx-background-insets: 0, 0, 1, 2;
+}
+
+#loginButton {
+    -fx-background-image: url("../images/button-background.jpg");
+    
+}
+#loginButton:hover {
+    -fx-background-image: url("../images/button-background-hover.jpg");
+}
+
+#playButton {
+    -fx-background-image: url("../images/play-button-background.png");
+}
+#playButton:hover {
+    -fx-background-image: url("../images/play-button-background-hover.png");
+}
