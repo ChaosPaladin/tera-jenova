@@ -112,7 +112,7 @@ public class ClientPacketHandler {
         addPacket((short) 0xB663, CM_PLAYER_DROP_ITEM_PICKUP.class);
 
         // EXCHANGE
-        addPacket((short) 0xDBD8, CM_EXCHANGE_ITEM_ADD_BUY.class);
+        addPacket((short) 0xFCEB, CM_EXCHANGE_ITEM_ADD_BUY.class); // OK
         addPacket((short) 0xF1C5, CM_EXCHANGE_ITEM_REMOVE_BUY.class);
         addPacket((short) 0xF624, CM_EXCHANGE_ITEM_ADD_SELL.class);
         addPacket((short) 0xAE84, CM_EXCHANGE_ITEM_REMOVE_SELL.class);

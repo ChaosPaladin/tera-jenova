@@ -20,18 +20,17 @@ public class SM_DIALOG extends TeraServerPacket {
     @Override
     protected void writeImpl(final TeraGameConnection connection, final ByteBuffer byteBuffer) {
         final Quest quest = this.dialog.getQuest();
-        int buttonsShift = 0;
-        int rewardShift = 0;
+        
         int itemsShift = 0;
 
         writeH(byteBuffer, (short) this.dialog.getDialogButtons().size()); //Buttons count
         
-        buttonsShift = byteBuffer.position();
+        int buttonsShift = byteBuffer.position();
         writeH(byteBuffer, 0); //First button shift
         
         writeH(byteBuffer, (short) (quest == null ? 0 : 1));
         
-        rewardShift = byteBuffer.position();
+        final int rewardShift = byteBuffer.position();
         writeH(byteBuffer, 0);
 
         writeUid(byteBuffer, this.dialog.getNpc());
@@ -55,9 +54,12 @@ public class SM_DIALOG extends TeraServerPacket {
             
             writeH(byteBuffer, 0);
 
-            writeH(byteBuffer, (short) (byteBuffer.position() + 10));
+            final int dialogTextShift = byteBuffer.position();
+            writeH(byteBuffer, 0);
             writeD(byteBuffer, i++);
             writeD(byteBuffer, dialogButton.getDialogIcon().value);
+
+            writeBufferPosition(byteBuffer, dialogTextShift);
             writeS(byteBuffer, dialogButton.getText());
         }
         
