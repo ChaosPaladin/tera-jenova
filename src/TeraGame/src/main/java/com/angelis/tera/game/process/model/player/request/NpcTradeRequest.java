@@ -14,7 +14,7 @@ public class NpcTradeRequest extends AbstractRequest<AbstractCreature, Player> {
     private final Map<Integer, Integer> sellItems = new FastMap<>();
 
     public NpcTradeRequest(final AbstractCreature initiator, final Player target) {
-        super(initiator, target, RequestTypeEnum.PLAYER_TRADE);
+        super(initiator, target, RequestTypeEnum.NPC_TRADE);
         target.getController().setRequest(this);
     }
 

@@ -23,7 +23,7 @@ public enum ObjectFamilyEnum {
     REQUEST("0", AbstractRequest.class, PartyInviteRequest.class, NpcTradeRequest.class, PegasusShowMapRequest.class),
 
     // Visible
-    PLAYER("00800001", Player.class),
+    PLAYER("00800000", Player.class),
     CREATURE("00800C00", Npc.class, Monster.class),
     GATHER("00800400", Gather.class),
     GAME_OBJECT("00800A00", GameObject.class),

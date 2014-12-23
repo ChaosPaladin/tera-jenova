@@ -17,7 +17,4 @@ public class GlobalConfig {
 
     @Property(key="global.data.threadpool.pool.size", defaultValue="3")
     public static int GLOBAL_THREADPOOL_POOL_SIZE;
-
-    @Property(key="global.kill.rate", defaultValue="1")
-    public static int GLOBAL_KILL_RATE;
 }

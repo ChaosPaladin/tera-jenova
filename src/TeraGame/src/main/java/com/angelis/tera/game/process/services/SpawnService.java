@@ -24,6 +24,7 @@ import com.angelis.tera.game.process.model.creature.Creature;
 import com.angelis.tera.game.process.model.creature.Monster;
 import com.angelis.tera.game.process.model.creature.Npc;
 import com.angelis.tera.game.process.model.drop.DropItem;
+import com.angelis.tera.game.process.model.enums.SpawnForEventEnum;
 import com.angelis.tera.game.process.model.gameobject.GameObject;
 import com.angelis.tera.game.process.model.gather.Gather;
 import com.angelis.tera.game.process.model.template.CreatureTemplate;
@@ -53,6 +54,14 @@ public class SpawnService extends AbstractService {
         // CREATURE SPAWNS
         final Set<CreatureSpawnsEntity> creatureEntities = XMLService.getInstance().getEntity(CreatureSpawnsEntityHolder.class).getCreatures();
         for (final CreatureSpawnsEntity creatureEntity : creatureEntities) {
+            // Check if the creature can be spawned for the current event
+            final SpawnForEventEnum spawnForEvent = creatureEntity.getSpawnForEvent();
+            if (spawnForEvent != null) {
+                if (spawnForEvent != SpawnConfig.SPAWN_CURRENT_EVENT) {
+                    continue;
+                }
+            }
+
             final CreatureTemplate template = TemplateService.getInstance().getCreatureTemplateByFullId(creatureEntity.getFullId());
             if (template == null) {
                 continue;

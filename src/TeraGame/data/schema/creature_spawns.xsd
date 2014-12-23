@@ -7,13 +7,19 @@
     <import schemaLocation="base.xsd" namespace="http://angelis.com/base" />
 
     <!-- TYPES -->
+    <simpleType name="CreatureSpawnForEventType">
+        <restriction base="string">
+            <enumeration value="NO_EVENT" />
+            <enumeration value="CHRISTMASS" />
+        </restriction>
+    </simpleType>
     <simpleType name="CreatureTitleType">
         <restriction base="string">
             <enumeration value="FLIGHT_MASTER" />
             <enumeration value="BANK" />
         </restriction>
     </simpleType>
-    <complexType name="TeraCreatureSpawnType">
+    <complexType name="CreatureSpawnTypeType">
         <complexContent>
             <extension base="base:BaseSpawnType">
                 <attribute name="heading" type="integer" />
@@ -22,12 +28,13 @@
     </complexType>
     <complexType name="CreatureSpawnType">
         <sequence>
-            <element name="spawn" type="xsd:TeraCreatureSpawnType" maxOccurs="unbounded" />
+            <element name="spawn" type="xsd:CreatureSpawnTypeType" maxOccurs="unbounded" />
         </sequence>
         <attribute name="id" type="integer" />
         <attribute name="full_id" type="integer" />
         <attribute name="creature_type" type="integer" />
         <attribute name="model_id" type="integer" />
+        <attribute name="spawn_for_event" type="xsd:CreatureSpawnForEventType" default="NO_EVENT"/>
     </complexType>
     <complexType name="CreatureSpawnsType">
         <sequence>
