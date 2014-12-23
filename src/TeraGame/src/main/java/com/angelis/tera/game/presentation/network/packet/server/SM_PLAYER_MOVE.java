@@ -49,7 +49,7 @@ public class SM_PLAYER_MOVE extends TeraServerPacket {
         writeF(byteBuffer, z1);
         writeH(byteBuffer, heading);
 
-        writeB(byteBuffer, "AA00"); // TODO player movement
+        writeB(byteBuffer, "F000"); // TODO player movement
 
         writeF(byteBuffer, x2);
         writeF(byteBuffer, y2);

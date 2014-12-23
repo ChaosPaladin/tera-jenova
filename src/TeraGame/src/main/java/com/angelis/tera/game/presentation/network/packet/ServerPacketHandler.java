@@ -83,9 +83,9 @@ public class ServerPacketHandler {
         addPacket((short) 0xEB1B, SM_ALLIANCE_INFO.class); // OK
 
         // ATTACK
-        addPacket((short) 0xAE89, SM_ACTION_STAGE.class);
-        addPacket((short) 0xD947, SM_ACTION_END.class);
-        addPacket((short) 0xD3A1, SM_CREATURE_INSTANCE_ARROW.class);
+        addPacket((short) 0xCF42, SM_ACTION_STAGE.class); // OK
+        addPacket((short) 0xD2E1, SM_ACTION_END.class); // OK
+        addPacket((short) 0xFF1F, SM_CREATURE_INSTANCE_ARROW.class); // OK
         addPacket((short) 0x64DA, SM_PLAYER_EXPERIENCE_UPDATE.class);
 
         // OPTIONS
@@ -106,18 +106,18 @@ public class ServerPacketHandler {
         addPacket((short) 0x7064, SM_PLAYER_FRIEND_LIST.class); // OK
         addPacket((short) 0x840C, SM_OWN_PLAYER_SPAWN.class); // OK
         addPacket((short) 0xCD87, SM_PLAYER_STATS_UPDATE.class); // OK
-        addPacket((short) 0xAD17, SM_PLAYER_MOVE.class);
+        addPacket((short) 0xE3F9, SM_PLAYER_MOVE.class); // OK
         addPacket((short) 0xD371, SM_PLAYER_ZONE_CHANGE.class);
         addPacket((short) 0xC258, SM_PLAYER_SELECT_CREATURE.class);
         addPacket((short) 0xB195, SM_PLAYER_STATE.class);
         addPacket((short) 0xA3C0, SM_RESPONSE_GAMESTAT_PONG.class);
         addPacket((short) 0x6022, SM_PLAYER_DONJON_CLEAR_COUNT_LIST.class);
-        addPacket((short) 0xCF79, SM_PLAYER_SPAWN.class);
-        addPacket((short) 0xEF19, SM_PLAYER_DESPAWN.class);
+        addPacket((short) 0x5390, SM_PLAYER_SPAWN.class); // OK
+        addPacket((short) 0x8668, SM_PLAYER_DESPAWN.class); // OK
         addPacket((short) 0xC7A3, SM_PLAYER_CLIMB_START.class);
         addPacket((short) 0xDFDC, SM_PLAYER_DESCRIPTION.class); // OK
-        addPacket((short) 0xA017, SM_PLAYER_UNK1.class);
-        addPacket((short) 0x573F, SM_PLAYER_UNK2.class);
+        addPacket((short) 0xF5B4, SM_PLAYER_UNK1.class); // OK
+        addPacket((short) 0xF169, SM_PLAYER_UNK2.class); // OK
         addPacket((short) 0xA3C6, SM_PLAYER_DEATH.class);
         addPacket((short) 0x8CB7, SM_PLAYER_REVIVE.class);
         addPacket((short) 0x862C, SM_PLAYER_DEATH_WINDOW.class);
@@ -153,9 +153,10 @@ public class ServerPacketHandler {
 
         // DIALOG
         addPacket((short) 0x5A8A, SM_DIALOG.class); // OK
-        addPacket((short) 0xAE4F, SM_DIALOG_CLOSE.class);
+        addPacket((short) 0xEFBC, SM_DIALOG_CLOSE.class); // OK
         addPacket((short) 0xFD90, SM_DIALOG_EVENT.class); // OK
         addPacket((short) 0x819E, SM_DIALOG_MENU_SELECT.class); // OK
+        addPacket((short) 0x9E7A, SM_DIALOG_TRADELIST_SHOW.class); // OK
 
         // CAMPFIRE
         addPacket((short) 0xCCE4, SM_CAMPFIRE_SPAWN.class);
@@ -193,13 +194,12 @@ public class ServerPacketHandler {
         addPacket((short) 0x8309, SM_STORAGE.class);
         addPacket((short) 0xC6A9, SM_ITEM_INFO.class); // OK
         addPacket((short) 0xD3D7, SM_ITEM_SIMPLE_INFO.class);
-        addPacket((short) 0x0000, SM_PLAYER_INVENTORY_SLOT_CHANGED.class);
+        addPacket((short) 0xE040, SM_PLAYER_INVENTORY_SLOT_CHANGED.class); // OK
         addPacket((short) 0x8890, SM_PLAYER_APPEARANCE_CHANGE.class); // OK
         addPacket((short) 0x5601, SM_ITEM_START_COOLTIME.class);
         addPacket((short) 0xE62F, SM_EXCHANGE_WINDOW_UPDATE.class);
 
         // TRADE
-        addPacket((short) 0xE12F, SM_NPC_TRADELIST.class);
         addPacket((short) 0xCCD6, SM_TRADE_WINDOW_SHOW.class);
 
         // MAP
@@ -229,7 +229,7 @@ public class ServerPacketHandler {
         addPacket((short) 0xA594, SM_QUIT_GAME.class); // OK
 
         // REQUEST
-        addPacket((short) 0x5EEC, SM_REQUEST_CONTRACT.class);
+        addPacket((short) 0xAF1A, SM_REQUEST_CONTRACT.class); // OK
         addPacket((short) 0xDFD7, SM_REQUEST_CONTRACT_REPLY.class);
         addPacket((short) 0xA249, SM_REQUEST_CONTRACT_CANCEL.class);
         addPacket((short) 0xAFE0, SM_REQUEST_COMPLETE.class);
@@ -239,14 +239,14 @@ public class ServerPacketHandler {
         // CHANNEL
         addPacket((short) 0xF32B, SM_PLAYER_ENTER_CHANNEL.class); // TODO
         addPacket((short) 0x907B, SM_PLAYER_CHANNEL_INFO.class); // OK
-        addPacket((short) 0xA909, SM_PLAYER_CHANNEL_LIST.class);
+        addPacket((short) 0xF419, SM_PLAYER_CHANNEL_LIST.class); // OK
 
         // GATHER
-        addPacket((short) 0xB3BC, SM_GATHER_START.class);
-        addPacket((short) 0xC47B, SM_GATHER_PROGRESS.class);
-        addPacket((short) 0x98C0, SM_GATHER_END.class);
-        addPacket((short) 0xF6F7, SM_GATHER_SPAWN.class);
-        addPacket((short) 0xB9D2, SM_GATHER_DESPAWN.class);
+        addPacket((short) 0xC775, SM_GATHER_START.class); // OK
+        addPacket((short) 0x949B, SM_GATHER_PROGRESS.class); // OK
+        addPacket((short) 0xD0F5, SM_GATHER_END.class); // OK
+        addPacket((short) 0xDB23, SM_GATHER_SPAWN.class); // OK
+        addPacket((short) 0xC86C, SM_GATHER_DESPAWN.class); // OK
         addPacket((short) 0x6AB5, SM_GATHERCRAFT_POINT.class); // OK
 
         // UNK
