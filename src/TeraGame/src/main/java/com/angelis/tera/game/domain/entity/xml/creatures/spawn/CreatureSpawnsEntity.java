@@ -31,7 +31,6 @@ public class CreatureSpawnsEntity extends AbstractXMLEntity {
     @XmlElement(name = "spawn", namespace = "http://angelis.com/creature_spawns")
     private Set<CreatureSpawnEntity> spawns;
 
-    @Override
     public Integer getId() {
         return id;
     }

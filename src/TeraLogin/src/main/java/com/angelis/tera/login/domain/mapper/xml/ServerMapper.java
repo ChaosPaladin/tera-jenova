@@ -19,6 +19,7 @@ public class ServerMapper extends AbstractXMLMapper<ServerEntity, Server> {
     @Override
     public void map(final Server model, final ServerEntity entity) {
         // DIRECT
+        entity.setId(model.getId());
         entity.setIp(model.getIp());
         entity.setLanguage(model.getLanguage().name().toLowerCase());
         entity.setPermissionMask(model.getPermissionMask());

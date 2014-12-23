@@ -25,7 +25,6 @@ public class GatherSpawnEntity extends AbstractXMLEntity {
     @XmlElement(name="spawn", namespace = "http://angelis.com/gather_spawns")
     private Set<SpawnEntity> spawns;
 
-    @Override
     public Integer getId() {
         return id;
     }
