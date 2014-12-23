@@ -26,7 +26,6 @@ public abstract class AbstractDatabaseEntity extends AbstractEntity implements S
 
     public AbstractDatabaseEntity() {}
 
-    @Override
     public final Integer getId() {
         return id;
     }
