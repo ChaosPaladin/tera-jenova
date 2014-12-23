@@ -30,6 +30,7 @@ import com.angelis.tera.game.process.services.ThreadPoolService;
 import com.angelis.tera.game.process.services.TradelistService;
 import com.angelis.tera.game.process.services.UserService;
 import com.angelis.tera.game.process.services.VisibleService;
+import com.angelis.tera.game.process.services.WelcomeMessageService;
 import com.angelis.tera.game.process.services.WorldService;
 import com.angelis.tera.game.process.services.XMLService;
 import com.angelis.tera.game.process.services.ZoneService;
@@ -71,6 +72,7 @@ public class MainGame {
         PegasusFlyService.getInstance().start();
         AchievementService.getInstance().start();
         ZoneService.getInstance().start();
+        WelcomeMessageService.getInstance().start();
         NetworkService.getInstance().start();
 
         PrintUtils.printSection("Launching");

@@ -11,7 +11,6 @@ import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
@@ -143,13 +142,12 @@ public class PlayerEntity extends AbstractDatabaseEntity {
     private Set<SkillEntity> skills;
 
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "player")
-    private Set<QuestEntity> quests;
+    private Set<QuestEnvEntity> quests;
 
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "player")
     private Set<AchievementEntity> achievements;
 
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "player_zones", joinColumns = { @JoinColumn(name = "player_id", referencedColumnName = "id") }, inverseJoinColumns = { @JoinColumn(name = "zone_id", referencedColumnName = "id") })
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Set<ZoneEntity> visitedZones;
 
     @ManyToMany(mappedBy = "owner")
@@ -443,11 +441,11 @@ public class PlayerEntity extends AbstractDatabaseEntity {
         this.skills = skills;
     }
 
-    public Set<QuestEntity> getQuests() {
+    public Set<QuestEnvEntity> getQuests() {
         return quests;
     }
 
-    public void setQuests(final Set<QuestEntity> quests) {
+    public void setQuests(final Set<QuestEnvEntity> quests) {
         this.quests = quests;
     }
 

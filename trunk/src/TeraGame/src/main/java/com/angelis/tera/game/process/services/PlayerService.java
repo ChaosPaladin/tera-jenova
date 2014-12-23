@@ -380,7 +380,6 @@ public class PlayerService extends AbstractService {
     public void registerPlayer(final TeraGameConnection connection, final Player player) {
         connection.setActivePlayer(player);
         player.setAccount(connection.getAccount());
-
         this.onPlayerConnect(player);
     }
 

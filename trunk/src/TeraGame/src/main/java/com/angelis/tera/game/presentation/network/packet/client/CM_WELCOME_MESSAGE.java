@@ -4,7 +4,7 @@ import java.nio.ByteBuffer;
 
 import com.angelis.tera.game.presentation.network.connection.TeraGameConnection;
 import com.angelis.tera.game.presentation.network.packet.TeraClientPacket;
-import com.angelis.tera.game.presentation.network.packet.server.SM_WELCOME_MESSAGE;
+import com.angelis.tera.game.process.services.WelcomeMessageService;
 
 public class CM_WELCOME_MESSAGE extends TeraClientPacket {
 
@@ -19,6 +19,6 @@ public class CM_WELCOME_MESSAGE extends TeraClientPacket {
 
     @Override
     protected void runImpl() {
-        this.getConnection().sendPacket(new SM_WELCOME_MESSAGE());
+        WelcomeMessageService.getInstance().onPlayerRequestWelcomeMessage(this.getConnection().getActivePlayer());
     }
 }
