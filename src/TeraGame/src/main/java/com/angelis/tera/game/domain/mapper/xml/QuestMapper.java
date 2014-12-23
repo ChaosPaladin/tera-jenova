@@ -27,6 +27,7 @@ public class QuestMapper extends AbstractXMLMapper<QuestEntity, Quest> {
     @Override
     public void map(final QuestEntity entity, final Quest model) {
         // DIRECT
+        model.setId(entity.getQuestId());
         model.setQuestType(entity.getQuestType());
         model.setStartNpcFullId(entity.getStartNpcFullId());
         model.setRequiredLevel(entity.getRequiredLevel());

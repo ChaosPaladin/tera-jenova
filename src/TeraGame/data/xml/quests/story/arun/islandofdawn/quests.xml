@@ -2,174 +2,174 @@
 <quests xmlns="http://angelis.com/quests" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://angelis.com/quests ../../../../schema/quests.xsd ">
     <quest quest_id="1301" quest_type="STORY" start_npc_full_id="21301105" required_level="1" experience_reward="500" money_reward="50">
         <step type="TALK">
-            <step_value object_id="21301014"/>
+            <step_value object_id="21301014" />
         </step>
-    </quest>       
+    </quest>
     <quest quest_id="1304" quest_type="STORY" start_npc_full_id="21301014" required_level="1" experience_reward="600" money_reward="60" reward_type="SELECTABLE">
-        <required_quest quest_id="1301"/>
+        <required_quest quest_id="1301" />
         <step type="TALK">
-            <step_value object_id="21301003"/>
+            <step_value object_id="21301003" />
         </step>
         <step type="TALK">
-            <step_value object_id="21301017"/>
+            <step_value object_id="21301017" />
         </step>
         <step type="TALK">
-            <step_value object_id="21301004"/>
+            <step_value object_id="21301004" />
         </step>
         <step type="TALK">
-            <step_value object_id="6401001"/>
+            <step_value object_id="6401001" />
         </step>
-        <reward item_id="17404" amount="1"/>
-        <reward item_id="17407" amount="1"/>
-        <reward item_id="17410" amount="1"/>
+        <reward item_id="17404" amount="1" />
+        <reward item_id="17407" amount="1" />
+        <reward item_id="17410" amount="1" />
     </quest>
     <quest quest_id="1303" quest_type="STORY" start_npc_full_id="21301115" required_level="4" experience_reward="2000" money_reward="20" reward_type="SELECTABLE">
         <step type="WATCH_MOVIE">
-            <step_value object_id="1"/>
+            <step_value object_id="1" />
         </step>
         <step type="KILL">
-            <step_value object_id="1301001"/>
+            <step_value object_id="1301001" />
         </step>
-        <reward item_id="12129" amount="1"/>
-        <reward item_id="12130" amount="1"/>
-        <reward item_id="12131" amount="1"/>
-        <reward item_id="12132" amount="1"/>
-        <reward item_id="12133" amount="1"/>
-        <reward item_id="12134" amount="1"/>
-        <reward item_id="12135" amount="1"/>
-        <reward item_id="12136" amount="1"/>
+        <reward item_id="12129" amount="1" />
+        <reward item_id="12130" amount="1" />
+        <reward item_id="12131" amount="1" />
+        <reward item_id="12132" amount="1" />
+        <reward item_id="12133" amount="1" />
+        <reward item_id="12134" amount="1" />
+        <reward item_id="12135" amount="1" />
+        <reward item_id="12136" amount="1" />
     </quest>
     <quest quest_id="1305" quest_type="STORY" start_npc_full_id="6401001" required_level="4" experience_reward="1000" money_reward="60" reward_type="SELECTABLE">
         <step type="TALK">
-            <step_value object_id="21301008"/>
+            <step_value object_id="21301008" />
         </step>
         <step type="TALK">
-            <step_value object_id="6401028"/>
+            <step_value object_id="6401028" />
         </step>
         <step type="TALK">
-            <step_value object_id="21301147"/>
+            <step_value object_id="21301147" />
         </step>
         <step type="TALK">
-            <step_value object_id="21301008"/>
+            <step_value object_id="21301008" />
         </step>
         <step type="TALK">
-            <step_value object_id="6401009"/>
+            <step_value object_id="6401009" />
         </step>
-        <reward item_id="10017" amount="1"/>
-        <reward item_id="10018" amount="1"/>
-        <reward item_id="10019" amount="1"/>
-        <reward item_id="10020" amount="1"/>
-        <reward item_id="10021" amount="1"/>
-        <reward item_id="10022" amount="1"/>
-        <reward item_id="10023" amount="1"/>
-        <reward item_id="10024" amount="1"/>
-        <reward item_id="15019" amount="1"/>
-        <reward item_id="15022" amount="1"/>
-        <reward item_id="15025" amount="1"/>        
+        <reward item_id="10017" amount="1" />
+        <reward item_id="10018" amount="1" />
+        <reward item_id="10019" amount="1" />
+        <reward item_id="10020" amount="1" />
+        <reward item_id="10021" amount="1" />
+        <reward item_id="10022" amount="1" />
+        <reward item_id="10023" amount="1" />
+        <reward item_id="10024" amount="1" />
+        <reward item_id="15019" amount="1" />
+        <reward item_id="15022" amount="1" />
+        <reward item_id="15025" amount="1" />
     </quest>
     <quest quest_id="1309" quest_type="STORY" start_npc_full_id="21301007" required_level="7" experience_reward="2700" money_reward="70">
         <step type="KILL">
-            <step_value object_id="1301002"/>
+            <step_value object_id="1301002" />
         </step>
         <step type="TALK">
-            <step_value object_id="21301134"/>
+            <step_value object_id="21301134" />
         </step>
     </quest>
     <quest quest_id="1311" quest_type="STORY" required_level="7" experience_reward="1500" money_reward="50">
         <step type="TALK">
-            <step_value object_id="6401001"/>
+            <step_value object_id="6401001" />
         </step>
         <step type="TALK">
-            <step_value object_id="6401033"/>
+            <step_value object_id="6401033" />
         </step>
         <step type="TALK">
-            <step_value object_id="21301007"/>
+            <step_value object_id="21301007" />
         </step>
         <step type="TALK">
-            <step_value object_id="21301134"/>
+            <step_value object_id="21301134" />
         </step>
     </quest>
     <quest quest_id="1313" quest_type="STORY" start_npc_full_id="21301134" required_level="7" experience_reward="1000" money_reward="70">
         <step type="TALK">
-            <step_value object_id="21301005"/>
+            <step_value object_id="21301005" />
         </step>
         <step type="TALK">
-            <step_value object_id="21301025"/>
+            <step_value object_id="21301025" />
         </step>
     </quest>
     <quest quest_id="1350" quest_type="STORY" start_npc_full_id="21301026" required_level="8" experience_reward="3200" money_reward="80">
         <step type="KILL">
-            <step_value object_id="1600951"/>
+            <step_value object_id="1600951" />
         </step>
         <step type="TALK">
-            <step_value object_id="21301026"/>
+            <step_value object_id="21301026" />
         </step>
-    </quest>    
+    </quest>
     <quest quest_id="1315" quest_type="STORY" start_npc_full_id="21301026" required_level="9" experience_reward="5200" money_reward="90">
         <step type="KILL">
-            <step_value object_id="1308"/>
+            <step_value object_id="1308" />
         </step>
         <step type="TALK">
-            <step_value object_id="21301025"/>
+            <step_value object_id="21301025" />
         </step>
         <step type="KILL">
-            <step_value object_id="1301004"/>
+            <step_value object_id="1301004" />
         </step>
         <step type="TALK">
-            <step_value object_id="21301025"/>
+            <step_value object_id="21301025" />
         </step>
-        <reward item_id="12137" amount="1"/>
-        <reward item_id="12138" amount="1"/>
-        <reward item_id="12139" amount="1"/>
-        <reward item_id="12140" amount="1"/>
-        <reward item_id="12141" amount="1"/>
-        <reward item_id="12142" amount="1"/>
-        <reward item_id="12143" amount="1"/>
-        <reward item_id="12144" amount="1"/>
-        <reward item_id="17413" amount="1"/>
-        <reward item_id="17416" amount="1"/>
-        <reward item_id="17419" amount="1"/> 
-    </quest>  
+        <reward item_id="12137" amount="1" />
+        <reward item_id="12138" amount="1" />
+        <reward item_id="12139" amount="1" />
+        <reward item_id="12140" amount="1" />
+        <reward item_id="12141" amount="1" />
+        <reward item_id="12142" amount="1" />
+        <reward item_id="12143" amount="1" />
+        <reward item_id="12144" amount="1" />
+        <reward item_id="17413" amount="1" />
+        <reward item_id="17416" amount="1" />
+        <reward item_id="17419" amount="1" />
+    </quest>
     <quest quest_id="1316" quest_type="STORY" start_npc_full_id="21301025" required_level="9" experience_reward="6000" money_reward="90">
         <step type="KILL">
-            <step_value object_id="43601002"/>
+            <step_value object_id="43601002" />
         </step>
         <step type="TALK">
-            <step_value object_id="21301025"/>
+            <step_value object_id="21301025" />
         </step>
         <step type="TALK">
-            <step_value object_id="21301037"/>
+            <step_value object_id="21301037" />
         </step>
         <step type="TALK">
-            <step_value object_id="6401001"/>
+            <step_value object_id="6401001" />
         </step>
-        <reward item_id="10593" amount="1"/>
-        <reward item_id="10594" amount="1"/>
-        <reward item_id="10595" amount="1"/>
-        <reward item_id="10596" amount="1"/>
-        <reward item_id="10597" amount="1"/>
-        <reward item_id="10598" amount="1"/>
-        <reward item_id="10599" amount="1"/>
-        <reward item_id="10600" amount="1"/>
-    </quest> 
+        <reward item_id="10593" amount="1" />
+        <reward item_id="10594" amount="1" />
+        <reward item_id="10595" amount="1" />
+        <reward item_id="10596" amount="1" />
+        <reward item_id="10597" amount="1" />
+        <reward item_id="10598" amount="1" />
+        <reward item_id="10599" amount="1" />
+        <reward item_id="10600" amount="1" />
+    </quest>
     <quest quest_id="1317" quest_type="STORY" start_npc_full_id="6401001" required_level="10" experience_reward="2000" money_reward="70">
         <step type="TALK">
-            <step_value object_id="6401009"/>
+            <step_value object_id="6401009" />
         </step>
         <step type="TALK">
-            <step_value object_id="21301001"/>
+            <step_value object_id="21301001" />
         </step>
         <step type="TALK">
-            <step_value object_id="21301016"/>
+            <step_value object_id="21301016" />
         </step>
         <step type="TALK">
-            <step_value object_id="6301097"/>
+            <step_value object_id="6301097" />
         </step>
         <step type="TALK">
-            <step_value object_id="6301107"/>
+            <step_value object_id="6301107" />
         </step>
-        <reward item_id="15667" amount="1"/>
-        <reward item_id="15670" amount="1"/>
-        <reward item_id="15673" amount="1"/>
-    </quest>     
+        <reward item_id="15667" amount="1" />
+        <reward item_id="15670" amount="1" />
+        <reward item_id="15673" amount="1" />
+    </quest>
 </quests>
