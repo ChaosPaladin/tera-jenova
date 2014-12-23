@@ -60,7 +60,6 @@ public class SM_DIALOG_TRADELIST_SHOW extends TeraServerPacket {
                 
                 final int nextItemShift = byteBuffer.position();
                 writeH(byteBuffer, 0);
-                
                 writeD(byteBuffer, integer);
                 
                 if (++j < entry.getValue().size()) {

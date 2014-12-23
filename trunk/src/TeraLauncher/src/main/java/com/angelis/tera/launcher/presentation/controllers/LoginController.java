@@ -94,14 +94,14 @@ public class LoginController {
         final String password = passwordTextField.getText();
         final String login = loginTextField.getText();
 
-        final File baseFile = new File(FileConfig.TERA_FOLDER+"Tera.launcher.exe");
-        final File launcherFile = new File(FileConfig.TERA_FOLDER+"Tera-temp.exe");
+        final URL baseFileUrl = getClass().getResource("/com/angelis/tera/launcher/presentation/bin/Tera.launcher.exe");
+        final File launcherFile = new File(FileConfig.FILE_TERA_FOLDER+"Tera.launcher.temp.exe");
         if (launcherFile.exists()) {
             launcherFile.delete();
         }
 
         try {
-            FileUtils.copyFile(baseFile, launcherFile, false);
+            FileUtils.copyURLToFile(baseFileUrl, launcherFile);
             final RandomAccessFile raf = new RandomAccessFile(launcherFile, "rw");
             raf.seek(5138868);
             String serverUrl = "http://"+LoginConfig.LOGIN_URL+"/servers."+lang;
@@ -125,7 +125,7 @@ public class LoginController {
         commands.add(lang);
         
         final ProcessBuilder builder = new ProcessBuilder(commands);
-        builder.directory(new File(FileConfig.TERA_FOLDER));
+        builder.directory(new File(FileConfig.FILE_TERA_FOLDER));
 
         try {
             builder.start();

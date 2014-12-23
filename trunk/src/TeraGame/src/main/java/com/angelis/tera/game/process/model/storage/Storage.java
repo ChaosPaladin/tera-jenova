@@ -108,7 +108,7 @@ public class Storage extends AbstractModel {
         for (int i = 0 ; i < this.size ; i++) {
             int slot = i;
             if (this.storageType == StorageTypeEnum.INVENTORY) {
-                slot += 42;
+                slot += 40;
             }
 
             if (this.isFreeSlot(slot)) {
