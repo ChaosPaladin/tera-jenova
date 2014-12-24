@@ -16,8 +16,6 @@ import com.angelis.tera.common.services.AbstractService;
 import com.angelis.tera.common.utils.Function;
 import com.angelis.tera.game.presentation.network.TeleportLocations;
 import com.angelis.tera.game.presentation.network.connection.TeraGameConnection;
-import com.angelis.tera.game.process.delegate.database.ZoneDelegate;
-import com.angelis.tera.game.process.model.Zone;
 import com.angelis.tera.game.process.model.channel.Channel;
 import com.angelis.tera.game.process.model.player.Player;
 import com.angelis.tera.game.process.model.player.enums.PlayerClassEnum;
@@ -28,15 +26,10 @@ public class WorldService extends AbstractService {
     /** LOGGER */
     private static Logger log = Logger.getLogger(WorldService.class.getName());
 
-    /** DELEGATES */
-    private final ZoneDelegate zoneDelegate = new ZoneDelegate();
-
     private final Map<String, Player> allPlayers = new FastMap<>();
     private final Map<String, Player> onlinePlayers = new FastMap<>();
 
     private final Map<Integer, Channel> channels = new FastMap<>();
-
-    private final Map<Byte[], Zone> zones = new FastMap<Byte[], Zone>();
 
     @Override
     public void onInit() {
@@ -64,6 +57,10 @@ public class WorldService extends AbstractService {
     public void onPlayerEnterWorld(final Player player) {
         QuestService.getInstance().onPlayerEnterWorld(player);
     }
+    
+    public void onPlayerLoadTopoFin(final Player player) {
+        player.setLoadTopoFin(true);
+    }
 
     public void onPlayerDisconnect(final Player player) {
         this.onlinePlayers.remove(player);
@@ -74,20 +71,17 @@ public class WorldService extends AbstractService {
         }
 
         player.setChannel(null);
+        player.setLoadTopoFin(false);
         channel.removePlayer(player);
     }
 
     public void onPlayerCreate(final Player player) {
-        // TODO startZoneData for REAPER
-        final byte[] startZoneData = new byte[] { 1, 0, 0, 0, 2, 0, 0, 0, 7, 0, 0, 0 };
-        final Set<Zone> zones = new FastSet<>();
-
         player.setCreationTime(new Date());
         player.setDeletionTime(null);
         player.setLastOnlineTime(null);
         player.setPlayerMode(PlayerModeEnum.NORMAL);
-        player.setCurrentZoneData(startZoneData);
-        player.setVisitedZones(zones);
+        player.setCurrentZoneData(ZoneService.getInstance().getStartingZoneFor(player.getPlayerClass()));
+        player.setVisitedZones(new FastSet<>());
         player.setWorldPosition(TeleportLocations.getStandardStartingPoint());
 
         int level = 1;

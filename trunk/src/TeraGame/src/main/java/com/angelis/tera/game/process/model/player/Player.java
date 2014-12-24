@@ -59,6 +59,7 @@ public class Player extends AbstractCreature {
     private int gatherCraftPoints;
     private Set<Zone> visitedZones;
     private List<Achievement> achievements;
+    private List<StockExchangeItem> stockExchangeItems;
 
     private Group group;
     private Channel channel;
@@ -68,6 +69,8 @@ public class Player extends AbstractCreature {
     private PegasusFly activePegasus;
     
     private PlayerCustomData playerCustomData;
+    
+    private boolean loadTopoFin;
 
     public Player(final Integer abstractId) {
         super(abstractId, new PlayerController(), new PlayerTemplate());
@@ -338,6 +341,14 @@ public class Player extends AbstractCreature {
         this.achievements = achievements;
     }
 
+    public List<StockExchangeItem> getStockExchangeItems() {
+        return stockExchangeItems;
+    }
+
+    public void setStockExchangeItems(final List<StockExchangeItem> stockExchangeItems) {
+        this.stockExchangeItems = stockExchangeItems;
+    }
+
     public QuestList getQuestList() {
         return questList;
     }
@@ -416,6 +427,14 @@ public class Player extends AbstractCreature {
         return playerCustomData;
     }
 
+    public boolean isLoadTopoFin() {
+        return loadTopoFin;
+    }
+
+    public void setLoadTopoFin(final boolean loadTopoFin) {
+        this.loadTopoFin = loadTopoFin;
+    }
+
     public final TeraGameConnection getConnection() {
         return this.getAccount().getConnection();
     }
@@ -451,10 +470,5 @@ public class Player extends AbstractCreature {
             return false;
         }
         return true;
-    }
-    
-    @Override
-    public void initializeAi() {
-        // Empty
     }
 }

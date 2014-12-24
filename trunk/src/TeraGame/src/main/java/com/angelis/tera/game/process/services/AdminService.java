@@ -31,6 +31,7 @@ import com.angelis.tera.game.process.command.admin.RemoveCommand;
 import com.angelis.tera.game.process.command.admin.SendFakePacketCommand;
 import com.angelis.tera.game.process.command.admin.SetCommand;
 import com.angelis.tera.game.process.command.admin.SpawnCommand;
+import com.angelis.tera.game.process.command.admin.StockExchangeItemCommand;
 import com.angelis.tera.game.process.command.admin.SummonCommand;
 import com.angelis.tera.game.process.command.admin.TeleportCommand;
 import com.angelis.tera.game.process.command.admin.UnMountCommand;
@@ -76,6 +77,7 @@ public class AdminService extends AbstractService {
         commands.put("kill", new KillCommand());
         commands.put("recall", new RecallCommand());
         commands.put("welcomemessage", new WelcomeMessageCommand());
+        commands.put("stockexchangeitem", new StockExchangeItemCommand());
 
         log.info("AdminService started");
     }

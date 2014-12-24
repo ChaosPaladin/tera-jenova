@@ -58,9 +58,4 @@ public class DropItem extends VisibleTeraObject {
     public DropItemController getController() {
         return (DropItemController) this.controller;
     }
-    
-    @Override
-    public void initializeAi() {
-        // Empty
-    }
 }

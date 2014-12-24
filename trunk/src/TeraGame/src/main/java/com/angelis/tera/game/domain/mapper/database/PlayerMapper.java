@@ -19,6 +19,7 @@ import com.angelis.tera.game.domain.entity.database.GatherEntity;
 import com.angelis.tera.game.domain.entity.database.PlayerEntity;
 import com.angelis.tera.game.domain.entity.database.QuestEnvEntity;
 import com.angelis.tera.game.domain.entity.database.SkillEntity;
+import com.angelis.tera.game.domain.entity.database.StockExchangeItemEntity;
 import com.angelis.tera.game.domain.entity.database.StorageEntity;
 import com.angelis.tera.game.domain.entity.database.ZoneEntity;
 import com.angelis.tera.game.process.model.Zone;
@@ -28,6 +29,7 @@ import com.angelis.tera.game.process.model.player.Achievement;
 import com.angelis.tera.game.process.model.player.Player;
 import com.angelis.tera.game.process.model.player.PlayerAppearance;
 import com.angelis.tera.game.process.model.player.SkillList;
+import com.angelis.tera.game.process.model.player.StockExchangeItem;
 import com.angelis.tera.game.process.model.player.craft.Craft;
 import com.angelis.tera.game.process.model.player.craft.CraftStats;
 import com.angelis.tera.game.process.model.player.gather.Gather;
@@ -167,6 +169,11 @@ public class PlayerMapper extends AbstractDatabaseMapper<PlayerEntity, Player> {
             }
             entity.setVisitedZones(visitedZoneEntities );
         }
+        
+        // STOCK EXCHANGE ITEM
+        if (!excludedDependencies.contains(StockExchangeItem.class)) {
+            // TODO
+        }
     }
 
     // ENTITY -> MODEL
@@ -299,6 +306,13 @@ public class PlayerMapper extends AbstractDatabaseMapper<PlayerEntity, Player> {
                 zones.add(zoneMapper.map(zoneEntity));
             }
             model.setVisitedZones(zones);
+        }
+        
+        // STOCK EXCHANGE ITEM
+        if (!excludedDependencies.contains(StockExchangeItemEntity.class)) {
+            final List<StockExchangeItem> stockExchangeItems = new FastList<>();
+            // TODO
+            model.setStockExchangeItems(stockExchangeItems );
         }
 
         // QUEST

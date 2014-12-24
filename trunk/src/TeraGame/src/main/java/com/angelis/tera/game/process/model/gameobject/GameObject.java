@@ -46,9 +46,4 @@ public class GameObject extends VisibleTeraObject {
     public GameObjectController getController() {
         return (GameObjectController) this.controller;
     }
-
-    @Override
-    public void initializeAi() {
-        // Empty
-    }
 }

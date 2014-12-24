@@ -14,9 +14,11 @@ import com.angelis.tera.common.utils.BeanUtils;
 import com.angelis.tera.common.utils.CollectionUtils;
 import com.angelis.tera.game.domain.entity.database.AccountEntity;
 import com.angelis.tera.game.domain.entity.database.PlayerEntity;
+import com.angelis.tera.game.domain.entity.database.StockExchangeItemEntity;
 import com.angelis.tera.game.process.model.account.Account;
 import com.angelis.tera.game.process.model.account.Options;
 import com.angelis.tera.game.process.model.player.Player;
+import com.angelis.tera.game.process.model.player.StockExchangeItem;
 
 public class AccountMapper extends BaseAccountMapper<AccountEntity, Account> {
     
@@ -88,6 +90,13 @@ public class AccountMapper extends BaseAccountMapper<AccountEntity, Account> {
                 players.add(player);
             }
             model.setPlayers(players);
+        }
+        
+        // STOCK EXCHANGE ITEM
+        if (!excludedDependencies.contains(StockExchangeItemEntity.class)) {
+            final List<StockExchangeItem> stockExchangeItems = new FastList<>();
+            // TODO
+            model.setStockExchangeItems(stockExchangeItems );
         }
     }
 

@@ -5,7 +5,7 @@ import java.util.Arrays;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import com.angelis.tera.common.domain.entity.database.AbstractDatabaseEntity;
@@ -19,7 +19,7 @@ public class ZoneEntity extends AbstractDatabaseEntity {
     @Column()
     private byte[] datas;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "visitedZones")
+    @ManyToOne(cascade = CascadeType.ALL)
     private PlayerEntity player;
 
     public ZoneEntity(final Integer id) {

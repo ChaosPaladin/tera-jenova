@@ -17,6 +17,7 @@ public class Gather extends VisibleTeraObject {
         this.getController().setOwner(this);
     }
 
+    @Override
     public GatherTemplate getTemplate() {
         return this.template;
     }
@@ -55,10 +56,5 @@ public class Gather extends VisibleTeraObject {
 
     public void processGather() {
         this.remainingGather--;
-    }
-
-    @Override
-    public void initializeAi() {
-        // Empty
     }
 }

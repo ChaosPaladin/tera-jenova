@@ -12,6 +12,7 @@ import com.angelis.tera.game.process.model.gameobject.GameObject;
 import com.angelis.tera.game.process.model.gather.Gather;
 import com.angelis.tera.game.process.model.item.Item;
 import com.angelis.tera.game.process.model.player.Player;
+import com.angelis.tera.game.process.model.player.StockExchangeItem;
 import com.angelis.tera.game.process.model.player.request.AbstractRequest;
 import com.angelis.tera.game.process.model.player.request.NpcTradeRequest;
 import com.angelis.tera.game.process.model.player.request.PartyInviteRequest;
@@ -34,7 +35,9 @@ public enum ObjectFamilyEnum {
 
     SYSTEM("0", Void.class), // TODO
     PROJECTILE("0", Void.class), // TODO
-    GUILD("0", Void.class); // TODO
+    GUILD("0", Void.class), // TODO
+    STOCK_EXCHANGE_ITEM("00000000", StockExchangeItem.class),
+    ;
 
     public final Class<?>[] associatedClass;
     public final String value;
