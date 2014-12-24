@@ -1,6 +1,6 @@
 package com.angelis.tera.game.ai.events.enums;
 
-import com.angelis.tera.game.ai.events.IEventHandler;
+import com.angelis.tera.game.ai.events.IAIEventHandler;
 import com.angelis.tera.game.ai.events.handlers.AttackedEventHandler;
 import com.angelis.tera.game.ai.events.handlers.NotSeePlayerEventHandler;
 import com.angelis.tera.game.ai.events.handlers.SeePlayerEventHandler;
@@ -11,9 +11,9 @@ public enum EventHandlerEnum {
 
     ATTACKED(new AttackedEventHandler());
     
-    public final IEventHandler eventHandler;
+    public final IAIEventHandler eventHandler;
 
-    private EventHandlerEnum(final IEventHandler eventHandler) {
+    private EventHandlerEnum(final IAIEventHandler eventHandler) {
         this.eventHandler = eventHandler;
     }
 }

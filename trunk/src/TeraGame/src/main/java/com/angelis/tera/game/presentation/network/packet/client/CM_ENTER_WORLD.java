@@ -91,8 +91,7 @@ public class CM_ENTER_WORLD extends TeraClientPacket {
         connection.sendPacket(new SM_F2P_PREMIUM_USER_PERMISSION());
         connection.sendPacket(new SM_OPCODE_LESS_PACKET("02C10000000000000000"));
 
-        // connection.sendPacket(SystemMessages.YOU_CAN_JOIN_GUILD_VIA_SOCIAL_LINK());
-        connection.sendPacket(SystemMessages.UNKONW());
+        connection.sendPacket(SystemMessages.YOU_CAN_JOIN_GUILD_VIA_SOCIAL_LINK());
 
         connection.sendPacket(new SM_MASSTIGE_STATUS());
 

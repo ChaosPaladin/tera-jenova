@@ -22,7 +22,7 @@ public class SM_DROP_ITEM_LOOT extends TeraServerPacket {
     @Override
     protected void writeImpl(final TeraGameConnection connection, final ByteBuffer byteBuffer) {
         writeUid(byteBuffer, this.player);
-        writeD(byteBuffer, 0);
+        writeQ(byteBuffer, 0);
         writeUid(byteBuffer, this.dropItem);
         writeC(byteBuffer, this.amount);
     }
