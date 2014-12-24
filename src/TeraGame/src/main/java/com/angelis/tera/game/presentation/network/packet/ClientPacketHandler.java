@@ -109,7 +109,7 @@ public class ClientPacketHandler {
         addPacket((short) 0xF772, CM_PLAYER_EQUIPEMENT_ITEM_INFO.class); // OK
         addPacket((short) 0xACA1, CM_PLAYER_DUNGEON_COOLTIME_LIST.class);
         addPacket((short) 0xB106, CM_PLAYER_ITEM_TRASH.class);
-        addPacket((short) 0xB663, CM_PLAYER_DROP_ITEM_PICKUP.class);
+        addPacket((short) 0x9DE4, CM_PLAYER_DROP_ITEM_PICKUP.class); // OK
 
         // EXCHANGE
         addPacket((short) 0xFCEB, CM_EXCHANGE_ITEM_ADD_BUY.class); // OK
@@ -128,6 +128,14 @@ public class ClientPacketHandler {
         addPacket((short) 0xB5E3, CM_INSTANCERANK_WINDOW_OPEN.class);
         addPacket((short) 0x62EB, CM_BATTLEGROUND_WINDOW_OPEN.class);
 
+        // STOCK EXCHANGE ITEM
+        addPacket((short) 0xCE53, CM_STOCK_EXCHANGE_ITEM_UNIQUE_LIST.class); // OK
+        addPacket((short) 0xD7AD, CM_STOCK_EXCHANGE_ITEM_UNIQUE_REQUEST.class); // OK
+        addPacket((short) 0x70E7, CM_STOCK_EXCHANGE_ITEM_ACCOUNT_LIST.class); // OK
+        addPacket((short) 0x6913, CM_STOCK_EXCHANGE_ITEM_ACCOUNT_REQUEST.class); // OK
+        addPacket((short) 0xD960, CM_STOCK_EXCHANGE_ITEM_INFO.class); // OK
+        addPacket((short) 0x518F, CM_STOCK_EXCHANGE_ITEM_UNK.class); // OK
+        
         // GUILD
         addPacket((short) 0xF070, CM_SERVERGUILD_WINDOW_OPEN.class);
         addPacket((short) 0xACFA, CM_GUILD_INFO.class);

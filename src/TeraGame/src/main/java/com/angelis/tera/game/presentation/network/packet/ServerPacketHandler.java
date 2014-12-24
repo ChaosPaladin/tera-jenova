@@ -49,8 +49,7 @@ public class ServerPacketHandler {
         addPacket((short) 0xA33A, SM_VIRTUAL_LATENCY.class); // OK
         addPacket((short) 0x539D, SM_MOVE_DISTANCE_DELTA.class); // OK
         addPacket((short) 0xAC2B, SM_F2P_PREMIUM_USER_PERMISSION.class); // OK
-        addPacket((short) 0x86B7, SM_PLAYER_EQUIP_ITEM_CHANGER.class); // Not
-                                                                       // sure
+        addPacket((short) 0x86B7, SM_PLAYER_EQUIP_ITEM_CHANGER.class); // Not sure
         addPacket((short) 0xD85D, SM_FESTIVAL_LIST.class); // OK
         addPacket((short) 0xF1AD, SM_MASSTIGE_STATUS.class); // OK
         addPacket((short) 0x792B, SM_LOAD_TOPO.class); // OK
@@ -86,7 +85,7 @@ public class ServerPacketHandler {
         addPacket((short) 0xCF42, SM_ACTION_STAGE.class); // OK
         addPacket((short) 0xD2E1, SM_ACTION_END.class); // OK
         addPacket((short) 0xFF1F, SM_CREATURE_INSTANCE_ARROW.class); // OK
-        addPacket((short) 0x64DA, SM_PLAYER_EXPERIENCE_UPDATE.class);
+        addPacket((short) 0xA71F, SM_PLAYER_EXPERIENCE_UPDATE.class); // OK
 
         // OPTIONS
         addPacket((short) 0xB4C9, SM_OPTION_SHOW_MASK.class);
@@ -147,9 +146,9 @@ public class ServerPacketHandler {
         addPacket((short) 0x95B4, SM_CREATURE_SHOW_HP.class);
 
         // DROP
-        addPacket((short) 0xB741, SM_DROP_ITEM_LOOT.class);
-        addPacket((short) 0xBD24, SM_DROP_ITEM_DESPAWN.class);
-        addPacket((short) 0xA769, SM_DROP_ITEM_SPAWN.class);
+        addPacket((short) 0x95CC, SM_DROP_ITEM_LOOT.class); // OK
+        addPacket((short) 0xD68B, SM_DROP_ITEM_DESPAWN.class); // OK
+        addPacket((short) 0xEB8B, SM_DROP_ITEM_SPAWN.class); // OK
 
         // DIALOG
         addPacket((short) 0x5A8A, SM_DIALOG.class); // OK
@@ -191,13 +190,24 @@ public class ServerPacketHandler {
 
         // INVENTORY
         addPacket((short) 0x8034, SM_INVENTORY.class); // OK
-        addPacket((short) 0x8309, SM_STORAGE.class);
         addPacket((short) 0xC6A9, SM_ITEM_INFO.class); // OK
         addPacket((short) 0xD3D7, SM_ITEM_SIMPLE_INFO.class);
         addPacket((short) 0xE040, SM_PLAYER_INVENTORY_SLOT_CHANGED.class); // OK
         addPacket((short) 0x8890, SM_PLAYER_APPEARANCE_CHANGE.class); // OK
         addPacket((short) 0x5601, SM_ITEM_START_COOLTIME.class);
         addPacket((short) 0xE62F, SM_EXCHANGE_WINDOW_UPDATE.class);
+
+        // STOCK EXCHANGE ITEM
+        addPacket((short) 0xACBE, SM_STOCK_EXCHANGE_ITEM_HINT.class); // OK
+        
+        addPacket((short) 0xB28D, SM_STOCK_EXCHANGE_ITEM_UNIQUE_LIST.class); // OK
+        addPacket((short) 0xF3A8, SM_STOCK_EXCHANGE_ITEM_UNIQUE_ADD.class); // OK
+        
+        addPacket((short) 0xFD9D, SM_STOCK_EXCHANGE_ITEM_ACCOUNT_LIST.class); // OK
+        addPacket((short) 0xBD6E, SM_STOCK_EXCHANGE_ITEM_ACCOUNT_ADD.class); // OK
+        addPacket((short) 0x6B70, SM_STOCK_EXCHANGE_ITEM_INFO.class); // OK
+        addPacket((short) 0xDC8F, SM_STOCK_EXCHANGE_ITEM_UNK.class); // OK
+        
 
         // TRADE
         addPacket((short) 0xCCD6, SM_TRADE_WINDOW_SHOW.class);
@@ -274,12 +284,12 @@ public class ServerPacketHandler {
             log.error("Server packet with id " + String.format("0x%02X: ", id) + " already exists");
             return;
         }
-        
+
         if ("0x0000".equals(String.format("0x%02X", id))) {
             // prevent adding packet with incorrect opcodes
             return;
         }
-        
+
         serverPackets.put(id, packetClass);
     }
 }
