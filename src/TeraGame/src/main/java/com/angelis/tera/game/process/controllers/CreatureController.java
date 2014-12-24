@@ -84,6 +84,5 @@ public class CreatureController extends Controller<Creature> {
     @Override
     public void onEndAttack() {
         // TODO Auto-generated method stub
-
     }
 }

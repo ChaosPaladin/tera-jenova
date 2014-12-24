@@ -8,6 +8,7 @@ import com.angelis.tera.common.process.model.BaseAccountModel;
 import com.angelis.tera.game.presentation.network.connection.TeraGameConnection;
 import com.angelis.tera.game.process.model.account.enums.AccountTypeEnum;
 import com.angelis.tera.game.process.model.player.Player;
+import com.angelis.tera.game.process.model.player.StockExchangeItem;
 
 public class Account extends BaseAccountModel {
 
@@ -16,6 +17,7 @@ public class Account extends BaseAccountModel {
     private List<Player> players;
     private Options options;
     private int extraCharacterSlotCount;
+    private List<StockExchangeItem> stockExchangeItems;
 
     public Account(final Integer id) {
         super(id);
@@ -84,6 +86,14 @@ public class Account extends BaseAccountModel {
     
     public void addExtractCharacterSlot(final int amount) {
         this.extraCharacterSlotCount += amount;
+    }
+
+    public List<StockExchangeItem> getStockExchangeItems() {
+        return stockExchangeItems;
+    }
+
+    public void setStockExchangeItems(final List<StockExchangeItem> stockExchangeItems) {
+        this.stockExchangeItems = stockExchangeItems;
     }
 
     public final boolean haveCharacterWithLevel(final int level) {

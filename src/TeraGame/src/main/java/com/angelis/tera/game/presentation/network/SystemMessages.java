@@ -168,23 +168,22 @@ public class SystemMessages {
         return new SM_SYSTEM_MESSAGE(new String[] { "@2649" });
     }
 
-    // LOADING SCREEN
-    public static final SM_SYSTEM_MESSAGE YOU_CAN_JOIN_GUILD_VIA_SOCIAL_LINK() {
-        return new SM_SYSTEM_MESSAGE(new String[] { "@2812" });
-    }
-
     // GUILD
     public static final SM_SYSTEM_MESSAGE YOU_CANT_AFFECT_EXECUTIVE_MEMBER_AS_CHIEF() {
         return new SM_SYSTEM_MESSAGE(new String[] { "@2810" });
     }
 
-    public static final SM_SYSTEM_MESSAGE UNKONW() {
-        return new SM_SYSTEM_MESSAGE(new String[] { "@2824" });
+    // TAXES
+    public static final SM_SYSTEM_MESSAGE YOU_MUST_WAIT_BEFORE_COLLECTING_TAXES() {
+        return new SM_SYSTEM_MESSAGE(new String[] { "@2812" });
     }
 
     // TERA
     public static final SM_SYSTEM_MESSAGE CONNECT_ON_TERA_EUROPE_FOR_LAST_NEWS() {
         return new SM_SYSTEM_MESSAGE(new String[] { "@888" });
+    }
+    public static final SM_SYSTEM_MESSAGE YOU_CAN_JOIN_GUILD_VIA_SOCIAL_LINK() {
+        return new SM_SYSTEM_MESSAGE(new String[] { "@2824" });
     }
 
     // TEAM

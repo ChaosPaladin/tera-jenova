@@ -15,6 +15,7 @@ import com.angelis.tera.game.domain.mapper.xml.ZoneMapper;
 import com.angelis.tera.game.presentation.network.packet.server.SM_PLAYER_ZONE_CHANGE;
 import com.angelis.tera.game.process.model.Zone;
 import com.angelis.tera.game.process.model.player.Player;
+import com.angelis.tera.game.process.model.player.enums.PlayerClassEnum;
 
 public class ZoneService extends AbstractService {
 
@@ -56,7 +57,7 @@ public class ZoneService extends AbstractService {
 
         Zone zone = zones.get(datasStringifyed);
         if (zone == null) {
-            log.error("Missing zone :"+datasStringifyed);
+            log.error("Missing zone :" + datasStringifyed);
 
             // fake the zone
             zone = new Zone();
@@ -64,6 +65,11 @@ public class ZoneService extends AbstractService {
         }
 
         return zone;
+    }
+
+    public byte[] getStartingZoneFor(final PlayerClassEnum playerClass) {
+        // TODO startZoneData for REAPER
+        return new byte[] { 1, 0, 0, 0, 2, 0, 0, 0, 7, 0, 0, 0 };
     }
 
     /** SINGLETON */

@@ -71,9 +71,4 @@ public class CampFire extends VisibleTeraObject {
         }
         return true;
     }
-    
-    @Override
-    public void initializeAi() {
-        // Empty
-    }
 }

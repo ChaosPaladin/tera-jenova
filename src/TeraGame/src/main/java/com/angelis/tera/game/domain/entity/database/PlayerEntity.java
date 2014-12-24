@@ -147,7 +147,7 @@ public class PlayerEntity extends AbstractDatabaseEntity {
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "player")
     private Set<AchievementEntity> achievements;
 
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "player")
     private Set<ZoneEntity> visitedZones;
 
     @ManyToMany(mappedBy = "owner")

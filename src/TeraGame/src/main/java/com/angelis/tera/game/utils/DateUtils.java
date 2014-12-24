@@ -1,5 +1,6 @@
 package com.angelis.tera.game.utils;
 
+import java.util.Calendar;
 import java.util.Date;
 
 public abstract class DateUtils {
@@ -52,5 +53,17 @@ public abstract class DateUtils {
     
     public static int getCurrentTimestamp() {
         return (int) (new Date().getTime()/1000);
+    }
+    
+    public static Date getInfiniteDate() {
+        final Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.DAY_OF_MONTH, 1);
+        calendar.set(Calendar.MONTH, 0);
+        calendar.set(Calendar.YEAR, 2031);
+        
+        calendar.set(Calendar.HOUR, 0);
+        calendar.set(Calendar.MINUTE, 59);
+        calendar.set(Calendar.SECOND, 59);
+        return calendar.getTime();
     }
 }
