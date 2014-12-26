@@ -104,7 +104,7 @@ public class LoginController {
             FileUtils.copyURLToFile(baseFileUrl, launcherFile);
             final RandomAccessFile raf = new RandomAccessFile(launcherFile, "rw");
             raf.seek(5138868);
-            String serverUrl = "http://"+LoginConfig.LOGIN_URL+"/servers."+lang;
+            String serverUrl = "http://"+LoginConfig.LOGIN_URL+":"+LoginConfig.LOGIN_PORT+"/servers."+lang;
             while (serverUrl.length() < 59) {
                 serverUrl += '\0';
             }
