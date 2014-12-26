@@ -267,6 +267,15 @@ public class ServerPacketHandler {
         addPacket((short) 0xFFFF, KeyServerPacket.class);
     }
 
+    public static Class<? extends AbstractServerPacket<TeraGameConnection>> getServerPacket(final short id) {
+        final Class<? extends AbstractServerPacket<TeraGameConnection>> serverPacketClass = serverPackets.get(id);
+        if (serverPacketClass == null) {
+            log.error("Unknow packet with id " + String.format("0x%02X: ", id));
+        }
+
+        return serverPacketClass;
+    }
+    
     @SuppressWarnings("rawtypes")
     public static Short getServerPacketId(final Class<? extends AbstractServerPacket> packetClass) {
         for (final Entry<Short, Class<? extends AbstractServerPacket<TeraGameConnection>>> entry : serverPackets.entrySet()) {
