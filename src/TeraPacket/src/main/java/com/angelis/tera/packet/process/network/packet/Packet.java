@@ -26,8 +26,7 @@ public class Packet {
         return datas;
     }
     
-    @Override
-    public String toString() {
+    public String toDebugString() {
         final StringBuilder sb = new StringBuilder();
         switch (this.packetDirection) {
             case CLIENT_TO_SERVER:
@@ -52,5 +51,10 @@ public class Packet {
         sb.append(System.getProperty("line.separator"));
 
         return sb.toString();
+    }
+    
+    @Override
+    public String toString() {
+        return PrintUtils.toHex(this.datas);
     }
 }

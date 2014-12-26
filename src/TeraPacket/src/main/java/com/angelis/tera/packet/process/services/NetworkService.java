@@ -12,6 +12,8 @@ import org.jnetpcap.PcapIf;
 import org.jnetpcap.packet.PcapPacketHandler;
 
 import com.angelis.tera.common.services.AbstractService;
+import com.angelis.tera.game.presentation.network.packet.ClientPacketHandler;
+import com.angelis.tera.game.presentation.network.packet.ServerPacketHandler;
 import com.angelis.tera.packet.config.CaptorConfig;
 import com.angelis.tera.packet.config.NetworkConfig;
 import com.angelis.tera.packet.process.network.Captor;
@@ -41,7 +43,7 @@ public class NetworkService extends AbstractService {
 
         final int snaplen = 64 * 1024; // Capture all packets, no trucation
         final int flags = Pcap.MODE_PROMISCUOUS; // capture all packets
-        final int timeout = 10 * 1000; // 10 seconds in millis
+        final int timeout = 0; // 10 seconds in millis
         final Pcap pcap = Pcap.openLive(device.getName(), snaplen, flags, timeout, errbuf);
 
         if (pcap == null) {
@@ -71,6 +73,8 @@ public class NetworkService extends AbstractService {
         }
 
         final PcapPacketHandler<String> jpacketHandler = new Captor(packetHandlers);
+        ClientPacketHandler.init();
+        ServerPacketHandler.init();
 
         new Thread() {
             @Override
