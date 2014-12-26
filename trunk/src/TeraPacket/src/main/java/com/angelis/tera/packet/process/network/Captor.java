@@ -86,7 +86,7 @@ public class Captor implements PcapPacketHandler<String> {
         }
 
         // Compute the packet
-        final short size = byteBuffer.getShort(); // size of packet
+        final int size = byteBuffer.getShort(); // size of packet
         final short opcode = byteBuffer.getShort();
         byteBuffer.position(0);
         final byte[] datas = new byte[byteBuffer.remaining()];

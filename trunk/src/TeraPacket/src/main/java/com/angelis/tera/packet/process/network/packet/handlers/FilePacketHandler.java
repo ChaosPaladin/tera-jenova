@@ -22,7 +22,7 @@ public class FilePacketHandler extends AbstractPacketHandler {
     @Override
     public void handle(final Packet packet) {
         try {
-            fileWriter.write(packet.toString());
+            fileWriter.write(packet.toDebugString());
         }
         catch (final IOException e) {
             log.error(e.getMessage(), e);
