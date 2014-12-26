@@ -10,9 +10,8 @@
         <module>../TeraCommon</module>
         <module>../TeraGame</module>
         <module>../TeraLogin</module>
+        <module>../TeraPacket</module>
         <module>../TeraLauncher</module>
-        <module>../TeraTools</module>
-        <!-- <module>../TeraPacket</module>  -->
     </modules>
     <build>
         <plugins>
@@ -27,16 +26,15 @@
                                 <property name="common" location="${project.basedir}/../TeraCommon" />
                                 <property name="game" location="${project.basedir}/../TeraGame" />
                                 <property name="login" location="${project.basedir}/../TeraLogin" />
-                                <property name="launcher" location="${project.basedir}/../TeraLauncher" />
-                                <property name="tools" location="${project.basedir}/../TeraTools" />
                                 <property name="packet" location="${project.basedir}/../TeraPacket" />
+                                <property name="launcher" location="${project.basedir}/../TeraLauncher" />
                                 
                                 <property name="build.dist" location="${project.basedir}/bin" />
                                 <property name="build.dist.game" location="${project.basedir}/bin/game" />
                                 <property name="build.dist.login" location="${project.basedir}/bin/login" />
-                                <property name="build.dist.launcher" location="${project.basedir}/bin/launcher" />
-                                <property name="build.dist.tools" location="${project.basedir}/bin/tools" />
                                 <property name="build.dist.packet" location="${project.basedir}/bin/packet" />
+                                <property name="build.dist.launcher" location="${project.basedir}/bin/launcher" />
+                                
 
 
 
@@ -108,22 +106,11 @@
 
 
 
-                                <!-- TERA TOOLS -->
-                                <!-- <mkdir dir="${build.dist.tools}" />
-                                <copy todir="${build.dist.tools}">
-                                    <fileset dir="${tools}/target">
-                                        <include name="TeraTools.jar" />
-                                    </fileset>
-                                </copy> -->
-
-
-
                                 <!-- TERA PACKET -->
-                                <!-- <mkdir dir="${build.dist.packet}" />
+                                <mkdir dir="${build.dist.packet}" />
                                 <mkdir dir="${build.dist.packet}/lib" />
-                                <mkdir dir="${build.dist.packet}/protocols" />
-                                <mkdir dir="${build.dist.packet}/config" />
-                                <mkdir dir="${build.dist.packet}/data" />
+                                <mkdir dir="${build.dist.packet}/natives" />
+                                <mkdir dir="${build.dist.packet}/conf" />
                                 <mkdir dir="${build.dist.packet}/logs" />
                                 <copy todir="${build.dist.packet}">
                                     <fileset dir="${packet}/target">
@@ -134,18 +121,19 @@
                                         <include name="*.sh" />
                                     </fileset>
                                 </copy>
-                                <copy todir="${build.dist.packet}/protocols">
-                                    <fileset dir="${packet}/protocols"/>
-                                </copy>
-                                <copy todir="${build.dist.packet}/config">
-                                    <fileset dir="${packet}/config"/>
+                                <copy todir="${build.dist.packet}/conf">
+                                    <fileset dir="${packet}/conf"/>
                                 </copy>
                                 <copy todir="${build.dist.packet}/lib">
                                     <fileset dir="${packet}/lib">
                                         <include name="*.jar" />
                                         <include name="*.dll" />
                                     </fileset>
-                                </copy> -->
+                                    <fileset dir="${packet}/target/dependencies"/>
+                                </copy>
+                                <copy todir="${build.dist.packet}/natives">
+                                    <fileset dir="${packet}/natives"/>
+                                </copy>
 
 
 

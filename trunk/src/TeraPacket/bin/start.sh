@@ -1,0 +1,1 @@
+java -cp ./lib/*:TeraPacket.jar com.angelis.tera.packet.MainPacket > logs/console.log 2>&1
