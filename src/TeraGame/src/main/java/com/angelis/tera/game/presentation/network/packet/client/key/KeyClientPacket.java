@@ -25,7 +25,7 @@ public class KeyClientPacket extends AbstractClientPacket<TeraGameConnection> {
     protected void runImpl() {
         final TeraGameConnection connection = this.getConnection();
         final CryptSession session = connection.getCryptSession();
-        session.readKeyPacket(this.data);
+        session.readClientKeyPacket(this.data);
         
         connection.sendPacket(new KeyServerPacket());
     }

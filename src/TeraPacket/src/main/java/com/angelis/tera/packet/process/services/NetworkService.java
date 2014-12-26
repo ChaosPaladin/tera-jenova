@@ -3,6 +3,8 @@ package com.angelis.tera.packet.process.services;
 import java.util.ArrayList;
 import java.util.List;
 
+import javolution.util.FastList;
+
 import org.apache.log4j.Logger;
 import org.jnetpcap.Pcap;
 import org.jnetpcap.PcapBpfProgram;
@@ -12,6 +14,8 @@ import org.jnetpcap.packet.PcapPacketHandler;
 import com.angelis.tera.common.services.AbstractService;
 import com.angelis.tera.packet.config.CaptorConfig;
 import com.angelis.tera.packet.config.NetworkConfig;
+import com.angelis.tera.packet.process.network.Captor;
+import com.angelis.tera.packet.process.network.packet.handlers.AbstractPacketHandler;
 
 public class NetworkService extends AbstractService {
 
@@ -55,14 +59,18 @@ public class NetworkService extends AbstractService {
             return;
         }
 
-        PcapPacketHandler<String> jpacketHandler;
-        try {
-            jpacketHandler = CaptorConfig.CAPTOR_CLASS.newInstance();
+        final List<AbstractPacketHandler> packetHandlers = new FastList<>();
+        for (final Class<? extends AbstractPacketHandler> packetHandlerClass : CaptorConfig.CAPTOR_PACKET_HANDLERS) {
+            try {
+                packetHandlers.add(packetHandlerClass.newInstance());
+            }
+            catch (InstantiationException | IllegalAccessException | IllegalArgumentException | SecurityException e) {
+                System.err.println(e.getMessage());
+                return;
+            }
         }
-        catch (InstantiationException | IllegalAccessException | IllegalArgumentException | SecurityException e) {
-            System.err.println(e.getMessage());
-            return;
-        }
+
+        final PcapPacketHandler<String> jpacketHandler = new Captor(packetHandlers);
 
         new Thread() {
             @Override

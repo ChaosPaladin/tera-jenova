@@ -6,10 +6,10 @@ import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 
 public class PrintUtils {
-    
+
     public static void printSection(final String sectionName) {
         final StringBuilder sb = new StringBuilder();
-        sb.append("-[ "+sectionName+" ]");
+        sb.append("-[ " + sectionName + " ]");
 
         while (sb.length() < 79) {
             sb.insert(0, "=");
@@ -17,20 +17,20 @@ public class PrintUtils {
 
         System.out.println(sb.toString());
     }
-    
+
     public static byte[] hex2bytes(String string) {
         if (string == null) {
             string = "";
         }
 
-        final String finalString = string.replaceAll("\\s+","");
+        final String finalString = string.replaceAll("\\s+", "");
         final byte[] bytes = new byte[finalString.length() / 2];
         for (int i = 0; i < bytes.length; i++) {
-           bytes[i] = (byte) Integer.parseInt(finalString.substring(2 * i, 2 * i + 2), 16);
+            bytes[i] = (byte) Integer.parseInt(finalString.substring(2 * i, 2 * i + 2), 16);
         }
         return bytes;
     }
-    
+
     public static String bytes2hex(final byte[] bytes) {
         final StringBuilder result = new StringBuilder();
         int value;
@@ -40,20 +40,24 @@ public class PrintUtils {
         }
         return result.toString();
     }
-    
+
     public static String reverseHex(final String input) {
-        final String[] chunked = new String[input.length()/2];
-        
+        final String[] chunked = new String[input.length() / 2];
+
         int position = 0;
-        for (int i = 0 ; i < input.length() ; i+=2) {
-            chunked[position] = input.substring(position*2, position*2+2);
+        for (int i = 0; i < input.length(); i += 2) {
+            chunked[position] = input.substring(position * 2, position * 2 + 2);
             position++;
         }
-        
+
         ArrayUtils.reverse(chunked);
         return StringUtils.join(chunked);
     }
-    
+
+    public static String toHex(final byte[] datas) {
+        return toHex(ByteBuffer.wrap(datas));
+    }
+
     public static String toHex(final ByteBuffer data) {
         final int position = data.position();
         final StringBuilder result = new StringBuilder();
@@ -82,6 +86,22 @@ public class PrintUtils {
             toText(data, result, rest);
         }
         data.position(position);
+        return result.toString();
+    }
+    
+    public static String toLineHex(final byte[] datas) {
+        return toLineHex(ByteBuffer.wrap(datas));
+    }
+
+    public static String toLineHex(final ByteBuffer datas) {
+        final int position = datas.position();
+        final StringBuilder result = new StringBuilder();
+        while (datas.hasRemaining()) {
+            final int b = datas.get() & 0xff;
+            result.append(String.format("%02X", b));
+        }
+        
+        datas.position(position);
         return result.toString();
     }
 
