@@ -12,9 +12,9 @@
 
 <Pane prefHeight="514.0" prefWidth="875.0" styleClass="root" stylesheets="@MainWindow.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.angelis.tera.packet.presentation.controllers.PacketController">
    <children>
-      <ListView id="listView" fx:id="listView" layoutX="14.0" layoutY="58.0" prefHeight="448.0" prefWidth="241.0" />
-      <TextArea id="packetContentTextArea" fx:id="packetContentTextArea" editable="false" layoutX="263.0" layoutY="58.0" prefHeight="448.0" prefWidth="602.0" />
-      <TextField id="filterTextField" fx:id="filterTextField" layoutX="50.0" layoutY="14.0" prefHeight="25.0" prefWidth="205.0" />
+      <ListView id="listView" fx:id="listView" layoutX="14.0" layoutY="58.0" prefHeight="448.0" prefWidth="265.0" />
+      <TextArea id="packetContentTextArea" fx:id="packetContentTextArea" editable="false" layoutX="287.0" layoutY="58.0" prefHeight="448.0" prefWidth="578.0" />
+      <TextField id="filterTextField" fx:id="filterTextField" layoutX="74.0" layoutY="14.0" prefHeight="25.0" prefWidth="205.0" />
       <Text layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filter" wrappingWidth="35.185546875" />
    </children>
 </Pane>
