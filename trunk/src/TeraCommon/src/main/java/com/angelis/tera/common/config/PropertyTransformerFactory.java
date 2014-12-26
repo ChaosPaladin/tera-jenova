@@ -9,6 +9,7 @@ import com.angelis.tera.common.config.exception.TransformationException;
 import com.angelis.tera.common.config.transformers.BooleanTransformer;
 import com.angelis.tera.common.config.transformers.ByteTransformer;
 import com.angelis.tera.common.config.transformers.CharTransformer;
+import com.angelis.tera.common.config.transformers.ClassArrayTransformer;
 import com.angelis.tera.common.config.transformers.ClassTransformer;
 import com.angelis.tera.common.config.transformers.DoubleTransformer;
 import com.angelis.tera.common.config.transformers.EnumTransformer;
@@ -40,7 +41,7 @@ public class PropertyTransformerFactory {
      *             {@link com.aionemu.commons.configuration.PropertyTransformer}
      */
     @SuppressWarnings("rawtypes")
-    public static PropertyTransformer newTransformer(Class clazzToTransform, Class<? extends PropertyTransformer> tc) throws TransformationException {
+    public static PropertyTransformer newTransformer(final Class clazzToTransform, Class<? extends PropertyTransformer> tc) throws TransformationException {
 
         // Just a hack, we can't set null to annotation value
         if (tc == PropertyTransformer.class) {
@@ -51,7 +52,7 @@ public class PropertyTransformerFactory {
             try {
                 return tc.newInstance();
             }
-            catch (Exception e) {
+            catch (final Exception e) {
                 throw new TransformationException("Can't instantiate property transfromer", e);
             }
         }
@@ -100,6 +101,9 @@ public class PropertyTransformerFactory {
         }
         else if (clazzToTransform == Class.class) {
             return ClassTransformer.SHARED_INSTANCE;
+        }
+        else if (clazzToTransform == Class[].class) {
+            return ClassArrayTransformer.SHARED_INSTANCE;
         }
         else if (clazzToTransform == Locale.class) {
             return LocaleTransformer.SHARED_INSTANCE;

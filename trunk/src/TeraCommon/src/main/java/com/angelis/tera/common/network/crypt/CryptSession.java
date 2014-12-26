@@ -51,11 +51,11 @@ public final class CryptSession implements IsObservable<EmptyEventable> {
         this.serverKey1 = serverKey1;
         this.serverKey2 = serverKey2;
         
-        this.init();
+        this.initCryptors();
         this.cryptState = CryptState.CRYPTED;
     }
 
-    private final void init() {
+    private final void initCryptors() {
         final byte[] tmp = new byte[128];
         final byte[] tmp2 = new byte[128];
         final byte[] crypt_key_1 = new byte[128];
@@ -76,19 +76,36 @@ public final class CryptSession implements IsObservable<EmptyEventable> {
         this.inited = true;
     }
 
-    public final void readKeyPacket(final byte[] data) {
+    public final void readClientKeyPacket(final byte[] datas) {
         switch (cryptState) {
             case KEY1:
-                this.clientKey1 = data;
+                this.clientKey1 = datas;
             break;
 
             case KEY2:
-                this.clientKey2 = data;
+                this.clientKey2 = datas;
             break;
 
             default:
                 throw new RuntimeException("You tryed to read key packet while having " + this.cryptState.name() + " crypt state");
         }
+    }
+    
+    public final void readServerKeyPacket(final byte[] datas) {
+        switch (cryptState) {
+            case KEY1:
+                this.serverKey1 = datas;
+            break;
+
+            case KEY2:
+                this.serverKey2 = datas;
+            break;
+
+            default:
+                throw new RuntimeException("You tryed to read key packet while having " + this.cryptState.name() + " crypt state");
+        }
+        
+        updateState();
     }
 
     public final byte[] sendKeyPacket() {
@@ -121,7 +138,7 @@ public final class CryptSession implements IsObservable<EmptyEventable> {
         }
 
         if (!this.inited) {
-            this.init();
+            this.initCryptors();
         }
 
         decryptor.applyCryptor(data, size);
@@ -137,7 +154,7 @@ public final class CryptSession implements IsObservable<EmptyEventable> {
         }
 
         if (!this.inited) {
-            this.init();
+            this.initCryptors();
         }
 
         encryptor.applyCryptor(data, size);
