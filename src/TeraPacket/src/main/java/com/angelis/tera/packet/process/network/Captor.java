@@ -7,6 +7,7 @@ import java.nio.ByteOrder;
 import java.util.List;
 import java.util.Map;
 
+import javolution.util.FastList;
 import javolution.util.FastMap;
 
 import org.apache.log4j.Logger;
@@ -17,6 +18,7 @@ import org.jnetpcap.protocol.network.Ip4;
 
 import com.angelis.tera.common.network.crypt.CryptSession;
 import com.angelis.tera.common.network.crypt.CryptState;
+import com.angelis.tera.common.network.packet.AbstractPacket;
 import com.angelis.tera.packet.process.Session;
 import com.angelis.tera.packet.process.network.packet.Packet;
 import com.angelis.tera.packet.process.network.packet.enums.PacketDirectionEnum;
@@ -30,6 +32,9 @@ public class Captor implements PcapPacketHandler<String> {
     protected Session session;
     private final List<AbstractPacketHandler> packetHandlers;
     private final Map<Short, Packet> receivedPackets = new FastMap<>();
+
+    private final List<Packet> creatureSpawns = new FastList<>();
+    private final List<Packet> gatherSpawns = new FastList<>();
 
     // This is used internally
     private final Ip4 ip = new Ip4();
@@ -75,6 +80,7 @@ public class Captor implements PcapPacketHandler<String> {
             return;
         }
 
+        final AbstractPacket associatedPacket = null;
         switch (packetDirection) {
             case CLIENT_TO_SERVER:
                 cryptSession.decrypt(byteBuffer);
@@ -86,7 +92,7 @@ public class Captor implements PcapPacketHandler<String> {
         }
 
         // Compute the packet
-        final int size = byteBuffer.getShort(); // size of packet
+        byteBuffer.getShort(); // size of packet
         final short opcode = byteBuffer.getShort();
         byteBuffer.position(0);
         final byte[] datas = new byte[byteBuffer.remaining()];
