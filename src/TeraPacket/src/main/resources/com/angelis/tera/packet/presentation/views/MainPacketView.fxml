@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="514.0" prefWidth="875.0" styleClass="root" stylesheets="@MainWindow.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.angelis.tera.packet.presentation.controllers.PacketController">
+   <children>
+      <ListView id="listView" fx:id="listView" layoutX="14.0" layoutY="74.0" prefHeight="432.0" prefWidth="265.0" />
+      <TextArea id="packetContentTextArea" fx:id="packetContentTextArea" editable="false" layoutX="287.0" layoutY="74.0" prefHeight="432.0" prefWidth="578.0" />
+      <TextField id="filterTextField" fx:id="filterTextField" layoutX="49.0" layoutY="46.0" onKeyReleased="#onFilterTextFieldKeyUp" prefHeight="25.0" prefWidth="62.0" />
+      <Text layoutX="14.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filter" wrappingWidth="35.185546875" />
+      <MenuBar prefHeight="25.0" prefWidth="875.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Tools">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Export Creature" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button layoutX="217.0" layoutY="46.0" mnemonicParsing="false" onAction="#onClearButtonClick" prefHeight="25.0" prefWidth="62.0" text="Clear" />
+   </children>
+</Pane>

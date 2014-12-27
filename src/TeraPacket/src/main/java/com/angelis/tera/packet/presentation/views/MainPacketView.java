@@ -1,23 +1,25 @@
 package com.angelis.tera.packet.presentation.views;
 
 import javafx.application.Application;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 
 import com.angelis.tera.packet.presentation.controllers.PacketController;
 
-public class MainWindow extends Application {
+public class MainPacketView extends Application {
 
-    public static MainWindow instance;
+    public static MainPacketView instance;
     
     private final FXMLLoader fxmlLoader;
     
     
-    public MainWindow() {
-        fxmlLoader = new FXMLLoader(getClass().getResource("/com/angelis/tera/packet/presentation/views/MainWindow.fxml"));
-        MainWindow.instance = this;
+    public MainPacketView() {
+        fxmlLoader = new FXMLLoader(getClass().getResource("/com/angelis/tera/packet/presentation/views/"+this.getClass().getSimpleName()+".fxml"));
+        MainPacketView.instance = this;
     }
 
     @Override
@@ -26,6 +28,12 @@ public class MainWindow extends Application {
         
         getController().loadUi();
         
+        stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+            @Override
+            public void handle(final WindowEvent we) {
+                System.exit(0);
+            }
+        });  
         stage.setScene(new Scene(root));
         stage.show();
     }

@@ -1,10 +1,13 @@
 package com.angelis.tera.packet.presentation.controllers;
 
 import java.io.IOException;
+import java.util.List;
 
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Label;
@@ -14,8 +17,10 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.HBox;
 import javafx.util.Callback;
+import javolution.util.FastList;
 
 import com.angelis.tera.common.network.packet.AbstractClientPacket;
 import com.angelis.tera.common.network.packet.AbstractServerPacket;
@@ -34,9 +39,10 @@ public class PacketController {
 
     @FXML
     private TextArea packetContentTextArea;
+    
+    private final List<Packet> packets = new FastList<>();
 
     public PacketController() {
-
     }
 
     public void setFilterTextField(final TextField filterTextField) {
@@ -121,5 +127,40 @@ public class PacketController {
                 }
             }
         });
+    }
+    
+    public synchronized void addPacket(final Packet packet) {
+        this.packets.add(packet);
+        this.refreshListView();
+    }
+    
+    private synchronized void refreshListView() {
+        final ObservableList<Packet> listViewItems = this.listView.getItems();
+        listViewItems.clear();
+
+        final String filter = this.filterTextField.getText();
+        if (filter == null || "".equals(filter)) {
+            listViewItems.addAll(this.packets);
+            return;
+        }
+
+        final ObservableList<Packet> subentries = FXCollections.observableArrayList();
+        for (final Packet packet : this.packets) {
+            if (String.format("0x%02X", packet.getOpcode()).equals(filter)) {
+                subentries.add(packet);
+            }
+        }
+        listView.setItems(subentries);
+    }
+
+    @FXML
+    private void onFilterTextFieldKeyUp(final KeyEvent event) {
+        this.refreshListView();
+    }
+    
+    @FXML
+    private void onClearButtonClick(final ActionEvent event) {
+        this.packets.clear();
+        this.refreshListView();
     }
 }
