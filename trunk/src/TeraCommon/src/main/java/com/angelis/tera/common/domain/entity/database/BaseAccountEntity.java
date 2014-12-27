@@ -5,7 +5,14 @@ import java.util.Locale;
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
+import com.angelis.tera.common.process.model.account.enums.AccountTypeEnum;
+import com.angelis.tera.common.process.model.account.enums.DisplayRangeEnum;
+
 @MappedSuperclass
+@Cache(usage = CacheConcurrencyStrategy.NONE)
 public class BaseAccountEntity extends AbstractDatabaseEntity {
 
     private static final long serialVersionUID = -4034792019245322102L;
@@ -27,6 +34,15 @@ public class BaseAccountEntity extends AbstractDatabaseEntity {
 
     @Column(name = "authenticated")
     private boolean authenticated;
+
+    @Column(name = "extra_character_slot")
+    private int extraCharacterSlotCount;
+    
+    @Column(name = "display_range")
+    private DisplayRangeEnum displayRange;
+
+    @Column(name = "account_type")
+    private AccountTypeEnum accountType;
 
     public BaseAccountEntity(final Integer id) {
         super(id);
@@ -84,13 +100,40 @@ public class BaseAccountEntity extends AbstractDatabaseEntity {
         this.authenticated = authenticated;
     }
 
+    public int getExtraCharacterSlotCount() {
+        return extraCharacterSlotCount;
+    }
+
+    public void setExtraCharacterSlotCount(final int extraCharacterSlotCount) {
+        this.extraCharacterSlotCount = extraCharacterSlotCount;
+    }
+    
+    public DisplayRangeEnum getDisplayRange() {
+        return displayRange;
+    }
+
+    public void setDisplayRange(final DisplayRangeEnum displayRange) {
+        this.displayRange = displayRange;
+    }
+
+    public AccountTypeEnum getAccountType() {
+        return accountType;
+    }
+
+    public void setAccountType(final AccountTypeEnum accountType) {
+        this.accountType = accountType;
+    }
+
     @Override
     public int hashCode() {
         final int prime = 31;
         int result = super.hashCode();
         result = prime * result + access;
+        result = prime * result + ((accountType == null) ? 0 : accountType.hashCode());
         result = prime * result + (authenticated ? 1231 : 1237);
         result = prime * result + (banned ? 1231 : 1237);
+        result = prime * result + ((displayRange == null) ? 0 : displayRange.hashCode());
+        result = prime * result + extraCharacterSlotCount;
         result = prime * result + ((locale == null) ? 0 : locale.hashCode());
         result = prime * result + ((login == null) ? 0 : login.hashCode());
         result = prime * result + ((password == null) ? 0 : password.hashCode());
@@ -112,10 +155,19 @@ public class BaseAccountEntity extends AbstractDatabaseEntity {
         if (access != other.access) {
             return false;
         }
+        if (accountType != other.accountType) {
+            return false;
+        }
         if (authenticated != other.authenticated) {
             return false;
         }
         if (banned != other.banned) {
+            return false;
+        }
+        if (displayRange != other.displayRange) {
+            return false;
+        }
+        if (extraCharacterSlotCount != other.extraCharacterSlotCount) {
             return false;
         }
         if (locale == null) {
@@ -144,5 +196,4 @@ public class BaseAccountEntity extends AbstractDatabaseEntity {
         }
         return true;
     }
-
 }

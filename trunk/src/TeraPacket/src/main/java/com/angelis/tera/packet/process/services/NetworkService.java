@@ -9,7 +9,7 @@ import org.jnetpcap.PcapBpfProgram;
 import org.jnetpcap.PcapIf;
 import org.jnetpcap.packet.PcapPacketHandler;
 
-import com.angelis.tera.common.services.AbstractService;
+import com.angelis.tera.common.process.services.AbstractService;
 import com.angelis.tera.packet.config.NetworkConfig;
 import com.angelis.tera.packet.di.injector.AppInjector;
 import com.angelis.tera.packet.process.network.Captor;

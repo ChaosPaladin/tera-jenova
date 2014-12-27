@@ -6,7 +6,7 @@ import org.apache.log4j.Logger;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.AnnotationConfiguration;
 
-import com.angelis.tera.common.services.AbstractService;
+import com.angelis.tera.common.process.services.AbstractService;
 import com.angelis.tera.login.domain.entity.database.AccountEntity;
 import com.angelis.tera.login.domain.entity.database.ServerEntity;
 

@@ -5,7 +5,7 @@ import java.util.List;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 
-import com.angelis.tera.common.services.AbstractService;
+import com.angelis.tera.common.process.services.AbstractService;
 import com.angelis.tera.login.process.delegate.database.ServerDelegate;
 import com.angelis.tera.login.process.dto.Server;
 import com.angelis.tera.login.process.exceptions.MissingRequiredFieldException;

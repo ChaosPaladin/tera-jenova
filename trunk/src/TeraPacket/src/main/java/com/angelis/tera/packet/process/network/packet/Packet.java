@@ -47,7 +47,7 @@ public class Packet {
         
         sb.append("Hex:");
         sb.append(System.getProperty("line.separator"));
-        sb.append(PrintUtils.toLineHex(this.datas));
+        sb.append(PrintUtils.toHex(this.datas));
         sb.append(System.getProperty("line.separator"));
         sb.append(System.getProperty("line.separator"));
 

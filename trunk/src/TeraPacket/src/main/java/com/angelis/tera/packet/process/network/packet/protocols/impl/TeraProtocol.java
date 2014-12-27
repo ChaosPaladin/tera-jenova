@@ -13,8 +13,8 @@ import javolution.util.FastMap;
 import org.jnetpcap.packet.PcapPacket;
 import org.jnetpcap.protocol.network.Ip4;
 
-import com.angelis.tera.common.network.crypt.CryptSession;
-import com.angelis.tera.common.network.crypt.CryptState;
+import com.angelis.tera.common.presentation.network.crypt.CryptSession;
+import com.angelis.tera.common.presentation.network.crypt.CryptState;
 import com.angelis.tera.game.presentation.network.packet.ClientPacketHandler;
 import com.angelis.tera.game.presentation.network.packet.ServerPacketHandler;
 import com.angelis.tera.packet.process.Session;

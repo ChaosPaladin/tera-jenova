@@ -9,9 +9,9 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
-import com.angelis.tera.common.network.config.ServerConfig;
-import com.angelis.tera.common.process.exceptions.AccountNotFoundException;
-import com.angelis.tera.common.process.exceptions.AccountWithIncorrectPasswordException;
+import com.angelis.tera.common.presentation.network.config.ServerConfig;
+import com.angelis.tera.common.process.exceptions.account.AccountNotFoundException;
+import com.angelis.tera.common.process.exceptions.account.AccountWithIncorrectPasswordException;
 import com.angelis.tera.login.config.AccountConfig;
 import com.angelis.tera.login.domain.entity.xml.ServerListEntity;
 import com.angelis.tera.login.process.dto.Server;
