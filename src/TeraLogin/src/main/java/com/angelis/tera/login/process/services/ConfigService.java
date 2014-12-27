@@ -6,7 +6,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
 import com.angelis.tera.common.config.ConfigurableProcessor;
-import com.angelis.tera.common.services.AbstractService;
+import com.angelis.tera.common.process.services.AbstractService;
 import com.angelis.tera.common.utils.PropertiesUtils;
 import com.angelis.tera.login.config.AccountConfig;
 import com.angelis.tera.login.config.NetworkConfig;

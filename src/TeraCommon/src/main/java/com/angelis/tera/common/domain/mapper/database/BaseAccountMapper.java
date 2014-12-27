@@ -15,6 +15,8 @@ public abstract class BaseAccountMapper<E extends BaseAccountEntity, M extends B
         entity.setAccess(model.getAccess());
         entity.setLocale(model.getLocale());
         entity.setAuthenticated(model.isAuthenticated());
+        entity.setAccountType(model.getAccountType());
+        entity.setExtraCharacterSlotCount(model.getExtraCharacterSlotCount());
     }
 
     // ENTITY -> MODEL
@@ -27,5 +29,7 @@ public abstract class BaseAccountMapper<E extends BaseAccountEntity, M extends B
         model.setAccess(entity.getAccess());
         model.setLocale(entity.getLocale());
         model.setAuthenticated(entity.isAuthenticated());
+        model.setAccountType(entity.getAccountType());
+        model.setExtraCharacterSlotCount(entity.getExtraCharacterSlotCount());
     }
 }

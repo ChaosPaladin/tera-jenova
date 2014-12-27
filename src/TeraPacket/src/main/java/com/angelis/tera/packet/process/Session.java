@@ -5,7 +5,7 @@ import java.net.UnknownHostException;
 
 import org.jnetpcap.protocol.network.Ip4;
 
-import com.angelis.tera.common.network.crypt.CryptSession;
+import com.angelis.tera.common.presentation.network.crypt.CryptSession;
 import com.angelis.tera.packet.process.network.packet.enums.PacketDirectionEnum;
 
 public class Session {

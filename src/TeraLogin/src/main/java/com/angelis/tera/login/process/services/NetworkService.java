@@ -4,8 +4,8 @@ import java.io.IOException;
 
 import org.apache.log4j.Logger;
 
-import com.angelis.tera.common.network.config.ServerConfig;
-import com.angelis.tera.common.services.AbstractService;
+import com.angelis.tera.common.presentation.network.config.ServerConfig;
+import com.angelis.tera.common.process.services.AbstractService;
 import com.angelis.tera.login.config.NetworkConfig;
 import com.angelis.tera.login.http.ServerRunner;
 import com.angelis.tera.login.presentation.network.TeraLoginServer;

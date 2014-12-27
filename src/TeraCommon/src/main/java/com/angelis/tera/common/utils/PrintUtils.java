@@ -88,22 +88,6 @@ public class PrintUtils {
         data.position(position);
         return result.toString();
     }
-    
-    public static String toLineHex(final byte[] datas) {
-        return toLineHex(ByteBuffer.wrap(datas));
-    }
-
-    public static String toLineHex(final ByteBuffer datas) {
-        final int position = datas.position();
-        final StringBuilder result = new StringBuilder();
-        while (datas.hasRemaining()) {
-            final int b = datas.get() & 0xff;
-            result.append(String.format("%02X", b));
-        }
-        
-        datas.position(position);
-        return result.toString();
-    }
 
     /**
      * Gets last <tt>cnt</tt> read bytes from the <tt>data</tt> buffer and puts

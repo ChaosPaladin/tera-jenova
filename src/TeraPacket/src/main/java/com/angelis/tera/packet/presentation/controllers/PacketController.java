@@ -22,8 +22,8 @@ import javafx.scene.layout.HBox;
 import javafx.util.Callback;
 import javolution.util.FastList;
 
-import com.angelis.tera.common.network.packet.AbstractClientPacket;
-import com.angelis.tera.common.network.packet.AbstractServerPacket;
+import com.angelis.tera.common.presentation.network.packet.AbstractClientPacket;
+import com.angelis.tera.common.presentation.network.packet.AbstractServerPacket;
 import com.angelis.tera.game.presentation.network.connection.TeraGameConnection;
 import com.angelis.tera.game.presentation.network.packet.ClientPacketHandler;
 import com.angelis.tera.game.presentation.network.packet.ServerPacketHandler;

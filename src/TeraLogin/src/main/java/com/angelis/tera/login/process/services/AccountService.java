@@ -4,9 +4,10 @@ import org.apache.commons.lang3.LocaleUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 
-import com.angelis.tera.common.process.exceptions.AccountNotFoundException;
-import com.angelis.tera.common.process.exceptions.AccountWithIncorrectPasswordException;
-import com.angelis.tera.common.services.AbstractService;
+import com.angelis.tera.common.process.exceptions.account.AccountNotFoundException;
+import com.angelis.tera.common.process.exceptions.account.AccountWithIncorrectPasswordException;
+import com.angelis.tera.common.process.model.account.enums.AccountTypeEnum;
+import com.angelis.tera.common.process.services.AbstractService;
 import com.angelis.tera.login.process.delegate.database.AccountDelegate;
 import com.angelis.tera.login.process.exceptions.MissingRequiredFieldException;
 import com.angelis.tera.login.process.model.Account;
@@ -59,6 +60,8 @@ public class AccountService extends AbstractService {
         account.setPassword(password);
         account.setBanned(false);
         account.setLocale(LocaleUtils.toLocale(locale.toLowerCase()));
+        account.setAccountType(AccountTypeEnum.NORMAL);
+        account.setExtraCharacterSlotCount(0);
 
         accountDelegate.create(account);
     }

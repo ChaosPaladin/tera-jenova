@@ -3,7 +3,7 @@ package com.angelis.tera.launcher.services;
 import java.util.Properties;
 
 import com.angelis.tera.common.config.ConfigurableProcessor;
-import com.angelis.tera.common.services.AbstractService;
+import com.angelis.tera.common.process.services.AbstractService;
 import com.angelis.tera.common.utils.PropertiesUtils;
 import com.angelis.tera.launcher.config.FileConfig;
 import com.angelis.tera.launcher.config.LoginConfig;

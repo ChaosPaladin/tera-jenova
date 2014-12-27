@@ -2,14 +2,18 @@ package com.angelis.tera.common.process.model;
 
 import java.util.Locale;
 
+import com.angelis.tera.common.process.model.account.enums.AccountTypeEnum;
+
 public class BaseAccountModel extends AbstractModel {
-    
+
     private String login;
     private String password;
     private boolean banned;
     private int access;
     private Locale locale;
     private boolean authenticated;
+    private AccountTypeEnum accountType;
+    private int extraCharacterSlotCount;
 
     public BaseAccountModel(final Integer id) {
         super(id);
@@ -67,13 +71,35 @@ public class BaseAccountModel extends AbstractModel {
         this.authenticated = authenticated;
     }
 
+    public AccountTypeEnum getAccountType() {
+        return accountType;
+    }
+
+    public void setAccountType(final AccountTypeEnum accountType) {
+        this.accountType = accountType;
+    }
+
+    public int getExtraCharacterSlotCount() {
+        return extraCharacterSlotCount;
+    }
+
+    public void setExtraCharacterSlotCount(final int extraCharacterSlotCount) {
+        this.extraCharacterSlotCount = extraCharacterSlotCount;
+    }
+
+    public void addExtractCharacterSlot(final int amount) {
+        this.extraCharacterSlotCount += amount;
+    }
+
     @Override
     public int hashCode() {
         final int prime = 31;
         int result = super.hashCode();
         result = prime * result + access;
+        result = prime * result + ((accountType == null) ? 0 : accountType.hashCode());
         result = prime * result + (authenticated ? 1231 : 1237);
         result = prime * result + (banned ? 1231 : 1237);
+        result = prime * result + extraCharacterSlotCount;
         result = prime * result + ((locale == null) ? 0 : locale.hashCode());
         result = prime * result + ((login == null) ? 0 : login.hashCode());
         result = prime * result + ((password == null) ? 0 : password.hashCode());
@@ -95,10 +121,16 @@ public class BaseAccountModel extends AbstractModel {
         if (access != other.access) {
             return false;
         }
+        if (accountType != other.accountType) {
+            return false;
+        }
         if (authenticated != other.authenticated) {
             return false;
         }
         if (banned != other.banned) {
+            return false;
+        }
+        if (extraCharacterSlotCount != other.extraCharacterSlotCount) {
             return false;
         }
         if (locale == null) {

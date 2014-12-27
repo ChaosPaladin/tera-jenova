@@ -1,6 +1,6 @@
 package com.angelis.tera.launcher.services;
 
-import com.angelis.tera.common.services.BaseI18nService;
+import com.angelis.tera.common.process.services.BaseI18nService;
 
 public class I18nService extends BaseI18nService {
     
