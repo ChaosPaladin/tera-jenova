@@ -3,8 +3,6 @@ package com.angelis.tera.packet.process.services;
 import java.util.ArrayList;
 import java.util.List;
 
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 import org.jnetpcap.Pcap;
 import org.jnetpcap.PcapBpfProgram;
@@ -12,12 +10,11 @@ import org.jnetpcap.PcapIf;
 import org.jnetpcap.packet.PcapPacketHandler;
 
 import com.angelis.tera.common.services.AbstractService;
-import com.angelis.tera.game.presentation.network.packet.ClientPacketHandler;
-import com.angelis.tera.game.presentation.network.packet.ServerPacketHandler;
-import com.angelis.tera.packet.config.CaptorConfig;
 import com.angelis.tera.packet.config.NetworkConfig;
+import com.angelis.tera.packet.di.injector.AppInjector;
 import com.angelis.tera.packet.process.network.Captor;
-import com.angelis.tera.packet.process.network.packet.handlers.AbstractPacketHandler;
+import com.google.inject.Guice;
+import com.google.inject.Injector;
 
 public class NetworkService extends AbstractService {
 
@@ -41,9 +38,9 @@ public class NetworkService extends AbstractService {
 
         final PcapIf device = alldevs.get(0);
 
-        final int snaplen = 64 * 1024; // Capture all packets, no trucation
+        final int snaplen = 131072*8; // Capture all packets, no trucation
         final int flags = Pcap.MODE_PROMISCUOUS; // capture all packets
-        final int timeout = 0; // 10 seconds in millis
+        final int timeout = 1;
         final Pcap pcap = Pcap.openLive(device.getName(), snaplen, flags, timeout, errbuf);
 
         if (pcap == null) {
@@ -61,20 +58,8 @@ public class NetworkService extends AbstractService {
             return;
         }
 
-        final List<AbstractPacketHandler> packetHandlers = new FastList<>();
-        for (final Class<? extends AbstractPacketHandler> packetHandlerClass : CaptorConfig.CAPTOR_PACKET_HANDLERS) {
-            try {
-                packetHandlers.add(packetHandlerClass.newInstance());
-            }
-            catch (InstantiationException | IllegalAccessException | IllegalArgumentException | SecurityException e) {
-                System.err.println(e.getMessage());
-                return;
-            }
-        }
-
-        final PcapPacketHandler<String> jpacketHandler = new Captor(packetHandlers);
-        ClientPacketHandler.init();
-        ServerPacketHandler.init();
+        final Injector injector = Guice.createInjector(new AppInjector());
+        final PcapPacketHandler<String> jpacketHandler = injector.getInstance(Captor.class);
 
         new Thread() {
             @Override

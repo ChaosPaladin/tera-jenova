@@ -4,6 +4,7 @@ import com.angelis.tera.common.utils.PrintUtils;
 import com.angelis.tera.packet.process.network.packet.enums.PacketDirectionEnum;
 
 public class Packet {
+
     private final short opcode;
     private final PacketDirectionEnum packetDirection;
     private final byte[] datas;

@@ -8,7 +8,6 @@ import org.apache.log4j.PropertyConfigurator;
 import com.angelis.tera.common.config.ConfigurableProcessor;
 import com.angelis.tera.common.services.AbstractService;
 import com.angelis.tera.common.utils.PropertiesUtils;
-import com.angelis.tera.packet.config.CaptorConfig;
 import com.angelis.tera.packet.config.NetworkConfig;
 
 public class ConfigService extends AbstractService {
@@ -25,7 +24,6 @@ public class ConfigService extends AbstractService {
 
         try {
             final Properties[] properties = PropertiesUtils.loadAllFromDirectory("conf");
-            ConfigurableProcessor.process(CaptorConfig.class, properties);
             ConfigurableProcessor.process(NetworkConfig.class, properties);
         }
         catch (final Exception e) {
